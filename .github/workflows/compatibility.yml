@@ -9,21 +9,33 @@ on:
     - cron: '0 0 * * *'
 
 jobs:
+
   tests:
+    strategy:
+      fail-fast: false
+      matrix:
+        language:
+          - java
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+      # See: https://github.com/KohlbacherLab/dnpm-dip-api-gateway/blob/main/app/controllers/README.md#synthetic-json-data
+      - name: Download synthetic mtb patient record
+        run: curl -f -L https://dnpm-dip.net/api/mtb/fake/data/patient-record -o ./mv64e-mtb-fake-patient.json
+
+      # Java
       - uses: actions/setup-java@v5
+        if: matrix.language == 'java'
         with:
           java-version: '11'
           distribution: 'temurin'
-
       - name: Setup Gradle
+        if: matrix.language == 'java'
         uses: gradle/actions/setup-gradle@v3
-
-      # See: https://github.com/KohlbacherLab/dnpm-dip-api-gateway/blob/main/app/controllers/README.md#synthetic-json-data
-      - name: Download synthetic mtb patient record
-        run: curl -f -L https://dnpm-dip.net/api/mtb/fake/data/patient-record -o ./src/test/resources/mv64e-mtb-fake-patient.json
-
       - name: Run tests
-        run: ./gradlew test
+        if: matrix.language == 'java'
+        working-directory: java
+        run: |
+          cp ../mv64e-mtb-fake-patient.json ./src/test/resources/mv64e-mtb-fake-patient.json
+          ./gradlew test
