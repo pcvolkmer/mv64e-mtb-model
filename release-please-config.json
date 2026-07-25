@@ -4,15 +4,18 @@
   "bump-patch-for-minor-pre-major": true,
   "include-v-in-tag": true,
   "include-component-in-tag": false,
-  "release-type": "simple",
   "packages": {
     "java": {
+      "release-type": "simple",
       "extra-files": [
         {
           "type": "generic",
           "path": "build.gradle.kts"
         }
       ]
+    },
+    "rust": {
+      "release-type": "rust"
     }
   }
 }
