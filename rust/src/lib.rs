@@ -1,12 +1,15 @@
 //! This crate provides structs to serialize and deserialize DNPM:DIP MTB DTOs.
-//! The base struct is `Mtb`.
+//! The base struct is `PatientRecord`.
 
 #![allow(clippy::needless_doctest_main)]
 
+use crate::models::{
+    GenderCoding, HealthInsuranceTypeCoding, Patient, PatientHealthInsurance, PatientRecord,
+    gender_coding, health_insurance_type_coding,
+};
 use std::error::Error;
 use std::fmt::{Debug, Display, Formatter};
 use std::str::FromStr;
-use crate::models::{gender_coding, health_insurance_type_coding, GenderCoding, HealthInsuranceTypeCoding, Patient, PatientHealthInsurance, PatientRecord};
 
 pub mod models;
 
