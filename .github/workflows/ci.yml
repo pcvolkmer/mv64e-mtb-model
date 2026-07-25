@@ -16,6 +16,7 @@ jobs:
       matrix:
         language:
           - java
+          - rust
 
     runs-on: ubuntu-latest
     steps:
@@ -35,8 +36,22 @@ jobs:
         working-directory: java
         run: ./gradlew test
 
+      # Rust
+      - name: Run tests
+        if: matrix.language == 'rust'
+        working-directory: rust
+        run: |
+          cargo build --verbose
+          cargo test --verbose
+
   publish:
     if: ${{ github.event_name == 'release' && github.event.action == 'created' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        language:
+          - java
+
     runs-on: ubuntu-latest
     permissions:
       contents: read

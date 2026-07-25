@@ -16,6 +16,7 @@ jobs:
       matrix:
         language:
           - java
+          - rust
 
     runs-on: ubuntu-latest
     steps:
@@ -39,3 +40,12 @@ jobs:
         run: |
           cp ../mv64e-mtb-fake-patient.json ./src/test/resources/mv64e-mtb-fake-patient.json
           ./gradlew test
+
+      # Rust
+      - name: Run tests
+        if: matrix.language == 'rust'
+        working-directory: rust
+        run: |
+          cp ../mv64e-mtb-fake-patient.json ./tests/mv64e-mtb-fake-patient.json
+          cargo build --verbose
+          cargo test --verbose
