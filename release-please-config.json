@@ -6,7 +6,7 @@
   "include-component-in-tag": false,
   "release-type": "simple",
   "packages": {
-    ".": {
+    "java": {
       "extra-files": [
         {
           "type": "generic",
