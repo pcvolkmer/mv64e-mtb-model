@@ -5,17 +5,19 @@
   "include-v-in-tag": true,
   "include-component-in-tag": false,
   "packages": {
-    "java": {
+    ".": {
       "release-type": "simple",
       "extra-files": [
         {
           "type": "generic",
-          "path": "build.gradle.kts"
+          "path": "java/build.gradle.kts"
+        },
+        {
+          "type": "toml",
+          "jsonpath": "$.package.version",
+          "path": "rust/Cargo.toml"
         }
       ]
-    },
-    "rust": {
-      "release-type": "rust"
     }
   }
 }
