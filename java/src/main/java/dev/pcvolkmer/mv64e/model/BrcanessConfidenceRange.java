@@ -16,6 +16,7 @@ public class BrcanessConfidenceRange {
   public BrcanessConfidenceRange() {}
 
   public BrcanessConfidenceRange min(BigDecimal min) {
+
     this.min = min;
     return this;
   }
@@ -31,6 +32,7 @@ public class BrcanessConfidenceRange {
   }
 
   public BrcanessConfidenceRange max(BigDecimal max) {
+
     this.max = max;
     return this;
   }

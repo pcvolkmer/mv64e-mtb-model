@@ -58,6 +58,7 @@ public class MtbMedicationRecommendation {
   public MtbMedicationRecommendation() {}
 
   public MtbMedicationRecommendation priority(RecommendationPriorityCoding priority) {
+
     this.priority = priority;
     return this;
   }
@@ -73,6 +74,7 @@ public class MtbMedicationRecommendation {
   }
 
   public MtbMedicationRecommendation medication(Set<AtcUnregisteredMedicationCoding> medication) {
+
     this.medication = medication;
     return this;
   }
@@ -99,6 +101,7 @@ public class MtbMedicationRecommendation {
 
   public MtbMedicationRecommendation supportingVariants(
       @Nullable List<GeneAlterationReference> supportingVariants) {
+
     this.supportingVariants = supportingVariants;
     return this;
   }
@@ -124,6 +127,7 @@ public class MtbMedicationRecommendation {
 
   public MtbMedicationRecommendation useType(
       @Nullable MtbMedicationRecommendationUseTypeCoding useType) {
+
     this.useType = useType;
     return this;
   }
@@ -139,6 +143,7 @@ public class MtbMedicationRecommendation {
   }
 
   public MtbMedicationRecommendation reason(@Nullable Reference reason) {
+
     this.reason = reason;
     return this;
   }
@@ -155,6 +160,7 @@ public class MtbMedicationRecommendation {
 
   public MtbMedicationRecommendation category(
       @Nullable Set<MtbMedicationRecommendationCategoryCoding> category) {
+
     this.category = category;
     return this;
   }
@@ -180,6 +186,7 @@ public class MtbMedicationRecommendation {
   }
 
   public MtbMedicationRecommendation issuedOn(Date issuedOn) {
+
     this.issuedOn = issuedOn;
     return this;
   }
@@ -196,6 +203,7 @@ public class MtbMedicationRecommendation {
   }
 
   public MtbMedicationRecommendation patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -212,6 +220,7 @@ public class MtbMedicationRecommendation {
 
   public MtbMedicationRecommendation supportingFindings(
       @Nullable List<Reference> supportingFindings) {
+
     this.supportingFindings = supportingFindings;
     return this;
   }
@@ -235,6 +244,7 @@ public class MtbMedicationRecommendation {
   }
 
   public MtbMedicationRecommendation levelOfEvidence(@Nullable LevelOfEvidence levelOfEvidence) {
+
     this.levelOfEvidence = levelOfEvidence;
     return this;
   }
@@ -250,6 +260,7 @@ public class MtbMedicationRecommendation {
   }
 
   public MtbMedicationRecommendation id(String id) {
+
     this.id = id;
     return this;
   }

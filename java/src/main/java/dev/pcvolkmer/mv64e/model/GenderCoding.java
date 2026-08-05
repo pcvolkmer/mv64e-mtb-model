@@ -62,6 +62,7 @@ public class GenderCoding {
   public GenderCoding() {}
 
   public GenderCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -77,6 +78,7 @@ public class GenderCoding {
   }
 
   public GenderCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -92,6 +94,7 @@ public class GenderCoding {
   }
 
   public GenderCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -107,6 +110,7 @@ public class GenderCoding {
   }
 
   public GenderCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

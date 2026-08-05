@@ -46,6 +46,7 @@ public class SomaticNgsReportResults {
   public SomaticNgsReportResults() {}
 
   public SomaticNgsReportResults rnaSeqs(@Nullable List<RnaSeq> rnaSeqs) {
+
     this.rnaSeqs = rnaSeqs;
     return this;
   }
@@ -69,6 +70,7 @@ public class SomaticNgsReportResults {
   }
 
   public SomaticNgsReportResults tmb(@Nullable Tmb tmb) {
+
     this.tmb = tmb;
     return this;
   }
@@ -84,6 +86,7 @@ public class SomaticNgsReportResults {
   }
 
   public SomaticNgsReportResults simpleVariants(@Nullable List<Snv> simpleVariants) {
+
     this.simpleVariants = simpleVariants;
     return this;
   }
@@ -107,6 +110,7 @@ public class SomaticNgsReportResults {
   }
 
   public SomaticNgsReportResults hrdScore(@Nullable HrdScore hrdScore) {
+
     this.hrdScore = hrdScore;
     return this;
   }
@@ -122,6 +126,7 @@ public class SomaticNgsReportResults {
   }
 
   public SomaticNgsReportResults copyNumberVariants(@Nullable List<Cnv> copyNumberVariants) {
+
     this.copyNumberVariants = copyNumberVariants;
     return this;
   }
@@ -145,6 +150,7 @@ public class SomaticNgsReportResults {
   }
 
   public SomaticNgsReportResults tumorCellContent(@Nullable TumorCellContent tumorCellContent) {
+
     this.tumorCellContent = tumorCellContent;
     return this;
   }
@@ -160,6 +166,7 @@ public class SomaticNgsReportResults {
   }
 
   public SomaticNgsReportResults dnaFusions(@Nullable List<DnaFusion> dnaFusions) {
+
     this.dnaFusions = dnaFusions;
     return this;
   }
@@ -183,6 +190,7 @@ public class SomaticNgsReportResults {
   }
 
   public SomaticNgsReportResults rnaFusions(@Nullable List<RnaFusion> rnaFusions) {
+
     this.rnaFusions = rnaFusions;
     return this;
   }
@@ -206,6 +214,7 @@ public class SomaticNgsReportResults {
   }
 
   public SomaticNgsReportResults brcaness(@Nullable Brcaness brcaness) {
+
     this.brcaness = brcaness;
     return this;
   }

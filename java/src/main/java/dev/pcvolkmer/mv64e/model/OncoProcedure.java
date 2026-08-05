@@ -59,6 +59,7 @@ public class OncoProcedure {
   public OncoProcedure() {}
 
   public OncoProcedure statusReason(@Nullable MtbTherapyStatusReasonCoding statusReason) {
+
     this.statusReason = statusReason;
     return this;
   }
@@ -74,6 +75,7 @@ public class OncoProcedure {
   }
 
   public OncoProcedure intent(@Nullable MtbTherapyIntentCoding intent) {
+
     this.intent = intent;
     return this;
   }
@@ -89,6 +91,7 @@ public class OncoProcedure {
   }
 
   public OncoProcedure therapyLine(@Nullable Integer therapyLine) {
+
     this.therapyLine = therapyLine;
     return this;
   }
@@ -104,6 +107,7 @@ public class OncoProcedure {
   }
 
   public OncoProcedure reason(@Nullable Reference reason) {
+
     this.reason = reason;
     return this;
   }
@@ -119,6 +123,7 @@ public class OncoProcedure {
   }
 
   public OncoProcedure code(OncoProcedureTypeCoding code) {
+
     this.code = code;
     return this;
   }
@@ -134,6 +139,7 @@ public class OncoProcedure {
   }
 
   public OncoProcedure id(String id) {
+
     this.id = id;
     return this;
   }
@@ -149,6 +155,7 @@ public class OncoProcedure {
   }
 
   public OncoProcedure recordedOn(Date recordedOn) {
+
     this.recordedOn = recordedOn;
     return this;
   }
@@ -165,6 +172,7 @@ public class OncoProcedure {
   }
 
   public OncoProcedure status(TherapyStatusCoding status) {
+
     this.status = status;
     return this;
   }
@@ -180,6 +188,7 @@ public class OncoProcedure {
   }
 
   public OncoProcedure basedOn(@Nullable Reference basedOn) {
+
     this.basedOn = basedOn;
     return this;
   }
@@ -195,6 +204,7 @@ public class OncoProcedure {
   }
 
   public OncoProcedure notes(@Nullable List<String> notes) {
+
     this.notes = notes;
     return this;
   }
@@ -218,6 +228,7 @@ public class OncoProcedure {
   }
 
   public OncoProcedure period(@Nullable PeriodDate period) {
+
     this.period = period;
     return this;
   }
@@ -233,6 +244,7 @@ public class OncoProcedure {
   }
 
   public OncoProcedure patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }

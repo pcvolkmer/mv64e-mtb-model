@@ -28,6 +28,7 @@ public class RnaFusionFusionPartner5prime {
   public RnaFusionFusionPartner5prime() {}
 
   public RnaFusionFusionPartner5prime transcriptId(TranscriptId transcriptId) {
+
     this.transcriptId = transcriptId;
     return this;
   }
@@ -43,6 +44,7 @@ public class RnaFusionFusionPartner5prime {
   }
 
   public RnaFusionFusionPartner5prime position(BigDecimal position) {
+
     this.position = position;
     return this;
   }
@@ -58,6 +60,7 @@ public class RnaFusionFusionPartner5prime {
   }
 
   public RnaFusionFusionPartner5prime exonId(String exonId) {
+
     this.exonId = exonId;
     return this;
   }
@@ -73,6 +76,7 @@ public class RnaFusionFusionPartner5prime {
   }
 
   public RnaFusionFusionPartner5prime strand(RnaFusionStrand strand) {
+
     this.strand = strand;
     return this;
   }
@@ -88,6 +92,7 @@ public class RnaFusionFusionPartner5prime {
   }
 
   public RnaFusionFusionPartner5prime gene(Coding gene) {
+
     this.gene = gene;
     return this;
   }

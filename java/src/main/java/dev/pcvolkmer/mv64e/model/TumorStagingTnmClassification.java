@@ -20,6 +20,7 @@ public class TumorStagingTnmClassification {
   public TumorStagingTnmClassification() {}
 
   public TumorStagingTnmClassification tumor(Coding tumor) {
+
     this.tumor = tumor;
     return this;
   }
@@ -37,6 +38,7 @@ public class TumorStagingTnmClassification {
   }
 
   public TumorStagingTnmClassification nodes(Coding nodes) {
+
     this.nodes = nodes;
     return this;
   }
@@ -54,6 +56,7 @@ public class TumorStagingTnmClassification {
   }
 
   public TumorStagingTnmClassification metastasis(Coding metastasis) {
+
     this.metastasis = metastasis;
     return this;
   }

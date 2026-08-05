@@ -66,6 +66,7 @@ public class MtbMedicationRecommendationCategoryCoding {
   public MtbMedicationRecommendationCategoryCoding() {}
 
   public MtbMedicationRecommendationCategoryCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -81,6 +82,7 @@ public class MtbMedicationRecommendationCategoryCoding {
   }
 
   public MtbMedicationRecommendationCategoryCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -96,6 +98,7 @@ public class MtbMedicationRecommendationCategoryCoding {
   }
 
   public MtbMedicationRecommendationCategoryCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -111,6 +114,7 @@ public class MtbMedicationRecommendationCategoryCoding {
   }
 
   public MtbMedicationRecommendationCategoryCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

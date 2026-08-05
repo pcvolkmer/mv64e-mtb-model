@@ -18,6 +18,7 @@ public class TumorGrading {
   public TumorGrading() {}
 
   public TumorGrading date(Date date) {
+
     this.date = date;
     return this;
   }
@@ -36,6 +37,7 @@ public class TumorGrading {
   }
 
   public TumorGrading codes(List<Coding> codes) {
+
     this.codes = codes;
     return this;
   }

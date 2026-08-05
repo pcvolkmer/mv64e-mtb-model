@@ -74,6 +74,7 @@ public class Cnv {
   public Cnv() {}
 
   public Cnv localization(@Nullable Set<BaseVariantLocalizationCoding> localization) {
+
     this.localization = localization;
     return this;
   }
@@ -98,6 +99,7 @@ public class Cnv {
   }
 
   public Cnv reportedFocality(@Nullable String reportedFocality) {
+
     this.reportedFocality = reportedFocality;
     return this;
   }
@@ -113,6 +115,7 @@ public class Cnv {
   }
 
   public Cnv reportedAffectedGenes(@Nullable Set<Coding> reportedAffectedGenes) {
+
     this.reportedAffectedGenes = reportedAffectedGenes;
     return this;
   }
@@ -137,6 +140,7 @@ public class Cnv {
   }
 
   public Cnv totalCopyNumber(@Nullable Integer totalCopyNumber) {
+
     this.totalCopyNumber = totalCopyNumber;
     return this;
   }
@@ -152,6 +156,7 @@ public class Cnv {
   }
 
   public Cnv cnA(@Nullable BigDecimal cnA) {
+
     this.cnA = cnA;
     return this;
   }
@@ -167,6 +172,7 @@ public class Cnv {
   }
 
   public Cnv externalIds(@Nullable List<VariantExternalId> externalIds) {
+
     this.externalIds = externalIds;
     return this;
   }
@@ -190,6 +196,7 @@ public class Cnv {
   }
 
   public Cnv startRange(@Nullable CnvStartRange startRange) {
+
     this.startRange = startRange;
     return this;
   }
@@ -205,6 +212,7 @@ public class Cnv {
   }
 
   public Cnv type(CnvTypeCoding type) {
+
     this.type = type;
     return this;
   }
@@ -220,6 +228,7 @@ public class Cnv {
   }
 
   public Cnv patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -235,6 +244,7 @@ public class Cnv {
   }
 
   public Cnv endRange(@Nullable CnvEndRange endRange) {
+
     this.endRange = endRange;
     return this;
   }
@@ -250,6 +260,7 @@ public class Cnv {
   }
 
   public Cnv chromosome(Chromosome chromosome) {
+
     this.chromosome = chromosome;
     return this;
   }
@@ -265,6 +276,7 @@ public class Cnv {
   }
 
   public Cnv id(String id) {
+
     this.id = id;
     return this;
   }
@@ -280,6 +292,7 @@ public class Cnv {
   }
 
   public Cnv cnB(@Nullable BigDecimal cnB) {
+
     this.cnB = cnB;
     return this;
   }
@@ -295,6 +308,7 @@ public class Cnv {
   }
 
   public Cnv relativeCopyNumber(@Nullable BigDecimal relativeCopyNumber) {
+
     this.relativeCopyNumber = relativeCopyNumber;
     return this;
   }
@@ -310,6 +324,7 @@ public class Cnv {
   }
 
   public Cnv copyNumberNeutralLoH(@Nullable Set<Coding> copyNumberNeutralLoH) {
+
     this.copyNumberNeutralLoH = copyNumberNeutralLoH;
     return this;
   }

@@ -26,6 +26,7 @@ public class MtbEpisodeOfCare {
   public MtbEpisodeOfCare() {}
 
   public MtbEpisodeOfCare id(String id) {
+
     this.id = id;
     return this;
   }
@@ -41,6 +42,7 @@ public class MtbEpisodeOfCare {
   }
 
   public MtbEpisodeOfCare patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -56,6 +58,7 @@ public class MtbEpisodeOfCare {
   }
 
   public MtbEpisodeOfCare period(PeriodDate period) {
+
     this.period = period;
     return this;
   }
@@ -71,6 +74,7 @@ public class MtbEpisodeOfCare {
   }
 
   public MtbEpisodeOfCare diagnoses(@Nullable List<Reference> diagnoses) {
+
     this.diagnoses = diagnoses;
     return this;
   }

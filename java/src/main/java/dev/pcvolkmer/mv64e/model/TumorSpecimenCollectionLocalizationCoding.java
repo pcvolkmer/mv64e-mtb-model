@@ -67,6 +67,7 @@ public class TumorSpecimenCollectionLocalizationCoding {
   public TumorSpecimenCollectionLocalizationCoding() {}
 
   public TumorSpecimenCollectionLocalizationCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -84,6 +85,7 @@ public class TumorSpecimenCollectionLocalizationCoding {
   }
 
   public TumorSpecimenCollectionLocalizationCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -101,6 +103,7 @@ public class TumorSpecimenCollectionLocalizationCoding {
   }
 
   public TumorSpecimenCollectionLocalizationCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -118,6 +121,7 @@ public class TumorSpecimenCollectionLocalizationCoding {
   }
 
   public TumorSpecimenCollectionLocalizationCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

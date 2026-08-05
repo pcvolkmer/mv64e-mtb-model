@@ -78,6 +78,7 @@ public class Snv {
   public Snv() {}
 
   public Snv localization(@Nullable Set<BaseVariantLocalizationCoding> localization) {
+
     this.localization = localization;
     return this;
   }
@@ -102,6 +103,7 @@ public class Snv {
   }
 
   public Snv proteinChange(@Nullable String proteinChange) {
+
     this.proteinChange = proteinChange;
     return this;
   }
@@ -117,6 +119,7 @@ public class Snv {
   }
 
   public Snv interpretation(@Nullable ClinVarCoding interpretation) {
+
     this.interpretation = interpretation;
     return this;
   }
@@ -132,6 +135,7 @@ public class Snv {
   }
 
   public Snv transcriptId(TranscriptId transcriptId) {
+
     this.transcriptId = transcriptId;
     return this;
   }
@@ -147,6 +151,7 @@ public class Snv {
   }
 
   public Snv externalIds(@Nullable List<VariantExternalId> externalIds) {
+
     this.externalIds = externalIds;
     return this;
   }
@@ -170,6 +175,7 @@ public class Snv {
   }
 
   public Snv chromosome(Chromosome chromosome) {
+
     this.chromosome = chromosome;
     return this;
   }
@@ -185,6 +191,7 @@ public class Snv {
   }
 
   public Snv id(String id) {
+
     this.id = id;
     return this;
   }
@@ -200,6 +207,7 @@ public class Snv {
   }
 
   public Snv altAllele(String altAllele) {
+
     this.altAllele = altAllele;
     return this;
   }
@@ -215,6 +223,7 @@ public class Snv {
   }
 
   public Snv position(CnvEndRange position) {
+
     this.position = position;
     return this;
   }
@@ -230,6 +239,7 @@ public class Snv {
   }
 
   public Snv gene(Coding gene) {
+
     this.gene = gene;
     return this;
   }
@@ -245,6 +255,7 @@ public class Snv {
   }
 
   public Snv exonId(@Nullable String exonId) {
+
     this.exonId = exonId;
     return this;
   }
@@ -260,6 +271,7 @@ public class Snv {
   }
 
   public Snv dnaChange(String dnaChange) {
+
     this.dnaChange = dnaChange;
     return this;
   }
@@ -275,6 +287,7 @@ public class Snv {
   }
 
   public Snv patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -290,6 +303,7 @@ public class Snv {
   }
 
   public Snv refAllele(String refAllele) {
+
     this.refAllele = refAllele;
     return this;
   }
@@ -305,6 +319,7 @@ public class Snv {
   }
 
   public Snv readDepth(Integer readDepth) {
+
     this.readDepth = readDepth;
     return this;
   }
@@ -320,6 +335,7 @@ public class Snv {
   }
 
   public Snv allelicFrequency(BigDecimal allelicFrequency) {
+
     this.allelicFrequency = allelicFrequency;
     return this;
   }

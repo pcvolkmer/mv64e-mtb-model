@@ -27,6 +27,7 @@ public class TumorStaging {
   public TumorStaging() {}
 
   public TumorStaging date(Date date) {
+
     this.date = date;
     return this;
   }
@@ -45,6 +46,7 @@ public class TumorStaging {
   }
 
   public TumorStaging method(TumorStagingMethodCoding method) {
+
     this.method = method;
     return this;
   }
@@ -62,6 +64,7 @@ public class TumorStaging {
   }
 
   public TumorStaging tnmClassification(@Nullable TumorStagingTnmClassification tnmClassification) {
+
     this.tnmClassification = tnmClassification;
     return this;
   }
@@ -79,6 +82,7 @@ public class TumorStaging {
   }
 
   public TumorStaging otherClassifications(@Nullable List<Coding> otherClassifications) {
+
     this.otherClassifications = otherClassifications;
     return this;
   }

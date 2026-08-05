@@ -62,6 +62,7 @@ public class LevelOfEvidenceAddendumCoding {
   public LevelOfEvidenceAddendumCoding() {}
 
   public LevelOfEvidenceAddendumCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -77,6 +78,7 @@ public class LevelOfEvidenceAddendumCoding {
   }
 
   public LevelOfEvidenceAddendumCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -92,6 +94,7 @@ public class LevelOfEvidenceAddendumCoding {
   }
 
   public LevelOfEvidenceAddendumCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -107,6 +110,7 @@ public class LevelOfEvidenceAddendumCoding {
   }
 
   public LevelOfEvidenceAddendumCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

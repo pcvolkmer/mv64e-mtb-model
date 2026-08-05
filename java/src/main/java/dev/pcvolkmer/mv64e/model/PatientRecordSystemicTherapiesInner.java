@@ -13,6 +13,7 @@ public class PatientRecordSystemicTherapiesInner {
   public PatientRecordSystemicTherapiesInner() {}
 
   public PatientRecordSystemicTherapiesInner history(List<MtbSystemicTherapy> history) {
+
     this.history = history;
     return this;
   }

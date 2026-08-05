@@ -17,6 +17,7 @@ public class HistologyReportResults {
 
   public HistologyReportResults tumorMorphology(
       HistologyReportResultsTumorMorphology tumorMorphology) {
+
     this.tumorMorphology = tumorMorphology;
     return this;
   }
@@ -32,6 +33,7 @@ public class HistologyReportResults {
   }
 
   public HistologyReportResults tumorCellContent(@Nullable TumorCellContent tumorCellContent) {
+
     this.tumorCellContent = tumorCellContent;
     return this;
   }

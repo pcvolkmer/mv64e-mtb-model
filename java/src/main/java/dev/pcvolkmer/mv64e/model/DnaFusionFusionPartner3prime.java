@@ -20,6 +20,7 @@ public class DnaFusionFusionPartner3prime {
   public DnaFusionFusionPartner3prime() {}
 
   public DnaFusionFusionPartner3prime chromosome(Chromosome chromosome) {
+
     this.chromosome = chromosome;
     return this;
   }
@@ -35,6 +36,7 @@ public class DnaFusionFusionPartner3prime {
   }
 
   public DnaFusionFusionPartner3prime gene(Coding gene) {
+
     this.gene = gene;
     return this;
   }
@@ -50,6 +52,7 @@ public class DnaFusionFusionPartner3prime {
   }
 
   public DnaFusionFusionPartner3prime position(BigDecimal position) {
+
     this.position = position;
     return this;
   }

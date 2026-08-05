@@ -17,6 +17,7 @@ public class IhcReportResults {
   public IhcReportResults() {}
 
   public IhcReportResults proteinExpression(List<ProteinExpression> proteinExpression) {
+
     this.proteinExpression = proteinExpression;
     return this;
   }
@@ -40,6 +41,7 @@ public class IhcReportResults {
   }
 
   public IhcReportResults msiMmr(List<ProteinExpression> msiMmr) {
+
     this.msiMmr = msiMmr;
     return this;
   }

@@ -24,6 +24,7 @@ public class MtbCarePlanRebiopsyRequestsInner {
   public MtbCarePlanRebiopsyRequestsInner() {}
 
   public MtbCarePlanRebiopsyRequestsInner id(String id) {
+
     this.id = id;
     return this;
   }
@@ -39,6 +40,7 @@ public class MtbCarePlanRebiopsyRequestsInner {
   }
 
   public MtbCarePlanRebiopsyRequestsInner patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -54,6 +56,7 @@ public class MtbCarePlanRebiopsyRequestsInner {
   }
 
   public MtbCarePlanRebiopsyRequestsInner tumorEntity(Reference tumorEntity) {
+
     this.tumorEntity = tumorEntity;
     return this;
   }
@@ -69,6 +72,7 @@ public class MtbCarePlanRebiopsyRequestsInner {
   }
 
   public MtbCarePlanRebiopsyRequestsInner issuedOn(Date issuedOn) {
+
     this.issuedOn = issuedOn;
     return this;
   }

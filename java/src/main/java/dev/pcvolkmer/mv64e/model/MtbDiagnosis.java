@@ -62,6 +62,7 @@ public class MtbDiagnosis {
   public MtbDiagnosis() {}
 
   public MtbDiagnosis grading(@Nullable MtbDiagnosisGrading grading) {
+
     this.grading = grading;
     return this;
   }
@@ -77,6 +78,7 @@ public class MtbDiagnosis {
   }
 
   public MtbDiagnosis germlineCodes(@Nullable Set<Coding> germlineCodes) {
+
     this.germlineCodes = germlineCodes;
     return this;
   }
@@ -101,6 +103,7 @@ public class MtbDiagnosis {
   }
 
   public MtbDiagnosis code(Coding code) {
+
     this.code = code;
     return this;
   }
@@ -116,6 +119,7 @@ public class MtbDiagnosis {
   }
 
   public MtbDiagnosis id(String id) {
+
     this.id = id;
     return this;
   }
@@ -131,6 +135,7 @@ public class MtbDiagnosis {
   }
 
   public MtbDiagnosis recordedOn(Date recordedOn) {
+
     this.recordedOn = recordedOn;
     return this;
   }
@@ -147,6 +152,7 @@ public class MtbDiagnosis {
   }
 
   public MtbDiagnosis type(MtbDiagnosisType type) {
+
     this.type = type;
     return this;
   }
@@ -162,6 +168,7 @@ public class MtbDiagnosis {
   }
 
   public MtbDiagnosis patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -177,6 +184,7 @@ public class MtbDiagnosis {
   }
 
   public MtbDiagnosis topography(Coding topography) {
+
     this.topography = topography;
     return this;
   }
@@ -192,6 +200,7 @@ public class MtbDiagnosis {
   }
 
   public MtbDiagnosis staging(@Nullable MtbDiagnosisStaging staging) {
+
     this.staging = staging;
     return this;
   }
@@ -207,6 +216,7 @@ public class MtbDiagnosis {
   }
 
   public MtbDiagnosis histology(@Nullable List<Reference> histology) {
+
     this.histology = histology;
     return this;
   }
@@ -231,6 +241,7 @@ public class MtbDiagnosis {
 
   public MtbDiagnosis guidelineTreatmentStatus(
       @Nullable MtbDiagnosisGuidelineTreatmentStatusCoding guidelineTreatmentStatus) {
+
     this.guidelineTreatmentStatus = guidelineTreatmentStatus;
     return this;
   }
@@ -247,6 +258,7 @@ public class MtbDiagnosis {
   }
 
   public MtbDiagnosis notes(@Nullable List<String> notes) {
+
     this.notes = notes;
     return this;
   }

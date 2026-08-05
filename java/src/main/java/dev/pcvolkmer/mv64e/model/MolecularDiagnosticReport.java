@@ -39,6 +39,7 @@ public class MolecularDiagnosticReport {
   public MolecularDiagnosticReport() {}
 
   public MolecularDiagnosticReport type(MolecularDiagnosticReportTypeCoding type) {
+
     this.type = type;
     return this;
   }
@@ -54,6 +55,7 @@ public class MolecularDiagnosticReport {
   }
 
   public MolecularDiagnosticReport specimen(Reference specimen) {
+
     this.specimen = specimen;
     return this;
   }
@@ -69,6 +71,7 @@ public class MolecularDiagnosticReport {
   }
 
   public MolecularDiagnosticReport issuedOn(Date issuedOn) {
+
     this.issuedOn = issuedOn;
     return this;
   }
@@ -85,6 +88,7 @@ public class MolecularDiagnosticReport {
   }
 
   public MolecularDiagnosticReport performer(@Nullable Reference performer) {
+
     this.performer = performer;
     return this;
   }
@@ -100,6 +104,7 @@ public class MolecularDiagnosticReport {
   }
 
   public MolecularDiagnosticReport patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -115,6 +120,7 @@ public class MolecularDiagnosticReport {
   }
 
   public MolecularDiagnosticReport id(String id) {
+
     this.id = id;
     return this;
   }
@@ -130,6 +136,7 @@ public class MolecularDiagnosticReport {
   }
 
   public MolecularDiagnosticReport results(@Nullable List<String> results) {
+
     this.results = results;
     return this;
   }

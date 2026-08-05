@@ -59,6 +59,7 @@ public class TumorStagingMethodCoding {
   public TumorStagingMethodCoding() {}
 
   public TumorStagingMethodCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -76,6 +77,7 @@ public class TumorStagingMethodCoding {
   }
 
   public TumorStagingMethodCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -93,6 +95,7 @@ public class TumorStagingMethodCoding {
   }
 
   public TumorStagingMethodCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -110,6 +113,7 @@ public class TumorStagingMethodCoding {
   }
 
   public TumorStagingMethodCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

@@ -24,6 +24,7 @@ public class Coding {
   public Coding() {}
 
   public Coding code(String code) {
+
     this.code = code;
     return this;
   }
@@ -39,6 +40,7 @@ public class Coding {
   }
 
   public Coding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -54,6 +56,7 @@ public class Coding {
   }
 
   public Coding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -69,6 +72,7 @@ public class Coding {
   }
 
   public Coding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

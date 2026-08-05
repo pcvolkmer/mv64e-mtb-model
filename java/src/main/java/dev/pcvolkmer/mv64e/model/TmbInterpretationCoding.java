@@ -61,6 +61,7 @@ public class TmbInterpretationCoding {
   public TmbInterpretationCoding() {}
 
   public TmbInterpretationCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -78,6 +79,7 @@ public class TmbInterpretationCoding {
   }
 
   public TmbInterpretationCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -95,6 +97,7 @@ public class TmbInterpretationCoding {
   }
 
   public TmbInterpretationCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -112,6 +115,7 @@ public class TmbInterpretationCoding {
   }
 
   public TmbInterpretationCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

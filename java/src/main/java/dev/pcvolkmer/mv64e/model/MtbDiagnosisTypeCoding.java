@@ -60,6 +60,7 @@ public class MtbDiagnosisTypeCoding {
   public MtbDiagnosisTypeCoding() {}
 
   public MtbDiagnosisTypeCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -75,6 +76,7 @@ public class MtbDiagnosisTypeCoding {
   }
 
   public MtbDiagnosisTypeCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -90,6 +92,7 @@ public class MtbDiagnosisTypeCoding {
   }
 
   public MtbDiagnosisTypeCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -105,6 +108,7 @@ public class MtbDiagnosisTypeCoding {
   }
 
   public MtbDiagnosisTypeCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

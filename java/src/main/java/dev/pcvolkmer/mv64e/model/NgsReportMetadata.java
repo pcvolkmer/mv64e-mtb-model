@@ -28,6 +28,7 @@ public class NgsReportMetadata {
   public NgsReportMetadata() {}
 
   public NgsReportMetadata kitManufacturer(String kitManufacturer) {
+
     this.kitManufacturer = kitManufacturer;
     return this;
   }
@@ -43,6 +44,7 @@ public class NgsReportMetadata {
   }
 
   public NgsReportMetadata pipeline(URI pipeline) {
+
     this.pipeline = pipeline;
     return this;
   }
@@ -58,6 +60,7 @@ public class NgsReportMetadata {
   }
 
   public NgsReportMetadata kitType(String kitType) {
+
     this.kitType = kitType;
     return this;
   }
@@ -73,6 +76,7 @@ public class NgsReportMetadata {
   }
 
   public NgsReportMetadata sequencer(String sequencer) {
+
     this.sequencer = sequencer;
     return this;
   }
@@ -88,6 +92,7 @@ public class NgsReportMetadata {
   }
 
   public NgsReportMetadata referenceGenome(String referenceGenome) {
+
     this.referenceGenome = referenceGenome;
     return this;
   }

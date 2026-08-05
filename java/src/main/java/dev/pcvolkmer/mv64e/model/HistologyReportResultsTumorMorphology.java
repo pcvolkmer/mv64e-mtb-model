@@ -28,6 +28,7 @@ public class HistologyReportResultsTumorMorphology {
   public HistologyReportResultsTumorMorphology() {}
 
   public HistologyReportResultsTumorMorphology id(String id) {
+
     this.id = id;
     return this;
   }
@@ -43,6 +44,7 @@ public class HistologyReportResultsTumorMorphology {
   }
 
   public HistologyReportResultsTumorMorphology note(@Nullable String note) {
+
     this.note = note;
     return this;
   }
@@ -58,6 +60,7 @@ public class HistologyReportResultsTumorMorphology {
   }
 
   public HistologyReportResultsTumorMorphology specimen(Reference specimen) {
+
     this.specimen = specimen;
     return this;
   }
@@ -73,6 +76,7 @@ public class HistologyReportResultsTumorMorphology {
   }
 
   public HistologyReportResultsTumorMorphology value(Coding value) {
+
     this.value = value;
     return this;
   }
@@ -88,6 +92,7 @@ public class HistologyReportResultsTumorMorphology {
   }
 
   public HistologyReportResultsTumorMorphology patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }

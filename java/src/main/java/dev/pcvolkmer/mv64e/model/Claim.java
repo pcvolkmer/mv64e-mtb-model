@@ -36,6 +36,7 @@ public class Claim {
   public Claim() {}
 
   public Claim stage(@Nullable ClaimStageCoding stage) {
+
     this.stage = stage;
     return this;
   }
@@ -52,6 +53,7 @@ public class Claim {
 
   public Claim requestedMedication(
       @Nullable Set<AtcUnregisteredMedicationCoding> requestedMedication) {
+
     this.requestedMedication = requestedMedication;
     return this;
   }
@@ -77,6 +79,7 @@ public class Claim {
   }
 
   public Claim recommendation(Reference recommendation) {
+
     this.recommendation = recommendation;
     return this;
   }
@@ -92,6 +95,7 @@ public class Claim {
   }
 
   public Claim id(String id) {
+
     this.id = id;
     return this;
   }
@@ -107,6 +111,7 @@ public class Claim {
   }
 
   public Claim issuedOn(Date issuedOn) {
+
     this.issuedOn = issuedOn;
     return this;
   }
@@ -123,6 +128,7 @@ public class Claim {
   }
 
   public Claim patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }

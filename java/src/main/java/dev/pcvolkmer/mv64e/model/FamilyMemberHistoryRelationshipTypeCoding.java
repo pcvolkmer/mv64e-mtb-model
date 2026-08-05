@@ -58,6 +58,7 @@ public class FamilyMemberHistoryRelationshipTypeCoding {
   public FamilyMemberHistoryRelationshipTypeCoding() {}
 
   public FamilyMemberHistoryRelationshipTypeCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -73,6 +74,7 @@ public class FamilyMemberHistoryRelationshipTypeCoding {
   }
 
   public FamilyMemberHistoryRelationshipTypeCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -88,6 +90,7 @@ public class FamilyMemberHistoryRelationshipTypeCoding {
   }
 
   public FamilyMemberHistoryRelationshipTypeCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -103,6 +106,7 @@ public class FamilyMemberHistoryRelationshipTypeCoding {
   }
 
   public FamilyMemberHistoryRelationshipTypeCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

@@ -25,6 +25,7 @@ public class LevelOfEvidence {
   public LevelOfEvidence() {}
 
   public LevelOfEvidence grading(LevelOfEvidenceGradingCoding grading) {
+
     this.grading = grading;
     return this;
   }
@@ -40,6 +41,7 @@ public class LevelOfEvidence {
   }
 
   public LevelOfEvidence addendums(@Nullable Set<LevelOfEvidenceAddendumCoding> addendums) {
+
     this.addendums = addendums;
     return this;
   }
@@ -64,6 +66,7 @@ public class LevelOfEvidence {
   }
 
   public LevelOfEvidence publications(@Nullable List<PublicationReference> publications) {
+
     this.publications = publications;
     return this;
   }

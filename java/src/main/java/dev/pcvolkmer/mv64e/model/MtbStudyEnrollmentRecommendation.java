@@ -54,6 +54,7 @@ public class MtbStudyEnrollmentRecommendation {
   public MtbStudyEnrollmentRecommendation() {}
 
   public MtbStudyEnrollmentRecommendation priority(RecommendationPriorityCoding priority) {
+
     this.priority = priority;
     return this;
   }
@@ -70,6 +71,7 @@ public class MtbStudyEnrollmentRecommendation {
 
   public MtbStudyEnrollmentRecommendation medication(
       @Nullable Set<AtcUnregisteredMedicationCoding> medication) {
+
     this.medication = medication;
     return this;
   }
@@ -96,6 +98,7 @@ public class MtbStudyEnrollmentRecommendation {
 
   public MtbStudyEnrollmentRecommendation supportingVariants(
       @Nullable List<GeneAlterationReference> supportingVariants) {
+
     this.supportingVariants = supportingVariants;
     return this;
   }
@@ -120,6 +123,7 @@ public class MtbStudyEnrollmentRecommendation {
   }
 
   public MtbStudyEnrollmentRecommendation reason(@Nullable Reference reason) {
+
     this.reason = reason;
     return this;
   }
@@ -135,6 +139,7 @@ public class MtbStudyEnrollmentRecommendation {
   }
 
   public MtbStudyEnrollmentRecommendation patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -151,6 +156,7 @@ public class MtbStudyEnrollmentRecommendation {
 
   public MtbStudyEnrollmentRecommendation supportingFindings(
       @Nullable List<Reference> supportingFindings) {
+
     this.supportingFindings = supportingFindings;
     return this;
   }
@@ -176,6 +182,7 @@ public class MtbStudyEnrollmentRecommendation {
 
   public MtbStudyEnrollmentRecommendation levelOfEvidence(
       @Nullable LevelOfEvidence levelOfEvidence) {
+
     this.levelOfEvidence = levelOfEvidence;
     return this;
   }
@@ -191,6 +198,7 @@ public class MtbStudyEnrollmentRecommendation {
   }
 
   public MtbStudyEnrollmentRecommendation id(String id) {
+
     this.id = id;
     return this;
   }
@@ -206,6 +214,7 @@ public class MtbStudyEnrollmentRecommendation {
   }
 
   public MtbStudyEnrollmentRecommendation issuedOn(Date issuedOn) {
+
     this.issuedOn = issuedOn;
     return this;
   }
@@ -222,6 +231,7 @@ public class MtbStudyEnrollmentRecommendation {
   }
 
   public MtbStudyEnrollmentRecommendation study(List<StudyReference> study) {
+
     this.study = study;
     return this;
   }

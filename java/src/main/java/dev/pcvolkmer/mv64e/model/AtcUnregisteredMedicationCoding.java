@@ -58,6 +58,7 @@ public class AtcUnregisteredMedicationCoding {
   public AtcUnregisteredMedicationCoding() {}
 
   public AtcUnregisteredMedicationCoding code(String code) {
+
     this.code = code;
     return this;
   }
@@ -73,6 +74,7 @@ public class AtcUnregisteredMedicationCoding {
   }
 
   public AtcUnregisteredMedicationCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -88,6 +90,7 @@ public class AtcUnregisteredMedicationCoding {
   }
 
   public AtcUnregisteredMedicationCoding system(SystemEnum system) {
+
     this.system = system;
     return this;
   }
@@ -103,6 +106,7 @@ public class AtcUnregisteredMedicationCoding {
   }
 
   public AtcUnregisteredMedicationCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

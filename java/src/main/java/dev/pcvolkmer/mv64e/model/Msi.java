@@ -32,6 +32,7 @@ public class Msi {
   public Msi() {}
 
   public Msi method(MsiMethodCoding method) {
+
     this.method = method;
     return this;
   }
@@ -47,6 +48,7 @@ public class Msi {
   }
 
   public Msi interpretation(MsiInterpretationCoding interpretation) {
+
     this.interpretation = interpretation;
     return this;
   }
@@ -62,6 +64,7 @@ public class Msi {
   }
 
   public Msi id(String id) {
+
     this.id = id;
     return this;
   }
@@ -77,6 +80,7 @@ public class Msi {
   }
 
   public Msi specimen(Reference specimen) {
+
     this.specimen = specimen;
     return this;
   }
@@ -92,6 +96,7 @@ public class Msi {
   }
 
   public Msi value(BigDecimal value) {
+
     this.value = value;
     return this;
   }
@@ -107,6 +112,7 @@ public class Msi {
   }
 
   public Msi patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }

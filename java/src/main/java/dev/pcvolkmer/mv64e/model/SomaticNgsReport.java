@@ -38,6 +38,7 @@ public class SomaticNgsReport {
   public SomaticNgsReport() {}
 
   public SomaticNgsReport metadata(List<NgsReportMetadata> metadata) {
+
     this.metadata = metadata;
     return this;
   }
@@ -61,6 +62,7 @@ public class SomaticNgsReport {
   }
 
   public SomaticNgsReport type(NgsReportTypeCoding type) {
+
     this.type = type;
     return this;
   }
@@ -76,6 +78,7 @@ public class SomaticNgsReport {
   }
 
   public SomaticNgsReport specimen(Reference specimen) {
+
     this.specimen = specimen;
     return this;
   }
@@ -91,6 +94,7 @@ public class SomaticNgsReport {
   }
 
   public SomaticNgsReport issuedOn(Date issuedOn) {
+
     this.issuedOn = issuedOn;
     return this;
   }
@@ -107,6 +111,7 @@ public class SomaticNgsReport {
   }
 
   public SomaticNgsReport patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -122,6 +127,7 @@ public class SomaticNgsReport {
   }
 
   public SomaticNgsReport id(String id) {
+
     this.id = id;
     return this;
   }
@@ -137,6 +143,7 @@ public class SomaticNgsReport {
   }
 
   public SomaticNgsReport results(SomaticNgsReportResults results) {
+
     this.results = results;
     return this;
   }

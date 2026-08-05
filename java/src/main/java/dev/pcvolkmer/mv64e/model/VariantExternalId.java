@@ -54,6 +54,7 @@ public class VariantExternalId {
   public VariantExternalId() {}
 
   public VariantExternalId value(String value) {
+
     this.value = value;
     return this;
   }
@@ -71,6 +72,7 @@ public class VariantExternalId {
   }
 
   public VariantExternalId system(SystemEnum system) {
+
     this.system = system;
     return this;
   }

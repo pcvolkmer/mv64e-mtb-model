@@ -24,6 +24,7 @@ public class Reference {
   public Reference() {}
 
   public Reference id(String id) {
+
     this.id = id;
     return this;
   }
@@ -39,6 +40,7 @@ public class Reference {
   }
 
   public Reference display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -54,6 +56,7 @@ public class Reference {
   }
 
   public Reference system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -69,6 +72,7 @@ public class Reference {
   }
 
   public Reference type(@Nullable String type) {
+
     this.type = type;
     return this;
   }

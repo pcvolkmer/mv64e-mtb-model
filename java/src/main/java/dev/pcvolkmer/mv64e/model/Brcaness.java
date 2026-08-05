@@ -28,6 +28,7 @@ public class Brcaness {
   public Brcaness() {}
 
   public Brcaness confidenceRange(BrcanessConfidenceRange confidenceRange) {
+
     this.confidenceRange = confidenceRange;
     return this;
   }
@@ -43,6 +44,7 @@ public class Brcaness {
   }
 
   public Brcaness id(String id) {
+
     this.id = id;
     return this;
   }
@@ -58,6 +60,7 @@ public class Brcaness {
   }
 
   public Brcaness specimen(Reference specimen) {
+
     this.specimen = specimen;
     return this;
   }
@@ -73,6 +76,7 @@ public class Brcaness {
   }
 
   public Brcaness value(BigDecimal value) {
+
     this.value = value;
     return this;
   }
@@ -88,6 +92,7 @@ public class Brcaness {
   }
 
   public Brcaness patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }

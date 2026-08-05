@@ -28,6 +28,7 @@ public class IhcReport {
   public IhcReport() {}
 
   public IhcReport specimen(Reference specimen) {
+
     this.specimen = specimen;
     return this;
   }
@@ -43,6 +44,7 @@ public class IhcReport {
   }
 
   public IhcReport issuedOn(Date issuedOn) {
+
     this.issuedOn = issuedOn;
     return this;
   }
@@ -59,6 +61,7 @@ public class IhcReport {
   }
 
   public IhcReport patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -74,6 +77,7 @@ public class IhcReport {
   }
 
   public IhcReport id(String id) {
+
     this.id = id;
     return this;
   }
@@ -89,6 +93,7 @@ public class IhcReport {
   }
 
   public IhcReport results(IhcReportResults results) {
+
     this.results = results;
     return this;
   }

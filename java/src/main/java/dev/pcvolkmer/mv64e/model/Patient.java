@@ -46,6 +46,7 @@ public class Patient {
   public Patient() {}
 
   public Patient dateOfDeath(@Nullable Date dateOfDeath) {
+
     this.dateOfDeath = dateOfDeath;
     return this;
   }
@@ -63,6 +64,7 @@ public class Patient {
   }
 
   public Patient age(@Nullable Age age) {
+
     this.age = age;
     return this;
   }
@@ -78,6 +80,7 @@ public class Patient {
   }
 
   public Patient healthInsurance(PatientHealthInsurance healthInsurance) {
+
     this.healthInsurance = healthInsurance;
     return this;
   }
@@ -93,6 +96,7 @@ public class Patient {
   }
 
   public Patient address(@Nullable PatientAddress address) {
+
     this.address = address;
     return this;
   }
@@ -108,6 +112,7 @@ public class Patient {
   }
 
   public Patient vitalStatus(@Nullable VitalStatusCoding vitalStatus) {
+
     this.vitalStatus = vitalStatus;
     return this;
   }
@@ -140,6 +145,7 @@ public class Patient {
   }
 
   public Patient id(String id) {
+
     this.id = id;
     return this;
   }
@@ -155,6 +161,7 @@ public class Patient {
   }
 
   public Patient gender(GenderCoding gender) {
+
     this.gender = gender;
     return this;
   }
@@ -170,6 +177,7 @@ public class Patient {
   }
 
   public Patient managingSite(@Nullable Coding managingSite) {
+
     this.managingSite = managingSite;
     return this;
   }

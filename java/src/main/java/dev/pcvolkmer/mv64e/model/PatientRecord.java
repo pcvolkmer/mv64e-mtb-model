@@ -90,6 +90,7 @@ public class PatientRecord {
   public PatientRecord() {}
 
   public PatientRecord diagnoses(@Nullable List<MtbDiagnosis> diagnoses) {
+
     this.diagnoses = diagnoses;
     return this;
   }
@@ -113,6 +114,7 @@ public class PatientRecord {
   }
 
   public PatientRecord ngsReports(@Nullable List<SomaticNgsReport> ngsReports) {
+
     this.ngsReports = ngsReports;
     return this;
   }
@@ -136,6 +138,7 @@ public class PatientRecord {
   }
 
   public PatientRecord performanceStatus(@Nullable List<PerformanceStatus> performanceStatus) {
+
     this.performanceStatus = performanceStatus;
     return this;
   }
@@ -159,6 +162,7 @@ public class PatientRecord {
   }
 
   public PatientRecord guidelineProcedures(@Nullable List<OncoProcedure> guidelineProcedures) {
+
     this.guidelineProcedures = guidelineProcedures;
     return this;
   }
@@ -183,6 +187,7 @@ public class PatientRecord {
 
   public PatientRecord familyMemberHistories(
       @Nullable List<FamilyMemberHistory> familyMemberHistories) {
+
     this.familyMemberHistories = familyMemberHistories;
     return this;
   }
@@ -206,6 +211,7 @@ public class PatientRecord {
   }
 
   public PatientRecord claimResponses(@Nullable List<ClaimResponse> claimResponses) {
+
     this.claimResponses = claimResponses;
     return this;
   }
@@ -229,6 +235,7 @@ public class PatientRecord {
   }
 
   public PatientRecord msiFindings(@Nullable List<Msi> msiFindings) {
+
     this.msiFindings = msiFindings;
     return this;
   }
@@ -252,6 +259,7 @@ public class PatientRecord {
   }
 
   public PatientRecord carePlans(@Nullable List<MtbCarePlan> carePlans) {
+
     this.carePlans = carePlans;
     return this;
   }
@@ -275,6 +283,7 @@ public class PatientRecord {
   }
 
   public PatientRecord specimens(@Nullable List<TumorSpecimen> specimens) {
+
     this.specimens = specimens;
     return this;
   }
@@ -298,6 +307,7 @@ public class PatientRecord {
   }
 
   public PatientRecord ihcReports(@Nullable List<IhcReport> ihcReports) {
+
     this.ihcReports = ihcReports;
     return this;
   }
@@ -321,6 +331,7 @@ public class PatientRecord {
   }
 
   public PatientRecord histologyReports(@Nullable List<HistologyReport> histologyReports) {
+
     this.histologyReports = histologyReports;
     return this;
   }
@@ -344,6 +355,7 @@ public class PatientRecord {
   }
 
   public PatientRecord guidelineTherapies(@Nullable List<MtbSystemicTherapy> guidelineTherapies) {
+
     this.guidelineTherapies = guidelineTherapies;
     return this;
   }
@@ -367,6 +379,7 @@ public class PatientRecord {
   }
 
   public PatientRecord episodesOfCare(@Nullable List<MtbEpisodeOfCare> episodesOfCare) {
+
     this.episodesOfCare = episodesOfCare;
     return this;
   }
@@ -391,6 +404,7 @@ public class PatientRecord {
 
   public PatientRecord priorDiagnosticReports(
       @Nullable List<MolecularDiagnosticReport> priorDiagnosticReports) {
+
     this.priorDiagnosticReports = priorDiagnosticReports;
     return this;
   }
@@ -417,6 +431,7 @@ public class PatientRecord {
 
   public PatientRecord systemicTherapies(
       @Nullable List<PatientRecordSystemicTherapiesInner> systemicTherapies) {
+
     this.systemicTherapies = systemicTherapies;
     return this;
   }
@@ -442,6 +457,7 @@ public class PatientRecord {
   }
 
   public PatientRecord followUps(@Nullable List<FollowUp> followUps) {
+
     this.followUps = followUps;
     return this;
   }
@@ -465,6 +481,7 @@ public class PatientRecord {
   }
 
   public PatientRecord claims(@Nullable List<Claim> claims) {
+
     this.claims = claims;
     return this;
   }
@@ -488,6 +505,7 @@ public class PatientRecord {
   }
 
   public PatientRecord metadata(@Nullable MvhMetadata metadata) {
+
     this.metadata = metadata;
     return this;
   }
@@ -503,6 +521,7 @@ public class PatientRecord {
   }
 
   public PatientRecord responses(@Nullable List<Response> responses) {
+
     this.responses = responses;
     return this;
   }
@@ -526,6 +545,7 @@ public class PatientRecord {
   }
 
   public PatientRecord patient(@Nullable Patient patient) {
+
     this.patient = patient;
     return this;
   }

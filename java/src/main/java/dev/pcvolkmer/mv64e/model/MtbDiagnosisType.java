@@ -13,6 +13,7 @@ public class MtbDiagnosisType {
   public MtbDiagnosisType() {}
 
   public MtbDiagnosisType history(List<MtbDiagnosisTypeHistoryInner> history) {
+
     this.history = history;
     return this;
   }
