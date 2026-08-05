@@ -58,6 +58,7 @@ public class PublicationReference {
   public PublicationReference() {}
 
   public PublicationReference id(String id) {
+
     this.id = id;
     return this;
   }
@@ -73,6 +74,7 @@ public class PublicationReference {
   }
 
   public PublicationReference system(SystemEnum system) {
+
     this.system = system;
     return this;
   }
@@ -88,6 +90,7 @@ public class PublicationReference {
   }
 
   public PublicationReference display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -103,6 +106,7 @@ public class PublicationReference {
   }
 
   public PublicationReference type(@Nullable String type) {
+
     this.type = type;
     return this;
   }

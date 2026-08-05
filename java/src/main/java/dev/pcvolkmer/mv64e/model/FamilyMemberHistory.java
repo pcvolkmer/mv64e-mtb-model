@@ -19,6 +19,7 @@ public class FamilyMemberHistory {
   public FamilyMemberHistory() {}
 
   public FamilyMemberHistory id(String id) {
+
     this.id = id;
     return this;
   }
@@ -34,6 +35,7 @@ public class FamilyMemberHistory {
   }
 
   public FamilyMemberHistory patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -49,6 +51,7 @@ public class FamilyMemberHistory {
   }
 
   public FamilyMemberHistory relationship(FamilyMemberHistoryRelationshipTypeCoding relationship) {
+
     this.relationship = relationship;
     return this;
   }

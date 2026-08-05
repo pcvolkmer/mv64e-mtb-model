@@ -20,6 +20,7 @@ public class HrdScoreComponents {
   public HrdScoreComponents() {}
 
   public HrdScoreComponents lst(BigDecimal lst) {
+
     this.lst = lst;
     return this;
   }
@@ -35,6 +36,7 @@ public class HrdScoreComponents {
   }
 
   public HrdScoreComponents loh(BigDecimal loh) {
+
     this.loh = loh;
     return this;
   }
@@ -50,6 +52,7 @@ public class HrdScoreComponents {
   }
 
   public HrdScoreComponents tai(BigDecimal tai) {
+
     this.tai = tai;
     return this;
   }

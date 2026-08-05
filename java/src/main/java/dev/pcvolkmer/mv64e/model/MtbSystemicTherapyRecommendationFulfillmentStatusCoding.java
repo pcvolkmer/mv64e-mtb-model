@@ -58,6 +58,7 @@ public class MtbSystemicTherapyRecommendationFulfillmentStatusCoding {
   public MtbSystemicTherapyRecommendationFulfillmentStatusCoding() {}
 
   public MtbSystemicTherapyRecommendationFulfillmentStatusCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -73,6 +74,7 @@ public class MtbSystemicTherapyRecommendationFulfillmentStatusCoding {
   }
 
   public MtbSystemicTherapyRecommendationFulfillmentStatusCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -88,6 +90,7 @@ public class MtbSystemicTherapyRecommendationFulfillmentStatusCoding {
   }
 
   public MtbSystemicTherapyRecommendationFulfillmentStatusCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -103,6 +106,7 @@ public class MtbSystemicTherapyRecommendationFulfillmentStatusCoding {
   }
 
   public MtbSystemicTherapyRecommendationFulfillmentStatusCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

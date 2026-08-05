@@ -36,6 +36,7 @@ public class ClaimResponse {
   public ClaimResponse() {}
 
   public ClaimResponse statusReason(@Nullable Set<ClaimResponseStatusReasonCoding> statusReason) {
+
     this.statusReason = statusReason;
     return this;
   }
@@ -60,6 +61,7 @@ public class ClaimResponse {
   }
 
   public ClaimResponse claim(Reference claim) {
+
     this.claim = claim;
     return this;
   }
@@ -75,6 +77,7 @@ public class ClaimResponse {
   }
 
   public ClaimResponse id(String id) {
+
     this.id = id;
     return this;
   }
@@ -90,6 +93,7 @@ public class ClaimResponse {
   }
 
   public ClaimResponse status(@Nullable ClaimResponseStatusCoding status) {
+
     this.status = status;
     return this;
   }
@@ -105,6 +109,7 @@ public class ClaimResponse {
   }
 
   public ClaimResponse issuedOn(Date issuedOn) {
+
     this.issuedOn = issuedOn;
     return this;
   }
@@ -121,6 +126,7 @@ public class ClaimResponse {
   }
 
   public ClaimResponse patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }

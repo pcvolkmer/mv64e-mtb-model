@@ -21,6 +21,7 @@ public class TumorSpecimenCollection {
   public TumorSpecimenCollection() {}
 
   public TumorSpecimenCollection date(@Nullable Date date) {
+
     this.date = date;
     return this;
   }
@@ -39,6 +40,7 @@ public class TumorSpecimenCollection {
   }
 
   public TumorSpecimenCollection method(TumorSpecimenCollectionMethodCoding method) {
+
     this.method = method;
     return this;
   }
@@ -57,6 +59,7 @@ public class TumorSpecimenCollection {
 
   public TumorSpecimenCollection localization(
       TumorSpecimenCollectionLocalizationCoding localization) {
+
     this.localization = localization;
     return this;
   }

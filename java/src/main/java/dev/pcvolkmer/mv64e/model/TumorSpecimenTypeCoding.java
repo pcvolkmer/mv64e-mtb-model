@@ -65,6 +65,7 @@ public class TumorSpecimenTypeCoding {
   public TumorSpecimenTypeCoding() {}
 
   public TumorSpecimenTypeCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -82,6 +83,7 @@ public class TumorSpecimenTypeCoding {
   }
 
   public TumorSpecimenTypeCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -99,6 +101,7 @@ public class TumorSpecimenTypeCoding {
   }
 
   public TumorSpecimenTypeCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -116,6 +119,7 @@ public class TumorSpecimenTypeCoding {
   }
 
   public TumorSpecimenTypeCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

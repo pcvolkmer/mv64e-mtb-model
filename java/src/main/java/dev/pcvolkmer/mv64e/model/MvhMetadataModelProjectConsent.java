@@ -23,6 +23,7 @@ public class MvhMetadataModelProjectConsent {
   public MvhMetadataModelProjectConsent() {}
 
   public MvhMetadataModelProjectConsent version(String version) {
+
     this.version = version;
     return this;
   }
@@ -38,6 +39,7 @@ public class MvhMetadataModelProjectConsent {
   }
 
   public MvhMetadataModelProjectConsent date(@Nullable Date date) {
+
     this.date = date;
     return this;
   }
@@ -55,6 +57,7 @@ public class MvhMetadataModelProjectConsent {
 
   public MvhMetadataModelProjectConsent provisions(
       List<MvhMetadataModelProjectConsentProvisionsInner> provisions) {
+
     this.provisions = provisions;
     return this;
   }

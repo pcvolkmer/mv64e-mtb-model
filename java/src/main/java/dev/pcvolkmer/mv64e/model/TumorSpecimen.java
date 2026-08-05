@@ -29,6 +29,7 @@ public class TumorSpecimen {
   public TumorSpecimen() {}
 
   public TumorSpecimen diagnosis(Reference diagnosis) {
+
     this.diagnosis = diagnosis;
     return this;
   }
@@ -46,6 +47,7 @@ public class TumorSpecimen {
   }
 
   public TumorSpecimen collection(@Nullable TumorSpecimenCollection collection) {
+
     this.collection = collection;
     return this;
   }
@@ -63,6 +65,7 @@ public class TumorSpecimen {
   }
 
   public TumorSpecimen id(String id) {
+
     this.id = id;
     return this;
   }
@@ -80,6 +83,7 @@ public class TumorSpecimen {
   }
 
   public TumorSpecimen type(TumorSpecimenTypeCoding type) {
+
     this.type = type;
     return this;
   }
@@ -97,6 +101,7 @@ public class TumorSpecimen {
   }
 
   public TumorSpecimen patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }

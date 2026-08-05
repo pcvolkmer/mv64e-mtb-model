@@ -24,6 +24,7 @@ public class PerformanceStatus {
   public PerformanceStatus() {}
 
   public PerformanceStatus id(String id) {
+
     this.id = id;
     return this;
   }
@@ -39,6 +40,7 @@ public class PerformanceStatus {
   }
 
   public PerformanceStatus patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -54,6 +56,7 @@ public class PerformanceStatus {
   }
 
   public PerformanceStatus effectiveDate(Date effectiveDate) {
+
     this.effectiveDate = effectiveDate;
     return this;
   }
@@ -70,6 +73,7 @@ public class PerformanceStatus {
   }
 
   public PerformanceStatus value(EcogCoding value) {
+
     this.value = value;
     return this;
   }

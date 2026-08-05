@@ -18,6 +18,7 @@ public class TmbResult {
   public TmbResult() {}
 
   public TmbResult value(BigDecimal value) {
+
     this.value = value;
     return this;
   }
@@ -35,6 +36,7 @@ public class TmbResult {
   }
 
   public TmbResult unit(@Nullable String unit) {
+
     this.unit = unit;
     return this;
   }

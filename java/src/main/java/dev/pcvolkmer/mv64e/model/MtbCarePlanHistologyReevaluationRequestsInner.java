@@ -24,6 +24,7 @@ public class MtbCarePlanHistologyReevaluationRequestsInner {
   public MtbCarePlanHistologyReevaluationRequestsInner() {}
 
   public MtbCarePlanHistologyReevaluationRequestsInner id(String id) {
+
     this.id = id;
     return this;
   }
@@ -39,6 +40,7 @@ public class MtbCarePlanHistologyReevaluationRequestsInner {
   }
 
   public MtbCarePlanHistologyReevaluationRequestsInner patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -54,6 +56,7 @@ public class MtbCarePlanHistologyReevaluationRequestsInner {
   }
 
   public MtbCarePlanHistologyReevaluationRequestsInner specimen(Reference specimen) {
+
     this.specimen = specimen;
     return this;
   }
@@ -69,6 +72,7 @@ public class MtbCarePlanHistologyReevaluationRequestsInner {
   }
 
   public MtbCarePlanHistologyReevaluationRequestsInner issuedOn(Date issuedOn) {
+
     this.issuedOn = issuedOn;
     return this;
   }

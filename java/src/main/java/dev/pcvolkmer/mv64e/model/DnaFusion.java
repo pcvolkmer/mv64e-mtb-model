@@ -41,6 +41,7 @@ public class DnaFusion {
   public DnaFusion() {}
 
   public DnaFusion fusionPartner3prime(DnaFusionFusionPartner3prime fusionPartner3prime) {
+
     this.fusionPartner3prime = fusionPartner3prime;
     return this;
   }
@@ -56,6 +57,7 @@ public class DnaFusion {
   }
 
   public DnaFusion localization(@Nullable Set<BaseVariantLocalizationCoding> localization) {
+
     this.localization = localization;
     return this;
   }
@@ -80,6 +82,7 @@ public class DnaFusion {
   }
 
   public DnaFusion fusionPartner5prime(DnaFusionFusionPartner5prime fusionPartner5prime) {
+
     this.fusionPartner5prime = fusionPartner5prime;
     return this;
   }
@@ -95,6 +98,7 @@ public class DnaFusion {
   }
 
   public DnaFusion externalIds(@Nullable List<VariantExternalId> externalIds) {
+
     this.externalIds = externalIds;
     return this;
   }
@@ -118,6 +122,7 @@ public class DnaFusion {
   }
 
   public DnaFusion id(String id) {
+
     this.id = id;
     return this;
   }
@@ -133,6 +138,7 @@ public class DnaFusion {
   }
 
   public DnaFusion reportedNumReads(Integer reportedNumReads) {
+
     this.reportedNumReads = reportedNumReads;
     return this;
   }
@@ -148,6 +154,7 @@ public class DnaFusion {
   }
 
   public DnaFusion patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }

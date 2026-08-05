@@ -64,6 +64,7 @@ public class CarePlanNoSequencingPerformedReasonCoding {
   public CarePlanNoSequencingPerformedReasonCoding() {}
 
   public CarePlanNoSequencingPerformedReasonCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -79,6 +80,7 @@ public class CarePlanNoSequencingPerformedReasonCoding {
   }
 
   public CarePlanNoSequencingPerformedReasonCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -94,6 +96,7 @@ public class CarePlanNoSequencingPerformedReasonCoding {
   }
 
   public CarePlanNoSequencingPerformedReasonCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -109,6 +112,7 @@ public class CarePlanNoSequencingPerformedReasonCoding {
   }
 
   public CarePlanNoSequencingPerformedReasonCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

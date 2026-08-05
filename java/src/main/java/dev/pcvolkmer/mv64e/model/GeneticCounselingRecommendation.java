@@ -24,6 +24,7 @@ public class GeneticCounselingRecommendation {
   public GeneticCounselingRecommendation() {}
 
   public GeneticCounselingRecommendation id(String id) {
+
     this.id = id;
     return this;
   }
@@ -39,6 +40,7 @@ public class GeneticCounselingRecommendation {
   }
 
   public GeneticCounselingRecommendation patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -54,6 +56,7 @@ public class GeneticCounselingRecommendation {
   }
 
   public GeneticCounselingRecommendation issuedOn(Date issuedOn) {
+
     this.issuedOn = issuedOn;
     return this;
   }
@@ -71,6 +74,7 @@ public class GeneticCounselingRecommendation {
 
   public GeneticCounselingRecommendation reason(
       GeneticCounselingRecommendationReasonCoding reason) {
+
     this.reason = reason;
     return this;
   }

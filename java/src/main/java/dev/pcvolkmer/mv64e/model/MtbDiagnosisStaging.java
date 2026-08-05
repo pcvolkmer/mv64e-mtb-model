@@ -13,6 +13,7 @@ public class MtbDiagnosisStaging {
   public MtbDiagnosisStaging() {}
 
   public MtbDiagnosisStaging history(List<TumorStaging> history) {
+
     this.history = history;
     return this;
   }

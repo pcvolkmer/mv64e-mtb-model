@@ -74,6 +74,7 @@ public class HealthInsuranceTypeCoding {
   public HealthInsuranceTypeCoding() {}
 
   public HealthInsuranceTypeCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -89,6 +90,7 @@ public class HealthInsuranceTypeCoding {
   }
 
   public HealthInsuranceTypeCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -104,6 +106,7 @@ public class HealthInsuranceTypeCoding {
   }
 
   public HealthInsuranceTypeCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -119,6 +122,7 @@ public class HealthInsuranceTypeCoding {
   }
 
   public HealthInsuranceTypeCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

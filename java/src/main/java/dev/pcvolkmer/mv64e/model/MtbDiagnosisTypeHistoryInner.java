@@ -16,6 +16,7 @@ public class MtbDiagnosisTypeHistoryInner {
   public MtbDiagnosisTypeHistoryInner() {}
 
   public MtbDiagnosisTypeHistoryInner value(MtbDiagnosisTypeCoding value) {
+
     this.value = value;
     return this;
   }
@@ -31,6 +32,7 @@ public class MtbDiagnosisTypeHistoryInner {
   }
 
   public MtbDiagnosisTypeHistoryInner date(Date date) {
+
     this.date = date;
     return this;
   }

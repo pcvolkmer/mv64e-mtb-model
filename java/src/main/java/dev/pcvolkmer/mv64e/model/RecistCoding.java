@@ -66,6 +66,7 @@ public class RecistCoding {
   public RecistCoding() {}
 
   public RecistCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -81,6 +82,7 @@ public class RecistCoding {
   }
 
   public RecistCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -96,6 +98,7 @@ public class RecistCoding {
   }
 
   public RecistCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -111,6 +114,7 @@ public class RecistCoding {
   }
 
   public RecistCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

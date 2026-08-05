@@ -50,6 +50,7 @@ public class TranscriptId {
   public TranscriptId() {}
 
   public TranscriptId value(String value) {
+
     this.value = value;
     return this;
   }
@@ -67,6 +68,7 @@ public class TranscriptId {
   }
 
   public TranscriptId system(SystemEnum system) {
+
     this.system = system;
     return this;
   }

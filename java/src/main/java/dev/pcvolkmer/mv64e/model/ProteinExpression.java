@@ -40,6 +40,7 @@ public class ProteinExpression {
   public ProteinExpression() {}
 
   public ProteinExpression cpsScore(@Nullable Integer cpsScore) {
+
     this.cpsScore = cpsScore;
     return this;
   }
@@ -55,6 +56,7 @@ public class ProteinExpression {
   }
 
   public ProteinExpression icScore(@Nullable ProteinExpressionIcScoreCoding icScore) {
+
     this.icScore = icScore;
     return this;
   }
@@ -70,6 +72,7 @@ public class ProteinExpression {
   }
 
   public ProteinExpression value(ProteinExpressionResultCoding value) {
+
     this.value = value;
     return this;
   }
@@ -85,6 +88,7 @@ public class ProteinExpression {
   }
 
   public ProteinExpression patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -100,6 +104,7 @@ public class ProteinExpression {
   }
 
   public ProteinExpression protein(Coding protein) {
+
     this.protein = protein;
     return this;
   }
@@ -115,6 +120,7 @@ public class ProteinExpression {
   }
 
   public ProteinExpression tcScore(@Nullable ProteinExpressionTcScoreCoding tcScore) {
+
     this.tcScore = tcScore;
     return this;
   }
@@ -130,6 +136,7 @@ public class ProteinExpression {
   }
 
   public ProteinExpression tpsScore(@Nullable Integer tpsScore) {
+
     this.tpsScore = tpsScore;
     return this;
   }
@@ -145,6 +152,7 @@ public class ProteinExpression {
   }
 
   public ProteinExpression id(String id) {
+
     this.id = id;
     return this;
   }

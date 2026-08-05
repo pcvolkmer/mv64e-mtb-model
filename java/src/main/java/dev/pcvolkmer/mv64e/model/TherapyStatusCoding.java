@@ -65,6 +65,7 @@ public class TherapyStatusCoding {
   public TherapyStatusCoding() {}
 
   public TherapyStatusCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -82,6 +83,7 @@ public class TherapyStatusCoding {
   }
 
   public TherapyStatusCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -99,6 +101,7 @@ public class TherapyStatusCoding {
   }
 
   public TherapyStatusCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -116,6 +119,7 @@ public class TherapyStatusCoding {
   }
 
   public TherapyStatusCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

@@ -73,6 +73,7 @@ public class MtbCarePlan {
   public MtbCarePlan() {}
 
   public MtbCarePlan boardType(@Nullable CarePlanBoardTypeCoding boardType) {
+
     this.boardType = boardType;
     return this;
   }
@@ -89,6 +90,7 @@ public class MtbCarePlan {
 
   public MtbCarePlan recommendationsMissingReason(
       @Nullable MtbCarePlanRecommendationsMissingReasonCoding recommendationsMissingReason) {
+
     this.recommendationsMissingReason = recommendationsMissingReason;
     return this;
   }
@@ -106,6 +108,7 @@ public class MtbCarePlan {
 
   public MtbCarePlan studyEnrollmentRecommendations(
       @Nullable List<MtbStudyEnrollmentRecommendation> studyEnrollmentRecommendations) {
+
     this.studyEnrollmentRecommendations = studyEnrollmentRecommendations;
     return this;
   }
@@ -131,6 +134,7 @@ public class MtbCarePlan {
   }
 
   public MtbCarePlan reason(@Nullable Reference reason) {
+
     this.reason = reason;
     return this;
   }
@@ -147,6 +151,7 @@ public class MtbCarePlan {
 
   public MtbCarePlan geneticCounselingRecommendation(
       @Nullable GeneticCounselingRecommendation geneticCounselingRecommendation) {
+
     this.geneticCounselingRecommendation = geneticCounselingRecommendation;
     return this;
   }
@@ -163,6 +168,7 @@ public class MtbCarePlan {
   }
 
   public MtbCarePlan id(String id) {
+
     this.id = id;
     return this;
   }
@@ -179,6 +185,7 @@ public class MtbCarePlan {
 
   public MtbCarePlan medicationRecommendations(
       @Nullable List<MtbMedicationRecommendation> medicationRecommendations) {
+
     this.medicationRecommendations = medicationRecommendations;
     return this;
   }
@@ -205,6 +212,7 @@ public class MtbCarePlan {
 
   public MtbCarePlan rebiopsyRequests(
       @Nullable List<MtbCarePlanRebiopsyRequestsInner> rebiopsyRequests) {
+
     this.rebiopsyRequests = rebiopsyRequests;
     return this;
   }
@@ -231,6 +239,7 @@ public class MtbCarePlan {
 
   public MtbCarePlan histologyReevaluationRequests(
       @Nullable List<MtbCarePlanHistologyReevaluationRequestsInner> histologyReevaluationRequests) {
+
     this.histologyReevaluationRequests = histologyReevaluationRequests;
     return this;
   }
@@ -257,6 +266,7 @@ public class MtbCarePlan {
   }
 
   public MtbCarePlan notes(@Nullable List<String> notes) {
+
     this.notes = notes;
     return this;
   }
@@ -281,6 +291,7 @@ public class MtbCarePlan {
 
   public MtbCarePlan procedureRecommendations(
       @Nullable List<MtbCarePlanProcedureRecommendationsInner> procedureRecommendations) {
+
     this.procedureRecommendations = procedureRecommendations;
     return this;
   }
@@ -306,6 +317,7 @@ public class MtbCarePlan {
   }
 
   public MtbCarePlan issuedOn(Date issuedOn) {
+
     this.issuedOn = issuedOn;
     return this;
   }
@@ -323,6 +335,7 @@ public class MtbCarePlan {
 
   public MtbCarePlan noSequencingPerformedReason(
       @Nullable CarePlanNoSequencingPerformedReasonCoding noSequencingPerformedReason) {
+
     this.noSequencingPerformedReason = noSequencingPerformedReason;
     return this;
   }
@@ -339,6 +352,7 @@ public class MtbCarePlan {
   }
 
   public MtbCarePlan patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }

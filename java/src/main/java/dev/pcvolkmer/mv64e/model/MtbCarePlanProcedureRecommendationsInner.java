@@ -47,6 +47,7 @@ public class MtbCarePlanProcedureRecommendationsInner {
   public MtbCarePlanProcedureRecommendationsInner() {}
 
   public MtbCarePlanProcedureRecommendationsInner priority(RecommendationPriorityCoding priority) {
+
     this.priority = priority;
     return this;
   }
@@ -63,6 +64,7 @@ public class MtbCarePlanProcedureRecommendationsInner {
 
   public MtbCarePlanProcedureRecommendationsInner supportingVariants(
       @Nullable List<GeneAlterationReference> supportingVariants) {
+
     this.supportingVariants = supportingVariants;
     return this;
   }
@@ -87,6 +89,7 @@ public class MtbCarePlanProcedureRecommendationsInner {
   }
 
   public MtbCarePlanProcedureRecommendationsInner reason(@Nullable Reference reason) {
+
     this.reason = reason;
     return this;
   }
@@ -103,6 +106,7 @@ public class MtbCarePlanProcedureRecommendationsInner {
 
   public MtbCarePlanProcedureRecommendationsInner code(
       MtbProcedureRecommendationCategoryCoding code) {
+
     this.code = code;
     return this;
   }
@@ -118,6 +122,7 @@ public class MtbCarePlanProcedureRecommendationsInner {
   }
 
   public MtbCarePlanProcedureRecommendationsInner issuedOn(Date issuedOn) {
+
     this.issuedOn = issuedOn;
     return this;
   }
@@ -134,6 +139,7 @@ public class MtbCarePlanProcedureRecommendationsInner {
   }
 
   public MtbCarePlanProcedureRecommendationsInner patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -150,6 +156,7 @@ public class MtbCarePlanProcedureRecommendationsInner {
 
   public MtbCarePlanProcedureRecommendationsInner supportingFindings(
       @Nullable List<Reference> supportingFindings) {
+
     this.supportingFindings = supportingFindings;
     return this;
   }
@@ -175,6 +182,7 @@ public class MtbCarePlanProcedureRecommendationsInner {
 
   public MtbCarePlanProcedureRecommendationsInner levelOfEvidence(
       @Nullable LevelOfEvidence levelOfEvidence) {
+
     this.levelOfEvidence = levelOfEvidence;
     return this;
   }
@@ -190,6 +198,7 @@ public class MtbCarePlanProcedureRecommendationsInner {
   }
 
   public MtbCarePlanProcedureRecommendationsInner id(String id) {
+
     this.id = id;
     return this;
   }

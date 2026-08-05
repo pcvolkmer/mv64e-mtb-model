@@ -29,6 +29,7 @@ public class TumorCellContent {
   public TumorCellContent() {}
 
   public TumorCellContent method(TumorCellContentMethodCoding method) {
+
     this.method = method;
     return this;
   }
@@ -46,6 +47,7 @@ public class TumorCellContent {
   }
 
   public TumorCellContent id(String id) {
+
     this.id = id;
     return this;
   }
@@ -63,6 +65,7 @@ public class TumorCellContent {
   }
 
   public TumorCellContent specimen(Reference specimen) {
+
     this.specimen = specimen;
     return this;
   }
@@ -80,6 +83,7 @@ public class TumorCellContent {
   }
 
   public TumorCellContent value(BigDecimal value) {
+
     this.value = value;
     return this;
   }
@@ -97,6 +101,7 @@ public class TumorCellContent {
   }
 
   public TumorCellContent patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }

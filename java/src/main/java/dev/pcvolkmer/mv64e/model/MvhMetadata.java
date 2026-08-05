@@ -36,6 +36,7 @@ public class MvhMetadata {
   public MvhMetadata() {}
 
   public MvhMetadata modelProjectConsent(MvhMetadataModelProjectConsent modelProjectConsent) {
+
     this.modelProjectConsent = modelProjectConsent;
     return this;
   }
@@ -51,6 +52,7 @@ public class MvhMetadata {
   }
 
   public MvhMetadata researchConsents(@Nullable List<Map<String, Object>> researchConsents) {
+
     this.researchConsents = researchConsents;
     return this;
   }
@@ -74,6 +76,7 @@ public class MvhMetadata {
   }
 
   public MvhMetadata episodeOfCare(@Nullable Reference episodeOfCare) {
+
     this.episodeOfCare = episodeOfCare;
     return this;
   }
@@ -90,6 +93,7 @@ public class MvhMetadata {
 
   public MvhMetadata reasonResearchConsentMissing(
       @Nullable BroadConsentReasonMissing reasonResearchConsentMissing) {
+
     this.reasonResearchConsentMissing = reasonResearchConsentMissing;
     return this;
   }
@@ -106,6 +110,7 @@ public class MvhMetadata {
   }
 
   public MvhMetadata transferTAN(String transferTAN) {
+
     this.transferTAN = transferTAN;
     return this;
   }
@@ -121,6 +126,7 @@ public class MvhMetadata {
   }
 
   public MvhMetadata type(MvhSubmissionType type) {
+
     this.type = type;
     return this;
   }

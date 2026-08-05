@@ -32,6 +32,7 @@ public class Response {
   public Response() {}
 
   public Response method(ResponseMethodCoding method) {
+
     this.method = method;
     return this;
   }
@@ -47,6 +48,7 @@ public class Response {
   }
 
   public Response therapy(Reference therapy) {
+
     this.therapy = therapy;
     return this;
   }
@@ -62,6 +64,7 @@ public class Response {
   }
 
   public Response id(String id) {
+
     this.id = id;
     return this;
   }
@@ -77,6 +80,7 @@ public class Response {
   }
 
   public Response effectiveDate(Date effectiveDate) {
+
     this.effectiveDate = effectiveDate;
     return this;
   }
@@ -93,6 +97,7 @@ public class Response {
   }
 
   public Response value(RecistCoding value) {
+
     this.value = value;
     return this;
   }
@@ -108,6 +113,7 @@ public class Response {
   }
 
   public Response patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }

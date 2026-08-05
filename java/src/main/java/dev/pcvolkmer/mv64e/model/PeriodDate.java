@@ -17,6 +17,7 @@ public class PeriodDate {
   public PeriodDate() {}
 
   public PeriodDate start(Date start) {
+
     this.start = start;
     return this;
   }
@@ -33,6 +34,7 @@ public class PeriodDate {
   }
 
   public PeriodDate end(@Nullable Date end) {
+
     this.end = end;
     return this;
   }

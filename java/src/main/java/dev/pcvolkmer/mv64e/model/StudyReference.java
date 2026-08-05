@@ -64,6 +64,7 @@ public class StudyReference {
   public StudyReference() {}
 
   public StudyReference id(String id) {
+
     this.id = id;
     return this;
   }
@@ -79,6 +80,7 @@ public class StudyReference {
   }
 
   public StudyReference system(SystemEnum system) {
+
     this.system = system;
     return this;
   }
@@ -94,6 +96,7 @@ public class StudyReference {
   }
 
   public StudyReference display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -109,6 +112,7 @@ public class StudyReference {
   }
 
   public StudyReference type(@Nullable String type) {
+
     this.type = type;
     return this;
   }

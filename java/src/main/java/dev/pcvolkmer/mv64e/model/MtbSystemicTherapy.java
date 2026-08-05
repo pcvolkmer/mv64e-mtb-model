@@ -76,6 +76,7 @@ public class MtbSystemicTherapy {
   public MtbSystemicTherapy() {}
 
   public MtbSystemicTherapy statusReason(@Nullable MtbTherapyStatusReasonCoding statusReason) {
+
     this.statusReason = statusReason;
     return this;
   }
@@ -91,6 +92,7 @@ public class MtbSystemicTherapy {
   }
 
   public MtbSystemicTherapy medication(@Nullable Set<AtcUnregisteredMedicationCoding> medication) {
+
     this.medication = medication;
     return this;
   }
@@ -115,6 +117,7 @@ public class MtbSystemicTherapy {
   }
 
   public MtbSystemicTherapy intent(@Nullable MtbTherapyIntentCoding intent) {
+
     this.intent = intent;
     return this;
   }
@@ -130,6 +133,7 @@ public class MtbSystemicTherapy {
   }
 
   public MtbSystemicTherapy therapyLine(@Nullable Integer therapyLine) {
+
     this.therapyLine = therapyLine;
     return this;
   }
@@ -145,6 +149,7 @@ public class MtbSystemicTherapy {
   }
 
   public MtbSystemicTherapy reason(@Nullable Reference reason) {
+
     this.reason = reason;
     return this;
   }
@@ -162,6 +167,7 @@ public class MtbSystemicTherapy {
   public MtbSystemicTherapy recommendationFulfillmentStatus(
       @Nullable MtbSystemicTherapyRecommendationFulfillmentStatusCoding
           recommendationFulfillmentStatus) {
+
     this.recommendationFulfillmentStatus = recommendationFulfillmentStatus;
     return this;
   }
@@ -180,6 +186,7 @@ public class MtbSystemicTherapy {
   }
 
   public MtbSystemicTherapy id(String id) {
+
     this.id = id;
     return this;
   }
@@ -195,6 +202,7 @@ public class MtbSystemicTherapy {
   }
 
   public MtbSystemicTherapy recordedOn(Date recordedOn) {
+
     this.recordedOn = recordedOn;
     return this;
   }
@@ -211,6 +219,7 @@ public class MtbSystemicTherapy {
   }
 
   public MtbSystemicTherapy status(TherapyStatusCoding status) {
+
     this.status = status;
     return this;
   }
@@ -226,6 +235,7 @@ public class MtbSystemicTherapy {
   }
 
   public MtbSystemicTherapy notes(@Nullable List<String> notes) {
+
     this.notes = notes;
     return this;
   }
@@ -249,6 +259,7 @@ public class MtbSystemicTherapy {
   }
 
   public MtbSystemicTherapy dosage(@Nullable MtbSystemicTherapyDosageDensityCoding dosage) {
+
     this.dosage = dosage;
     return this;
   }
@@ -264,6 +275,7 @@ public class MtbSystemicTherapy {
   }
 
   public MtbSystemicTherapy period(@Nullable PeriodDate period) {
+
     this.period = period;
     return this;
   }
@@ -279,6 +291,7 @@ public class MtbSystemicTherapy {
   }
 
   public MtbSystemicTherapy patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -294,6 +307,7 @@ public class MtbSystemicTherapy {
   }
 
   public MtbSystemicTherapy category(@Nullable MtbSystemicTherapyCategoryCoding category) {
+
     this.category = category;
     return this;
   }
@@ -309,6 +323,7 @@ public class MtbSystemicTherapy {
   }
 
   public MtbSystemicTherapy basedOn(@Nullable Reference basedOn) {
+
     this.basedOn = basedOn;
     return this;
   }

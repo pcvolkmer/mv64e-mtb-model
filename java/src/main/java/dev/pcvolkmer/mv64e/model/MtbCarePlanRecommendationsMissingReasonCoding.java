@@ -56,6 +56,7 @@ public class MtbCarePlanRecommendationsMissingReasonCoding {
   public MtbCarePlanRecommendationsMissingReasonCoding() {}
 
   public MtbCarePlanRecommendationsMissingReasonCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -71,6 +72,7 @@ public class MtbCarePlanRecommendationsMissingReasonCoding {
   }
 
   public MtbCarePlanRecommendationsMissingReasonCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -86,6 +88,7 @@ public class MtbCarePlanRecommendationsMissingReasonCoding {
   }
 
   public MtbCarePlanRecommendationsMissingReasonCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -101,6 +104,7 @@ public class MtbCarePlanRecommendationsMissingReasonCoding {
   }
 
   public MtbCarePlanRecommendationsMissingReasonCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

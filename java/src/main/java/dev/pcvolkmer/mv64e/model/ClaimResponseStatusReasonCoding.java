@@ -70,6 +70,7 @@ public class ClaimResponseStatusReasonCoding {
   public ClaimResponseStatusReasonCoding() {}
 
   public ClaimResponseStatusReasonCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -85,6 +86,7 @@ public class ClaimResponseStatusReasonCoding {
   }
 
   public ClaimResponseStatusReasonCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -100,6 +102,7 @@ public class ClaimResponseStatusReasonCoding {
   }
 
   public ClaimResponseStatusReasonCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -115,6 +118,7 @@ public class ClaimResponseStatusReasonCoding {
   }
 
   public ClaimResponseStatusReasonCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

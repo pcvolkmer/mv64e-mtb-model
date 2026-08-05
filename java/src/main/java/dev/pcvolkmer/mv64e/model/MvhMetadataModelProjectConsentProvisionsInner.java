@@ -20,6 +20,7 @@ public class MvhMetadataModelProjectConsentProvisionsInner {
   public MvhMetadataModelProjectConsentProvisionsInner() {}
 
   public MvhMetadataModelProjectConsentProvisionsInner date(Date date) {
+
     this.date = date;
     return this;
   }
@@ -36,6 +37,7 @@ public class MvhMetadataModelProjectConsentProvisionsInner {
   }
 
   public MvhMetadataModelProjectConsentProvisionsInner purpose(ModelProjectConsentPurpose purpose) {
+
     this.purpose = purpose;
     return this;
   }
@@ -51,6 +53,7 @@ public class MvhMetadataModelProjectConsentProvisionsInner {
   }
 
   public MvhMetadataModelProjectConsentProvisionsInner type(ConsentProvisionType type) {
+
     this.type = type;
     return this;
   }

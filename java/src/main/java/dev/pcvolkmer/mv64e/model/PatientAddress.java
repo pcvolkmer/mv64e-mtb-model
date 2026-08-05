@@ -11,6 +11,7 @@ public class PatientAddress {
   public PatientAddress() {}
 
   public PatientAddress municipalityCode(String municipalityCode) {
+
     this.municipalityCode = municipalityCode;
     return this;
   }

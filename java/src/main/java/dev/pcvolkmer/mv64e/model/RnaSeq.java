@@ -63,6 +63,7 @@ public class RnaSeq {
   public RnaSeq() {}
 
   public RnaSeq librarySize(@Nullable Integer librarySize) {
+
     this.librarySize = librarySize;
     return this;
   }
@@ -78,6 +79,7 @@ public class RnaSeq {
   }
 
   public RnaSeq localization(@Nullable Set<BaseVariantLocalizationCoding> localization) {
+
     this.localization = localization;
     return this;
   }
@@ -102,6 +104,7 @@ public class RnaSeq {
   }
 
   public RnaSeq transcriptsPerMillion(BigDecimal transcriptsPerMillion) {
+
     this.transcriptsPerMillion = transcriptsPerMillion;
     return this;
   }
@@ -117,6 +120,7 @@ public class RnaSeq {
   }
 
   public RnaSeq cohortRanking(@Nullable Integer cohortRanking) {
+
     this.cohortRanking = cohortRanking;
     return this;
   }
@@ -132,6 +136,7 @@ public class RnaSeq {
   }
 
   public RnaSeq rawCounts(Integer rawCounts) {
+
     this.rawCounts = rawCounts;
     return this;
   }
@@ -147,6 +152,7 @@ public class RnaSeq {
   }
 
   public RnaSeq variant(Reference variant) {
+
     this.variant = variant;
     return this;
   }
@@ -162,6 +168,7 @@ public class RnaSeq {
   }
 
   public RnaSeq transcriptId(@Nullable TranscriptId transcriptId) {
+
     this.transcriptId = transcriptId;
     return this;
   }
@@ -177,6 +184,7 @@ public class RnaSeq {
   }
 
   public RnaSeq externalIds(@Nullable List<VariantExternalId> externalIds) {
+
     this.externalIds = externalIds;
     return this;
   }
@@ -200,6 +208,7 @@ public class RnaSeq {
   }
 
   public RnaSeq id(String id) {
+
     this.id = id;
     return this;
   }
@@ -215,6 +224,7 @@ public class RnaSeq {
   }
 
   public RnaSeq tissueCorrectedExpression(@Nullable Boolean tissueCorrectedExpression) {
+
     this.tissueCorrectedExpression = tissueCorrectedExpression;
     return this;
   }
@@ -230,6 +240,7 @@ public class RnaSeq {
   }
 
   public RnaSeq gene(@Nullable Coding gene) {
+
     this.gene = gene;
     return this;
   }
@@ -245,6 +256,7 @@ public class RnaSeq {
   }
 
   public RnaSeq patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }

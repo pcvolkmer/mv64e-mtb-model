@@ -33,6 +33,7 @@ public class HrdScore {
   public HrdScore() {}
 
   public HrdScore interpretation(@Nullable HrdScoreInterpretationCoding interpretation) {
+
     this.interpretation = interpretation;
     return this;
   }
@@ -48,6 +49,7 @@ public class HrdScore {
   }
 
   public HrdScore components(HrdScoreComponents components) {
+
     this.components = components;
     return this;
   }
@@ -63,6 +65,7 @@ public class HrdScore {
   }
 
   public HrdScore id(String id) {
+
     this.id = id;
     return this;
   }
@@ -78,6 +81,7 @@ public class HrdScore {
   }
 
   public HrdScore specimen(Reference specimen) {
+
     this.specimen = specimen;
     return this;
   }
@@ -93,6 +97,7 @@ public class HrdScore {
   }
 
   public HrdScore value(BigDecimal value) {
+
     this.value = value;
     return this;
   }
@@ -108,6 +113,7 @@ public class HrdScore {
   }
 
   public HrdScore patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }

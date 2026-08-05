@@ -20,6 +20,7 @@ public class GeneAlterationReference {
   public GeneAlterationReference() {}
 
   public GeneAlterationReference variant(Reference variant) {
+
     this.variant = variant;
     return this;
   }
@@ -35,6 +36,7 @@ public class GeneAlterationReference {
   }
 
   public GeneAlterationReference display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -50,6 +52,7 @@ public class GeneAlterationReference {
   }
 
   public GeneAlterationReference gene(@Nullable Coding gene) {
+
     this.gene = gene;
     return this;
   }

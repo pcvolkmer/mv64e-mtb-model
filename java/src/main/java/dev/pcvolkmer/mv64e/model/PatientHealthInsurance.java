@@ -16,6 +16,7 @@ public class PatientHealthInsurance {
   public PatientHealthInsurance() {}
 
   public PatientHealthInsurance type(HealthInsuranceTypeCoding type) {
+
     this.type = type;
     return this;
   }
@@ -31,6 +32,7 @@ public class PatientHealthInsurance {
   }
 
   public PatientHealthInsurance reference(@Nullable Reference reference) {
+
     this.reference = reference;
     return this;
   }

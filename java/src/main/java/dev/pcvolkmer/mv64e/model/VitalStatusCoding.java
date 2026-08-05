@@ -59,6 +59,7 @@ public class VitalStatusCoding {
   public VitalStatusCoding() {}
 
   public VitalStatusCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -76,6 +77,7 @@ public class VitalStatusCoding {
   }
 
   public VitalStatusCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -93,6 +95,7 @@ public class VitalStatusCoding {
   }
 
   public VitalStatusCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -110,6 +113,7 @@ public class VitalStatusCoding {
   }
 
   public VitalStatusCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

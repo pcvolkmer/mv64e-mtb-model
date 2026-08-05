@@ -78,6 +78,7 @@ public class MolecularDiagnosticReportTypeCoding {
   public MolecularDiagnosticReportTypeCoding() {}
 
   public MolecularDiagnosticReportTypeCoding code(CodeEnum code) {
+
     this.code = code;
     return this;
   }
@@ -93,6 +94,7 @@ public class MolecularDiagnosticReportTypeCoding {
   }
 
   public MolecularDiagnosticReportTypeCoding display(@Nullable String display) {
+
     this.display = display;
     return this;
   }
@@ -108,6 +110,7 @@ public class MolecularDiagnosticReportTypeCoding {
   }
 
   public MolecularDiagnosticReportTypeCoding system(@Nullable String system) {
+
     this.system = system;
     return this;
   }
@@ -123,6 +126,7 @@ public class MolecularDiagnosticReportTypeCoding {
   }
 
   public MolecularDiagnosticReportTypeCoding version(@Nullable String version) {
+
     this.version = version;
     return this;
   }

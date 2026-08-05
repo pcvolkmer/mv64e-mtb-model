@@ -25,6 +25,7 @@ public class FollowUp {
   public FollowUp() {}
 
   public FollowUp date(Date date) {
+
     this.date = date;
     return this;
   }
@@ -41,6 +42,7 @@ public class FollowUp {
   }
 
   public FollowUp patient(Reference patient) {
+
     this.patient = patient;
     return this;
   }
@@ -56,6 +58,7 @@ public class FollowUp {
   }
 
   public FollowUp lastContactDate(@Nullable Date lastContactDate) {
+
     this.lastContactDate = lastContactDate;
     return this;
   }
@@ -72,6 +75,7 @@ public class FollowUp {
   }
 
   public FollowUp patientStatus(@Nullable FollowUpPatientStatusCoding patientStatus) {
+
     this.patientStatus = patientStatus;
     return this;
   }

@@ -17,6 +17,7 @@ public class CnvStartRange {
   public CnvStartRange() {}
 
   public CnvStartRange start(BigDecimal start) {
+
     this.start = start;
     return this;
   }
@@ -32,6 +33,7 @@ public class CnvStartRange {
   }
 
   public CnvStartRange end(@Nullable BigDecimal end) {
+
     this.end = end;
     return this;
   }
