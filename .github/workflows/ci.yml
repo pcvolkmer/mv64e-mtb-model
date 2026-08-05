@@ -39,7 +39,6 @@ jobs:
       # Rust
       - name: Run tests
         if: matrix.language == 'rust'
-        working-directory: rust
         run: |
           cargo build --verbose
           cargo test --verbose

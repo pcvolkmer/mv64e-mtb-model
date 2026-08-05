@@ -44,8 +44,7 @@ jobs:
       # Rust
       - name: Run tests
         if: matrix.language == 'rust'
-        working-directory: rust
         run: |
-          cp ../mv64e-mtb-fake-patient.json ./tests/mv64e-mtb-fake-patient.json
+          cp mv64e-mtb-fake-patient.json rust/tests/mv64e-mtb-fake-patient.json
           cargo build --verbose
           cargo test --verbose
