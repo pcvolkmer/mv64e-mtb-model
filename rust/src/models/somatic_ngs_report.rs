@@ -11,7 +11,7 @@ pub struct SomaticNgsReport {
     #[serde(rename = "specimen")]
     pub specimen: models::Reference,
     #[serde(rename = "issuedOn")]
-    pub issued_on: String,
+    pub issued_on: chrono::NaiveDate,
     #[serde(rename = "patient")]
     pub patient: models::Reference,
     #[serde(rename = "id")]
@@ -25,7 +25,7 @@ impl SomaticNgsReport {
         metadata: Vec<models::NgsReportMetadata>,
         r#type: models::NgsReportTypeCoding,
         specimen: models::Reference,
-        issued_on: String,
+        issued_on: chrono::NaiveDate,
         patient: models::Reference,
         id: String,
         results: models::SomaticNgsReportResults,

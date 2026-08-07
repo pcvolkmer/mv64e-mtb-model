@@ -13,7 +13,7 @@ pub struct MtbDiagnosis {
     #[serde(rename = "id")]
     pub id: String,
     #[serde(rename = "recordedOn")]
-    pub recorded_on: String,
+    pub recorded_on: chrono::NaiveDate,
     #[serde(rename = "type")]
     pub r#type: models::MtbDiagnosisType,
     #[serde(rename = "patient")]
@@ -37,7 +37,7 @@ impl MtbDiagnosis {
     pub fn new(
         code: models::Coding,
         id: String,
-        recorded_on: String,
+        recorded_on: chrono::NaiveDate,
         r#type: models::MtbDiagnosisType,
         patient: models::Reference,
         topography: models::Coding,

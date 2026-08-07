@@ -5,7 +5,7 @@ use serde::{Deserialize, Serialize};
 #[serde(deny_unknown_fields)]
 pub struct TumorStaging {
     #[serde(rename = "date")]
-    pub date: String,
+    pub date: chrono::NaiveDate,
     #[serde(rename = "method")]
     pub method: models::TumorStagingMethodCoding,
     #[serde(rename = "tnmClassification", skip_serializing_if = "Option::is_none")]
@@ -18,7 +18,7 @@ pub struct TumorStaging {
 }
 
 impl TumorStaging {
-    pub fn new(date: String, method: models::TumorStagingMethodCoding) -> TumorStaging {
+    pub fn new(date: chrono::NaiveDate, method: models::TumorStagingMethodCoding) -> TumorStaging {
         TumorStaging {
             date,
             method,

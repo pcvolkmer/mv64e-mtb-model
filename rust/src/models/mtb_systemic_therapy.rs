@@ -23,7 +23,7 @@ pub struct MtbSystemicTherapy {
     #[serde(rename = "id")]
     pub id: String,
     #[serde(rename = "recordedOn")]
-    pub recorded_on: String,
+    pub recorded_on: chrono::NaiveDate,
     #[serde(rename = "status")]
     pub status: models::TherapyStatusCoding,
     #[serde(rename = "notes", skip_serializing_if = "Option::is_none")]
@@ -43,7 +43,7 @@ pub struct MtbSystemicTherapy {
 impl MtbSystemicTherapy {
     pub fn new(
         id: String,
-        recorded_on: String,
+        recorded_on: chrono::NaiveDate,
         status: models::TherapyStatusCoding,
         patient: models::Reference,
     ) -> MtbSystemicTherapy {

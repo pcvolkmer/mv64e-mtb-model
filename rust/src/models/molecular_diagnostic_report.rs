@@ -9,7 +9,7 @@ pub struct MolecularDiagnosticReport {
     #[serde(rename = "specimen")]
     pub specimen: models::Reference,
     #[serde(rename = "issuedOn")]
-    pub issued_on: String,
+    pub issued_on: chrono::NaiveDate,
     #[serde(rename = "performer", skip_serializing_if = "Option::is_none")]
     pub performer: Option<models::Reference>,
     #[serde(rename = "patient")]
@@ -24,7 +24,7 @@ impl MolecularDiagnosticReport {
     pub fn new(
         r#type: models::MolecularDiagnosticReportTypeCoding,
         specimen: models::Reference,
-        issued_on: String,
+        issued_on: chrono::NaiveDate,
         patient: models::Reference,
         id: String,
     ) -> MolecularDiagnosticReport {

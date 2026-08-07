@@ -11,7 +11,7 @@ pub struct MtbCarePlanHistologyReevaluationRequestsInner {
     #[serde(rename = "specimen")]
     pub specimen: models::Reference,
     #[serde(rename = "issuedOn")]
-    pub issued_on: String,
+    pub issued_on: chrono::NaiveDate,
 }
 
 impl MtbCarePlanHistologyReevaluationRequestsInner {
@@ -19,7 +19,7 @@ impl MtbCarePlanHistologyReevaluationRequestsInner {
         id: String,
         patient: models::Reference,
         specimen: models::Reference,
-        issued_on: String,
+        issued_on: chrono::NaiveDate,
     ) -> MtbCarePlanHistologyReevaluationRequestsInner {
         MtbCarePlanHistologyReevaluationRequestsInner {
             id,

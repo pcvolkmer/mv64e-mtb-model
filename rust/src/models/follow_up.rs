@@ -5,17 +5,17 @@ use serde::{Deserialize, Serialize};
 #[serde(deny_unknown_fields)]
 pub struct FollowUp {
     #[serde(rename = "date")]
-    pub date: String,
+    pub date: chrono::NaiveDate,
     #[serde(rename = "patient")]
     pub patient: models::Reference,
     #[serde(rename = "lastContactDate", skip_serializing_if = "Option::is_none")]
-    pub last_contact_date: Option<String>,
+    pub last_contact_date: Option<chrono::NaiveDate>,
     #[serde(rename = "patientStatus", skip_serializing_if = "Option::is_none")]
     pub patient_status: Option<models::FollowUpPatientStatusCoding>,
 }
 
 impl FollowUp {
-    pub fn new(date: String, patient: models::Reference) -> FollowUp {
+    pub fn new(date: chrono::NaiveDate, patient: models::Reference) -> FollowUp {
         FollowUp {
             date,
             patient,

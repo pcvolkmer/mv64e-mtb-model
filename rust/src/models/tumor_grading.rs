@@ -5,13 +5,13 @@ use serde::{Deserialize, Serialize};
 #[serde(deny_unknown_fields)]
 pub struct TumorGrading {
     #[serde(rename = "date")]
-    pub date: String,
+    pub date: chrono::NaiveDate,
     #[serde(rename = "codes")]
     pub codes: Vec<models::Coding>,
 }
 
 impl TumorGrading {
-    pub fn new(date: String, codes: Vec<models::Coding>) -> TumorGrading {
+    pub fn new(date: chrono::NaiveDate, codes: Vec<models::Coding>) -> TumorGrading {
         TumorGrading { date, codes }
     }
 }

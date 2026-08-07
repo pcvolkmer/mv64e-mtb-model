@@ -5,7 +5,7 @@ use serde::{Deserialize, Serialize};
 #[serde(deny_unknown_fields)]
 pub struct MvhMetadataModelProjectConsentProvisionsInner {
     #[serde(rename = "date")]
-    pub date: String,
+    pub date: chrono::NaiveDate,
     #[serde(rename = "purpose")]
     pub purpose: models::ModelProjectConsentPurpose,
     #[serde(rename = "type")]
@@ -14,7 +14,7 @@ pub struct MvhMetadataModelProjectConsentProvisionsInner {
 
 impl MvhMetadataModelProjectConsentProvisionsInner {
     pub fn new(
-        date: String,
+        date: chrono::NaiveDate,
         purpose: models::ModelProjectConsentPurpose,
         r#type: models::ConsentProvisionType,
     ) -> MvhMetadataModelProjectConsentProvisionsInner {

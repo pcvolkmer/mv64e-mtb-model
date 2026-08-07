@@ -16,7 +16,7 @@ pub struct Claim {
     #[serde(rename = "id")]
     pub id: String,
     #[serde(rename = "issuedOn")]
-    pub issued_on: String,
+    pub issued_on: chrono::NaiveDate,
     #[serde(rename = "patient")]
     pub patient: models::Reference,
 }
@@ -25,7 +25,7 @@ impl Claim {
     pub fn new(
         recommendation: models::Reference,
         id: String,
-        issued_on: String,
+        issued_on: chrono::NaiveDate,
         patient: models::Reference,
     ) -> Claim {
         Claim {

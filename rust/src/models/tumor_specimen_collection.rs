@@ -5,7 +5,7 @@ use serde::{Deserialize, Serialize};
 #[serde(deny_unknown_fields)]
 pub struct TumorSpecimenCollection {
     #[serde(rename = "date", skip_serializing_if = "Option::is_none")]
-    pub date: Option<String>,
+    pub date: Option<chrono::NaiveDate>,
     #[serde(rename = "method")]
     pub method: models::TumorSpecimenCollectionMethodCoding,
     #[serde(rename = "localization")]

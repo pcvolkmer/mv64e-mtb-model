@@ -13,7 +13,7 @@ pub struct ClaimResponse {
     #[serde(rename = "status", skip_serializing_if = "Option::is_none")]
     pub status: Option<models::ClaimResponseStatusCoding>,
     #[serde(rename = "issuedOn")]
-    pub issued_on: String,
+    pub issued_on: chrono::NaiveDate,
     #[serde(rename = "patient")]
     pub patient: models::Reference,
 }
@@ -22,7 +22,7 @@ impl ClaimResponse {
     pub fn new(
         claim: models::Reference,
         id: String,
-        issued_on: String,
+        issued_on: chrono::NaiveDate,
         patient: models::Reference,
     ) -> ClaimResponse {
         ClaimResponse {

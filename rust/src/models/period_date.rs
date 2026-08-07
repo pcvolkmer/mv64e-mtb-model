@@ -5,13 +5,13 @@ use serde::{Deserialize, Serialize};
 #[serde(deny_unknown_fields)]
 pub struct PeriodDate {
     #[serde(rename = "start")]
-    pub start: String,
+    pub start: chrono::NaiveDate,
     #[serde(rename = "end", skip_serializing_if = "Option::is_none")]
-    pub end: Option<String>,
+    pub end: Option<chrono::NaiveDate>,
 }
 
 impl PeriodDate {
-    pub fn new(start: String) -> PeriodDate {
+    pub fn new(start: chrono::NaiveDate) -> PeriodDate {
         PeriodDate { start, end: None }
     }
 }
