@@ -17,7 +17,7 @@ pub struct OncoProcedure {
     #[serde(rename = "id")]
     pub id: String,
     #[serde(rename = "recordedOn")]
-    pub recorded_on: String,
+    pub recorded_on: chrono::NaiveDate,
     #[serde(rename = "status")]
     pub status: models::TherapyStatusCoding,
     #[serde(rename = "basedOn", skip_serializing_if = "Option::is_none")]
@@ -34,7 +34,7 @@ impl OncoProcedure {
     pub fn new(
         code: models::OncoProcedureTypeCoding,
         id: String,
-        recorded_on: String,
+        recorded_on: chrono::NaiveDate,
         status: models::TherapyStatusCoding,
         patient: models::Reference,
     ) -> OncoProcedure {

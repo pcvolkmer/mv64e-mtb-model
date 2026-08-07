@@ -11,7 +11,7 @@ pub struct Response {
     #[serde(rename = "id")]
     pub id: String,
     #[serde(rename = "effectiveDate")]
-    pub effective_date: String,
+    pub effective_date: chrono::NaiveDate,
     #[serde(rename = "value")]
     pub value: models::RecistCoding,
     #[serde(rename = "patient")]
@@ -23,7 +23,7 @@ impl Response {
         method: models::ResponseMethodCoding,
         therapy: models::Reference,
         id: String,
-        effective_date: String,
+        effective_date: chrono::NaiveDate,
         value: models::RecistCoding,
         patient: models::Reference,
     ) -> Response {

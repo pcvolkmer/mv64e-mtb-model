@@ -9,7 +9,7 @@ pub struct GeneticCounselingRecommendation {
     #[serde(rename = "patient")]
     pub patient: models::Reference,
     #[serde(rename = "issuedOn")]
-    pub issued_on: String,
+    pub issued_on: chrono::NaiveDate,
     #[serde(rename = "reason")]
     pub reason: models::GeneticCounselingRecommendationReasonCoding,
 }
@@ -18,7 +18,7 @@ impl GeneticCounselingRecommendation {
     pub fn new(
         id: String,
         patient: models::Reference,
-        issued_on: String,
+        issued_on: chrono::NaiveDate,
         reason: models::GeneticCounselingRecommendationReasonCoding,
     ) -> GeneticCounselingRecommendation {
         GeneticCounselingRecommendation {

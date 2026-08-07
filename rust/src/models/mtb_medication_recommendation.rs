@@ -17,7 +17,7 @@ pub struct MtbMedicationRecommendation {
     #[serde(rename = "category", skip_serializing_if = "Option::is_none")]
     pub category: Option<Vec<models::MtbMedicationRecommendationCategoryCoding>>,
     #[serde(rename = "issuedOn")]
-    pub issued_on: String,
+    pub issued_on: chrono::NaiveDate,
     #[serde(rename = "patient")]
     pub patient: models::Reference,
     #[serde(rename = "supportingFindings", skip_serializing_if = "Option::is_none")]
@@ -32,7 +32,7 @@ impl MtbMedicationRecommendation {
     pub fn new(
         priority: models::RecommendationPriorityCoding,
         medication: Vec<models::AtcUnregisteredMedicationCoding>,
-        issued_on: String,
+        issued_on: chrono::NaiveDate,
         patient: models::Reference,
         id: String,
     ) -> MtbMedicationRecommendation {

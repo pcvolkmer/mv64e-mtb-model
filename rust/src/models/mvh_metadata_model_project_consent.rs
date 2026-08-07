@@ -7,7 +7,7 @@ pub struct MvhMetadataModelProjectConsent {
     #[serde(rename = "version")]
     pub version: String,
     #[serde(rename = "date", skip_serializing_if = "Option::is_none")]
-    pub date: Option<String>,
+    pub date: Option<chrono::NaiveDate>,
     #[serde(rename = "provisions")]
     pub provisions: Vec<models::MvhMetadataModelProjectConsentProvisionsInner>,
 }

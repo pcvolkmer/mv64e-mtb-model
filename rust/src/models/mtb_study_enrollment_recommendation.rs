@@ -21,7 +21,7 @@ pub struct MtbStudyEnrollmentRecommendation {
     #[serde(rename = "id")]
     pub id: String,
     #[serde(rename = "issuedOn")]
-    pub issued_on: String,
+    pub issued_on: chrono::NaiveDate,
     #[serde(rename = "study")]
     pub study: Vec<models::StudyReference>,
 }
@@ -31,7 +31,7 @@ impl MtbStudyEnrollmentRecommendation {
         priority: models::RecommendationPriorityCoding,
         patient: models::Reference,
         id: String,
-        issued_on: String,
+        issued_on: chrono::NaiveDate,
         study: Vec<models::StudyReference>,
     ) -> MtbStudyEnrollmentRecommendation {
         MtbStudyEnrollmentRecommendation {

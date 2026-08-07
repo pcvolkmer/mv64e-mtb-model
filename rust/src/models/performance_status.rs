@@ -9,7 +9,7 @@ pub struct PerformanceStatus {
     #[serde(rename = "patient")]
     pub patient: models::Reference,
     #[serde(rename = "effectiveDate")]
-    pub effective_date: String,
+    pub effective_date: chrono::NaiveDate,
     #[serde(rename = "value")]
     pub value: models::EcogCoding,
 }
@@ -18,7 +18,7 @@ impl PerformanceStatus {
     pub fn new(
         id: String,
         patient: models::Reference,
-        effective_date: String,
+        effective_date: chrono::NaiveDate,
         value: models::EcogCoding,
     ) -> PerformanceStatus {
         PerformanceStatus {

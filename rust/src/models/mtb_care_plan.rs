@@ -47,7 +47,7 @@ pub struct MtbCarePlan {
     )]
     pub procedure_recommendations: Option<Vec<models::MtbCarePlanProcedureRecommendationsInner>>,
     #[serde(rename = "issuedOn")]
-    pub issued_on: String,
+    pub issued_on: chrono::NaiveDate,
     #[serde(
         rename = "noSequencingPerformedReason",
         skip_serializing_if = "Option::is_none"
@@ -58,7 +58,11 @@ pub struct MtbCarePlan {
 }
 
 impl MtbCarePlan {
-    pub fn new(id: String, issued_on: String, patient: models::Reference) -> MtbCarePlan {
+    pub fn new(
+        id: String,
+        issued_on: chrono::NaiveDate,
+        patient: models::Reference,
+    ) -> MtbCarePlan {
         MtbCarePlan {
             board_type: None,
             recommendations_missing_reason: None,

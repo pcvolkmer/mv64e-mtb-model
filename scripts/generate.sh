@@ -89,7 +89,7 @@ case $1 in
         -i /local/openapi.json \
         -g rust \
         -o /local/out \
-        --additional-properties=packageName=mv64e-model,avoidBoxedModels=true,useChrono=false
+        --additional-properties=packageName=mv64e-model,avoidBoxedModels=true,useChrono=true
 
     # cleanup rust code
     find ./generated/rust -name "*.rs" \
