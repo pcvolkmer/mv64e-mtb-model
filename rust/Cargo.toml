@@ -1,6 +1,6 @@
 [package]
 name = "mv64e-mtb-model"
-version = "0.4.3"
+version = "0.4.4"
 edition = "2024"
 license = "MIT"
 authors = ["Paul-Christian Volkmer <code@pcvolkmer.de>"]
