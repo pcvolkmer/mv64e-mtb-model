@@ -63,7 +63,9 @@ RESULT=$(cat <<EOF
     "schemas":
       $SCHEMAS YYY
       "PatientRecord": {
-        "properties": $PATIENT_RECORD
+        "properties": $PATIENT_RECORD,
+        "type" : "object",
+        "required" : [ "patient", "episodesOfCare", "diagnoses" ]
       }
     }
   }

@@ -9,7 +9,7 @@ import org.jspecify.annotations.Nullable;
 public class PatientRecord {
   public static final String JSON_PROPERTY_DIAGNOSES = "diagnoses";
 
-  private @Nullable List<MtbDiagnosis> diagnoses;
+  private List<MtbDiagnosis> diagnoses;
 
   public static final String JSON_PROPERTY_NGS_REPORTS = "ngsReports";
 
@@ -57,7 +57,7 @@ public class PatientRecord {
 
   public static final String JSON_PROPERTY_EPISODES_OF_CARE = "episodesOfCare";
 
-  private @Nullable List<MtbEpisodeOfCare> episodesOfCare;
+  private List<MtbEpisodeOfCare> episodesOfCare;
 
   public static final String JSON_PROPERTY_PRIOR_DIAGNOSTIC_REPORTS = "priorDiagnosticReports";
 
@@ -85,11 +85,11 @@ public class PatientRecord {
 
   public static final String JSON_PROPERTY_PATIENT = "patient";
 
-  private @Nullable Patient patient;
+  private Patient patient;
 
   public PatientRecord() {}
 
-  public PatientRecord diagnoses(@Nullable List<MtbDiagnosis> diagnoses) {
+  public PatientRecord diagnoses(List<MtbDiagnosis> diagnoses) {
 
     this.diagnoses = diagnoses;
     return this;
@@ -103,13 +103,13 @@ public class PatientRecord {
     return this;
   }
 
-  @JsonProperty(value = JSON_PROPERTY_DIAGNOSES, required = false)
-  public @Nullable List<MtbDiagnosis> getDiagnoses() {
+  @JsonProperty(value = JSON_PROPERTY_DIAGNOSES, required = true)
+  public List<MtbDiagnosis> getDiagnoses() {
     return diagnoses;
   }
 
-  @JsonProperty(value = JSON_PROPERTY_DIAGNOSES, required = false)
-  public void setDiagnoses(@Nullable List<MtbDiagnosis> diagnoses) {
+  @JsonProperty(value = JSON_PROPERTY_DIAGNOSES, required = true)
+  public void setDiagnoses(List<MtbDiagnosis> diagnoses) {
     this.diagnoses = diagnoses;
   }
 
@@ -378,7 +378,7 @@ public class PatientRecord {
     this.guidelineTherapies = guidelineTherapies;
   }
 
-  public PatientRecord episodesOfCare(@Nullable List<MtbEpisodeOfCare> episodesOfCare) {
+  public PatientRecord episodesOfCare(List<MtbEpisodeOfCare> episodesOfCare) {
 
     this.episodesOfCare = episodesOfCare;
     return this;
@@ -392,13 +392,13 @@ public class PatientRecord {
     return this;
   }
 
-  @JsonProperty(value = JSON_PROPERTY_EPISODES_OF_CARE, required = false)
-  public @Nullable List<MtbEpisodeOfCare> getEpisodesOfCare() {
+  @JsonProperty(value = JSON_PROPERTY_EPISODES_OF_CARE, required = true)
+  public List<MtbEpisodeOfCare> getEpisodesOfCare() {
     return episodesOfCare;
   }
 
-  @JsonProperty(value = JSON_PROPERTY_EPISODES_OF_CARE, required = false)
-  public void setEpisodesOfCare(@Nullable List<MtbEpisodeOfCare> episodesOfCare) {
+  @JsonProperty(value = JSON_PROPERTY_EPISODES_OF_CARE, required = true)
+  public void setEpisodesOfCare(List<MtbEpisodeOfCare> episodesOfCare) {
     this.episodesOfCare = episodesOfCare;
   }
 
@@ -544,19 +544,19 @@ public class PatientRecord {
     this.responses = responses;
   }
 
-  public PatientRecord patient(@Nullable Patient patient) {
+  public PatientRecord patient(Patient patient) {
 
     this.patient = patient;
     return this;
   }
 
-  @JsonProperty(value = JSON_PROPERTY_PATIENT, required = false)
-  public @Nullable Patient getPatient() {
+  @JsonProperty(value = JSON_PROPERTY_PATIENT, required = true)
+  public Patient getPatient() {
     return patient;
   }
 
-  @JsonProperty(value = JSON_PROPERTY_PATIENT, required = false)
-  public void setPatient(@Nullable Patient patient) {
+  @JsonProperty(value = JSON_PROPERTY_PATIENT, required = true)
+  public void setPatient(Patient patient) {
     this.patient = patient;
   }
 

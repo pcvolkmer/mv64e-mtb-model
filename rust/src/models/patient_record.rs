@@ -4,8 +4,8 @@ use serde::{Deserialize, Serialize};
 #[derive(Clone, Default, Debug, PartialEq, Serialize, Deserialize)]
 #[serde(deny_unknown_fields)]
 pub struct PatientRecord {
-    #[serde(rename = "diagnoses", skip_serializing_if = "Option::is_none")]
-    pub diagnoses: Option<Vec<models::MtbDiagnosis>>,
+    #[serde(rename = "diagnoses")]
+    pub diagnoses: Vec<models::MtbDiagnosis>,
     #[serde(rename = "ngsReports", skip_serializing_if = "Option::is_none")]
     pub ngs_reports: Option<Vec<models::SomaticNgsReport>>,
     #[serde(rename = "performanceStatus", skip_serializing_if = "Option::is_none")]
@@ -34,8 +34,8 @@ pub struct PatientRecord {
     pub histology_reports: Option<Vec<models::HistologyReport>>,
     #[serde(rename = "guidelineTherapies", skip_serializing_if = "Option::is_none")]
     pub guideline_therapies: Option<Vec<models::MtbSystemicTherapy>>,
-    #[serde(rename = "episodesOfCare", skip_serializing_if = "Option::is_none")]
-    pub episodes_of_care: Option<Vec<models::MtbEpisodeOfCare>>,
+    #[serde(rename = "episodesOfCare")]
+    pub episodes_of_care: Vec<models::MtbEpisodeOfCare>,
     #[serde(
         rename = "priorDiagnosticReports",
         skip_serializing_if = "Option::is_none"
@@ -51,14 +51,18 @@ pub struct PatientRecord {
     pub metadata: Option<models::MvhMetadata>,
     #[serde(rename = "responses", skip_serializing_if = "Option::is_none")]
     pub responses: Option<Vec<models::Response>>,
-    #[serde(rename = "patient", skip_serializing_if = "Option::is_none")]
-    pub patient: Option<models::Patient>,
+    #[serde(rename = "patient")]
+    pub patient: models::Patient,
 }
 
 impl PatientRecord {
-    pub fn new() -> PatientRecord {
+    pub fn new(
+        diagnoses: Vec<models::MtbDiagnosis>,
+        episodes_of_care: Vec<models::MtbEpisodeOfCare>,
+        patient: models::Patient,
+    ) -> PatientRecord {
         PatientRecord {
-            diagnoses: None,
+            diagnoses,
             ngs_reports: None,
             performance_status: None,
             guideline_procedures: None,
@@ -70,14 +74,14 @@ impl PatientRecord {
             ihc_reports: None,
             histology_reports: None,
             guideline_therapies: None,
-            episodes_of_care: None,
+            episodes_of_care,
             prior_diagnostic_reports: None,
             systemic_therapies: None,
             follow_ups: None,
             claims: None,
             metadata: None,
             responses: None,
-            patient: None,
+            patient,
         }
     }
 }
