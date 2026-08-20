@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.5.0](https://github.com/pcvolkmer/mv64e-mtb-model/compare/v0.4.3...v0.5.0) (2026-08-20)
+
+
+### Features
+
+* add model for the rust language ([#10](https://github.com/pcvolkmer/mv64e-mtb-model/issues/10)) ([dc158c7](https://github.com/pcvolkmer/mv64e-mtb-model/commit/dc158c75127f94456a06e832a51e1c3b2039cdbe))
+* deny unknown properties in rust code ([#13](https://github.com/pcvolkmer/mv64e-mtb-model/issues/13)) ([4c3c45b](https://github.com/pcvolkmer/mv64e-mtb-model/commit/4c3c45be543bf37bf942c20fb780966049d4ece9))
+* required properties in PatientRecord ([#17](https://github.com/pcvolkmer/mv64e-mtb-model/issues/17)) ([d20f296](https://github.com/pcvolkmer/mv64e-mtb-model/commit/d20f296aca2f77add31e586f486f2bd8dc9753e5))
+* update to DNPM Datamodel 2.1 used by DNPM:DIP 1.3.2 ([#18](https://github.com/pcvolkmer/mv64e-mtb-model/issues/18)) ([19d85fa](https://github.com/pcvolkmer/mv64e-mtb-model/commit/19d85fa0e5c070407222dc54cfabd5635832748c))
+* use chrono crate for most of dates ([#16](https://github.com/pcvolkmer/mv64e-mtb-model/issues/16)) ([4306e12](https://github.com/pcvolkmer/mv64e-mtb-model/commit/4306e1299660411be8af12010be65ee14c9b8462))
+
+
+### Miscellaneous Chores
+
+* release 0.4.4 ([e97791c](https://github.com/pcvolkmer/mv64e-mtb-model/commit/e97791c0552a6d9f8616cc884f255659324ee7c6))
+* release 0.5.0 ([1eea569](https://github.com/pcvolkmer/mv64e-mtb-model/commit/1eea569f4fa8efe453d4514889bf97d0e4bcfa84))
+
 ## [0.4.3](https://github.com/pcvolkmer/mv64e-mtb-model-java/compare/v0.4.2...v0.4.3) (2026-06-06)
 
 
