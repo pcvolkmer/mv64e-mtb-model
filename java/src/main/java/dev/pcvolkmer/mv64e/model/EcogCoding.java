@@ -182,17 +182,17 @@ public class EcogCoding {
       return this;
     }
 
-    public EcogCoding.Builder display(String display) {
+    public EcogCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public EcogCoding.Builder system(String system) {
+    public EcogCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public EcogCoding.Builder version(String version) {
+    public EcogCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

@@ -140,12 +140,13 @@ public class LevelOfEvidence {
       return this;
     }
 
-    public LevelOfEvidence.Builder addendums(Set<LevelOfEvidenceAddendumCoding> addendums) {
+    public LevelOfEvidence.Builder addendums(
+        @Nullable Set<LevelOfEvidenceAddendumCoding> addendums) {
       this.instance.addendums = addendums;
       return this;
     }
 
-    public LevelOfEvidence.Builder publications(List<PublicationReference> publications) {
+    public LevelOfEvidence.Builder publications(@Nullable List<PublicationReference> publications) {
       this.instance.publications = publications;
       return this;
     }

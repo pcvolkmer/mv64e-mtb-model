@@ -5,7 +5,7 @@ use serde::{Deserialize, Serialize};
 #[serde(deny_unknown_fields)]
 pub struct MtbMedicationRecommendation {
     #[serde(rename = "priority")]
-    pub priority: models::RecommendationPriorityCoding,
+    pub priority: models::MtbRecommendationPriorityCoding,
     #[serde(rename = "medication")]
     pub medication: Vec<models::AtcUnregisteredMedicationCoding>,
     #[serde(rename = "supportingVariants", skip_serializing_if = "Option::is_none")]
@@ -30,7 +30,7 @@ pub struct MtbMedicationRecommendation {
 
 impl MtbMedicationRecommendation {
     pub fn new(
-        priority: models::RecommendationPriorityCoding,
+        priority: models::MtbRecommendationPriorityCoding,
         medication: Vec<models::AtcUnregisteredMedicationCoding>,
         issued_on: chrono::NaiveDate,
         patient: models::Reference,

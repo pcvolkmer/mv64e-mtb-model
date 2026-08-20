@@ -179,17 +179,20 @@ public class MtbSystemicTherapyRecommendationFulfillmentStatusCoding {
       return this;
     }
 
-    public MtbSystemicTherapyRecommendationFulfillmentStatusCoding.Builder display(String display) {
+    public MtbSystemicTherapyRecommendationFulfillmentStatusCoding.Builder display(
+        @Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public MtbSystemicTherapyRecommendationFulfillmentStatusCoding.Builder system(String system) {
+    public MtbSystemicTherapyRecommendationFulfillmentStatusCoding.Builder system(
+        @Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public MtbSystemicTherapyRecommendationFulfillmentStatusCoding.Builder version(String version) {
+    public MtbSystemicTherapyRecommendationFulfillmentStatusCoding.Builder version(
+        @Nullable String version) {
       this.instance.version = version;
       return this;
     }

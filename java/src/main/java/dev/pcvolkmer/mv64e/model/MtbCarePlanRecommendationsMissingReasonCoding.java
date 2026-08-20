@@ -173,17 +173,17 @@ public class MtbCarePlanRecommendationsMissingReasonCoding {
       return this;
     }
 
-    public MtbCarePlanRecommendationsMissingReasonCoding.Builder display(String display) {
+    public MtbCarePlanRecommendationsMissingReasonCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public MtbCarePlanRecommendationsMissingReasonCoding.Builder system(String system) {
+    public MtbCarePlanRecommendationsMissingReasonCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public MtbCarePlanRecommendationsMissingReasonCoding.Builder version(String version) {
+    public MtbCarePlanRecommendationsMissingReasonCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

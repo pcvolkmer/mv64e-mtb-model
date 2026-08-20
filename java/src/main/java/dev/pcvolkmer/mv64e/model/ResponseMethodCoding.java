@@ -174,17 +174,17 @@ public class ResponseMethodCoding {
       return this;
     }
 
-    public ResponseMethodCoding.Builder display(String display) {
+    public ResponseMethodCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public ResponseMethodCoding.Builder system(String system) {
+    public ResponseMethodCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public ResponseMethodCoding.Builder version(String version) {
+    public ResponseMethodCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

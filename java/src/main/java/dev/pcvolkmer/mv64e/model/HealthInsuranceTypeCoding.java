@@ -190,17 +190,17 @@ public class HealthInsuranceTypeCoding {
       return this;
     }
 
-    public HealthInsuranceTypeCoding.Builder display(String display) {
+    public HealthInsuranceTypeCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public HealthInsuranceTypeCoding.Builder system(String system) {
+    public HealthInsuranceTypeCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public HealthInsuranceTypeCoding.Builder version(String version) {
+    public HealthInsuranceTypeCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

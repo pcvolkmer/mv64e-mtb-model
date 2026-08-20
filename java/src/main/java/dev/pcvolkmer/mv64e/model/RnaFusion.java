@@ -262,7 +262,8 @@ public class RnaFusion {
       return this;
     }
 
-    public RnaFusion.Builder localization(Set<BaseVariantLocalizationCoding> localization) {
+    public RnaFusion.Builder localization(
+        @Nullable Set<BaseVariantLocalizationCoding> localization) {
       this.instance.localization = localization;
       return this;
     }
@@ -272,12 +273,12 @@ public class RnaFusion {
       return this;
     }
 
-    public RnaFusion.Builder effect(String effect) {
+    public RnaFusion.Builder effect(@Nullable String effect) {
       this.instance.effect = effect;
       return this;
     }
 
-    public RnaFusion.Builder externalIds(List<VariantExternalId> externalIds) {
+    public RnaFusion.Builder externalIds(@Nullable List<VariantExternalId> externalIds) {
       this.instance.externalIds = externalIds;
       return this;
     }

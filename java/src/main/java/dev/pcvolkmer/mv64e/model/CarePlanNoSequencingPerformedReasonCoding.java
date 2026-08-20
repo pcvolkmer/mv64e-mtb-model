@@ -181,17 +181,17 @@ public class CarePlanNoSequencingPerformedReasonCoding {
       return this;
     }
 
-    public CarePlanNoSequencingPerformedReasonCoding.Builder display(String display) {
+    public CarePlanNoSequencingPerformedReasonCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public CarePlanNoSequencingPerformedReasonCoding.Builder system(String system) {
+    public CarePlanNoSequencingPerformedReasonCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public CarePlanNoSequencingPerformedReasonCoding.Builder version(String version) {
+    public CarePlanNoSequencingPerformedReasonCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

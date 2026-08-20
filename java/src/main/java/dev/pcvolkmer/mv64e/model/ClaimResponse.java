@@ -193,7 +193,8 @@ public class ClaimResponse {
       this.instance = instance;
     }
 
-    public ClaimResponse.Builder statusReason(Set<ClaimResponseStatusReasonCoding> statusReason) {
+    public ClaimResponse.Builder statusReason(
+        @Nullable Set<ClaimResponseStatusReasonCoding> statusReason) {
       this.instance.statusReason = statusReason;
       return this;
     }
@@ -208,7 +209,7 @@ public class ClaimResponse {
       return this;
     }
 
-    public ClaimResponse.Builder status(ClaimResponseStatusCoding status) {
+    public ClaimResponse.Builder status(@Nullable ClaimResponseStatusCoding status) {
       this.instance.status = status;
       return this;
     }

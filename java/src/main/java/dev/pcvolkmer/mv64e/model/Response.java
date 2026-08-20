@@ -3,11 +3,12 @@ package dev.pcvolkmer.mv64e.model;
 import com.fasterxml.jackson.annotation.*;
 import java.util.Date;
 import java.util.Objects;
+import org.jspecify.annotations.Nullable;
 
 public class Response {
   public static final String JSON_PROPERTY_METHOD = "method";
 
-  private ResponseMethodCoding method;
+  private @Nullable ResponseMethodCoding method;
 
   public static final String JSON_PROPERTY_THERAPY = "therapy";
 
@@ -31,19 +32,19 @@ public class Response {
 
   public Response() {}
 
-  public Response method(ResponseMethodCoding method) {
+  public Response method(@Nullable ResponseMethodCoding method) {
 
     this.method = method;
     return this;
   }
 
-  @JsonProperty(value = JSON_PROPERTY_METHOD, required = true)
-  public ResponseMethodCoding getMethod() {
+  @JsonProperty(value = JSON_PROPERTY_METHOD, required = false)
+  public @Nullable ResponseMethodCoding getMethod() {
     return method;
   }
 
-  @JsonProperty(value = JSON_PROPERTY_METHOD, required = true)
-  public void setMethod(ResponseMethodCoding method) {
+  @JsonProperty(value = JSON_PROPERTY_METHOD, required = false)
+  public void setMethod(@Nullable ResponseMethodCoding method) {
     this.method = method;
   }
 
@@ -180,7 +181,7 @@ public class Response {
       this.instance = instance;
     }
 
-    public Response.Builder method(ResponseMethodCoding method) {
+    public Response.Builder method(@Nullable ResponseMethodCoding method) {
       this.instance.method = method;
       return this;
     }

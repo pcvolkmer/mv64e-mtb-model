@@ -24,14 +24,12 @@ public class TumorGrading {
   }
 
   @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
   public Date getDate() {
     return date;
   }
 
   @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDate(Date date) {
     this.date = date;
   }
@@ -51,13 +49,11 @@ public class TumorGrading {
   }
 
   @JsonProperty(value = JSON_PROPERTY_CODES, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public List<Coding> getCodes() {
     return codes;
   }
 
   @JsonProperty(value = JSON_PROPERTY_CODES, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCodes(List<Coding> codes) {
     this.codes = codes;
   }

@@ -98,7 +98,8 @@ public class HistologyReportResults {
       return this;
     }
 
-    public HistologyReportResults.Builder tumorCellContent(TumorCellContent tumorCellContent) {
+    public HistologyReportResults.Builder tumorCellContent(
+        @Nullable TumorCellContent tumorCellContent) {
       this.instance.tumorCellContent = tumorCellContent;
       return this;
     }

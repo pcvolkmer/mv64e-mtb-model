@@ -13,7 +13,7 @@ import org.jspecify.annotations.Nullable;
 public class MtbMedicationRecommendation {
   public static final String JSON_PROPERTY_PRIORITY = "priority";
 
-  private RecommendationPriorityCoding priority;
+  private MtbRecommendationPriorityCoding priority;
 
   public static final String JSON_PROPERTY_MEDICATION = "medication";
 
@@ -57,19 +57,19 @@ public class MtbMedicationRecommendation {
 
   public MtbMedicationRecommendation() {}
 
-  public MtbMedicationRecommendation priority(RecommendationPriorityCoding priority) {
+  public MtbMedicationRecommendation priority(MtbRecommendationPriorityCoding priority) {
 
     this.priority = priority;
     return this;
   }
 
   @JsonProperty(value = JSON_PROPERTY_PRIORITY, required = true)
-  public RecommendationPriorityCoding getPriority() {
+  public MtbRecommendationPriorityCoding getPriority() {
     return priority;
   }
 
   @JsonProperty(value = JSON_PROPERTY_PRIORITY, required = true)
-  public void setPriority(RecommendationPriorityCoding priority) {
+  public void setPriority(MtbRecommendationPriorityCoding priority) {
     this.priority = priority;
   }
 
@@ -348,7 +348,7 @@ public class MtbMedicationRecommendation {
       this.instance = instance;
     }
 
-    public MtbMedicationRecommendation.Builder priority(RecommendationPriorityCoding priority) {
+    public MtbMedicationRecommendation.Builder priority(MtbRecommendationPriorityCoding priority) {
       this.instance.priority = priority;
       return this;
     }
@@ -360,24 +360,24 @@ public class MtbMedicationRecommendation {
     }
 
     public MtbMedicationRecommendation.Builder supportingVariants(
-        List<GeneAlterationReference> supportingVariants) {
+        @Nullable List<GeneAlterationReference> supportingVariants) {
       this.instance.supportingVariants = supportingVariants;
       return this;
     }
 
     public MtbMedicationRecommendation.Builder useType(
-        MtbMedicationRecommendationUseTypeCoding useType) {
+        @Nullable MtbMedicationRecommendationUseTypeCoding useType) {
       this.instance.useType = useType;
       return this;
     }
 
-    public MtbMedicationRecommendation.Builder reason(Reference reason) {
+    public MtbMedicationRecommendation.Builder reason(@Nullable Reference reason) {
       this.instance.reason = reason;
       return this;
     }
 
     public MtbMedicationRecommendation.Builder category(
-        Set<MtbMedicationRecommendationCategoryCoding> category) {
+        @Nullable Set<MtbMedicationRecommendationCategoryCoding> category) {
       this.instance.category = category;
       return this;
     }
@@ -393,12 +393,13 @@ public class MtbMedicationRecommendation {
     }
 
     public MtbMedicationRecommendation.Builder supportingFindings(
-        List<Reference> supportingFindings) {
+        @Nullable List<Reference> supportingFindings) {
       this.instance.supportingFindings = supportingFindings;
       return this;
     }
 
-    public MtbMedicationRecommendation.Builder levelOfEvidence(LevelOfEvidence levelOfEvidence) {
+    public MtbMedicationRecommendation.Builder levelOfEvidence(
+        @Nullable LevelOfEvidence levelOfEvidence) {
       this.instance.levelOfEvidence = levelOfEvidence;
       return this;
     }

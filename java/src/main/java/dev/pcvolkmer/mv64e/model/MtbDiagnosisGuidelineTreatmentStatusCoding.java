@@ -181,17 +181,17 @@ public class MtbDiagnosisGuidelineTreatmentStatusCoding {
       return this;
     }
 
-    public MtbDiagnosisGuidelineTreatmentStatusCoding.Builder display(String display) {
+    public MtbDiagnosisGuidelineTreatmentStatusCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public MtbDiagnosisGuidelineTreatmentStatusCoding.Builder system(String system) {
+    public MtbDiagnosisGuidelineTreatmentStatusCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public MtbDiagnosisGuidelineTreatmentStatusCoding.Builder version(String version) {
+    public MtbDiagnosisGuidelineTreatmentStatusCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

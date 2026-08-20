@@ -197,13 +197,13 @@ public class Claim {
       this.instance = instance;
     }
 
-    public Claim.Builder stage(ClaimStageCoding stage) {
+    public Claim.Builder stage(@Nullable ClaimStageCoding stage) {
       this.instance.stage = stage;
       return this;
     }
 
     public Claim.Builder requestedMedication(
-        Set<AtcUnregisteredMedicationCoding> requestedMedication) {
+        @Nullable Set<AtcUnregisteredMedicationCoding> requestedMedication) {
       this.instance.requestedMedication = requestedMedication;
       return this;
     }

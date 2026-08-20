@@ -182,17 +182,17 @@ public class MsiInterpretationCoding {
       return this;
     }
 
-    public MsiInterpretationCoding.Builder display(String display) {
+    public MsiInterpretationCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public MsiInterpretationCoding.Builder system(String system) {
+    public MsiInterpretationCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public MsiInterpretationCoding.Builder version(String version) {
+    public MsiInterpretationCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

@@ -176,17 +176,17 @@ public class MsiMethodCoding {
       return this;
     }
 
-    public MsiMethodCoding.Builder display(String display) {
+    public MsiMethodCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public MsiMethodCoding.Builder system(String system) {
+    public MsiMethodCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public MsiMethodCoding.Builder version(String version) {
+    public MsiMethodCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

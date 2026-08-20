@@ -1,6 +1,5 @@
 package dev.pcvolkmer.mv64e.model;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Objects;
 import org.jspecify.annotations.Nullable;
@@ -35,13 +34,11 @@ public class TumorSpecimen {
   }
 
   @JsonProperty(value = JSON_PROPERTY_DIAGNOSIS, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public Reference getDiagnosis() {
     return diagnosis;
   }
 
   @JsonProperty(value = JSON_PROPERTY_DIAGNOSIS, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDiagnosis(Reference diagnosis) {
     this.diagnosis = diagnosis;
   }
@@ -53,13 +50,11 @@ public class TumorSpecimen {
   }
 
   @JsonProperty(value = JSON_PROPERTY_COLLECTION, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public @Nullable TumorSpecimenCollection getCollection() {
     return collection;
   }
 
   @JsonProperty(value = JSON_PROPERTY_COLLECTION, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCollection(@Nullable TumorSpecimenCollection collection) {
     this.collection = collection;
   }
@@ -71,13 +66,11 @@ public class TumorSpecimen {
   }
 
   @JsonProperty(value = JSON_PROPERTY_ID, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public String getId() {
     return id;
   }
 
   @JsonProperty(value = JSON_PROPERTY_ID, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setId(String id) {
     this.id = id;
   }
@@ -89,13 +82,11 @@ public class TumorSpecimen {
   }
 
   @JsonProperty(value = JSON_PROPERTY_TYPE, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public TumorSpecimenTypeCoding getType() {
     return type;
   }
 
   @JsonProperty(value = JSON_PROPERTY_TYPE, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setType(TumorSpecimenTypeCoding type) {
     this.type = type;
   }
@@ -107,13 +98,11 @@ public class TumorSpecimen {
   }
 
   @JsonProperty(value = JSON_PROPERTY_PATIENT, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public Reference getPatient() {
     return patient;
   }
 
   @JsonProperty(value = JSON_PROPERTY_PATIENT, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPatient(Reference patient) {
     this.patient = patient;
   }
@@ -173,7 +162,7 @@ public class TumorSpecimen {
       return this;
     }
 
-    public TumorSpecimen.Builder collection(TumorSpecimenCollection collection) {
+    public TumorSpecimen.Builder collection(@Nullable TumorSpecimenCollection collection) {
       this.instance.collection = collection;
       return this;
     }

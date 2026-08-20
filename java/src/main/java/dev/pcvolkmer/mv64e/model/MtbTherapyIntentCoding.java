@@ -178,17 +178,17 @@ public class MtbTherapyIntentCoding {
       return this;
     }
 
-    public MtbTherapyIntentCoding.Builder display(String display) {
+    public MtbTherapyIntentCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public MtbTherapyIntentCoding.Builder system(String system) {
+    public MtbTherapyIntentCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public MtbTherapyIntentCoding.Builder version(String version) {
+    public MtbTherapyIntentCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

@@ -1,6 +1,5 @@
 package dev.pcvolkmer.mv64e.model;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Objects;
 
@@ -26,13 +25,11 @@ public class TumorStagingTnmClassification {
   }
 
   @JsonProperty(value = JSON_PROPERTY_TUMOR, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public Coding getTumor() {
     return tumor;
   }
 
   @JsonProperty(value = JSON_PROPERTY_TUMOR, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTumor(Coding tumor) {
     this.tumor = tumor;
   }
@@ -44,13 +41,11 @@ public class TumorStagingTnmClassification {
   }
 
   @JsonProperty(value = JSON_PROPERTY_NODES, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public Coding getNodes() {
     return nodes;
   }
 
   @JsonProperty(value = JSON_PROPERTY_NODES, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setNodes(Coding nodes) {
     this.nodes = nodes;
   }
@@ -62,13 +57,11 @@ public class TumorStagingTnmClassification {
   }
 
   @JsonProperty(value = JSON_PROPERTY_METASTASIS, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public Coding getMetastasis() {
     return metastasis;
   }
 
   @JsonProperty(value = JSON_PROPERTY_METASTASIS, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMetastasis(Coding metastasis) {
     this.metastasis = metastasis;
   }

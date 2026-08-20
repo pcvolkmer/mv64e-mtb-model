@@ -175,17 +175,17 @@ public class FamilyMemberHistoryRelationshipTypeCoding {
       return this;
     }
 
-    public FamilyMemberHistoryRelationshipTypeCoding.Builder display(String display) {
+    public FamilyMemberHistoryRelationshipTypeCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public FamilyMemberHistoryRelationshipTypeCoding.Builder system(String system) {
+    public FamilyMemberHistoryRelationshipTypeCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public FamilyMemberHistoryRelationshipTypeCoding.Builder version(String version) {
+    public FamilyMemberHistoryRelationshipTypeCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

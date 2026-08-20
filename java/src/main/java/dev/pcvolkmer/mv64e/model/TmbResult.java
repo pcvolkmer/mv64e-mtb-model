@@ -1,6 +1,5 @@
 package dev.pcvolkmer.mv64e.model;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -24,13 +23,11 @@ public class TmbResult {
   }
 
   @JsonProperty(value = JSON_PROPERTY_VALUE, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public BigDecimal getValue() {
     return value;
   }
 
   @JsonProperty(value = JSON_PROPERTY_VALUE, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setValue(BigDecimal value) {
     this.value = value;
   }
@@ -42,13 +39,11 @@ public class TmbResult {
   }
 
   @JsonProperty(value = JSON_PROPERTY_UNIT, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public @Nullable String getUnit() {
     return unit;
   }
 
   @JsonProperty(value = JSON_PROPERTY_UNIT, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setUnit(@Nullable String unit) {
     this.unit = unit;
   }
@@ -101,7 +96,7 @@ public class TmbResult {
       return this;
     }
 
-    public TmbResult.Builder unit(String unit) {
+    public TmbResult.Builder unit(@Nullable String unit) {
       this.instance.unit = unit;
       return this;
     }

@@ -160,7 +160,7 @@ public class MtbEpisodeOfCare {
       return this;
     }
 
-    public MtbEpisodeOfCare.Builder diagnoses(List<Reference> diagnoses) {
+    public MtbEpisodeOfCare.Builder diagnoses(@Nullable List<Reference> diagnoses) {
       this.instance.diagnoses = diagnoses;
       return this;
     }

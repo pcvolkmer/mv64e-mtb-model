@@ -671,58 +671,62 @@ public class PatientRecord {
       return this;
     }
 
-    public PatientRecord.Builder ngsReports(List<SomaticNgsReport> ngsReports) {
+    public PatientRecord.Builder ngsReports(@Nullable List<SomaticNgsReport> ngsReports) {
       this.instance.ngsReports = ngsReports;
       return this;
     }
 
-    public PatientRecord.Builder performanceStatus(List<PerformanceStatus> performanceStatus) {
+    public PatientRecord.Builder performanceStatus(
+        @Nullable List<PerformanceStatus> performanceStatus) {
       this.instance.performanceStatus = performanceStatus;
       return this;
     }
 
-    public PatientRecord.Builder guidelineProcedures(List<OncoProcedure> guidelineProcedures) {
+    public PatientRecord.Builder guidelineProcedures(
+        @Nullable List<OncoProcedure> guidelineProcedures) {
       this.instance.guidelineProcedures = guidelineProcedures;
       return this;
     }
 
     public PatientRecord.Builder familyMemberHistories(
-        List<FamilyMemberHistory> familyMemberHistories) {
+        @Nullable List<FamilyMemberHistory> familyMemberHistories) {
       this.instance.familyMemberHistories = familyMemberHistories;
       return this;
     }
 
-    public PatientRecord.Builder claimResponses(List<ClaimResponse> claimResponses) {
+    public PatientRecord.Builder claimResponses(@Nullable List<ClaimResponse> claimResponses) {
       this.instance.claimResponses = claimResponses;
       return this;
     }
 
-    public PatientRecord.Builder msiFindings(List<Msi> msiFindings) {
+    public PatientRecord.Builder msiFindings(@Nullable List<Msi> msiFindings) {
       this.instance.msiFindings = msiFindings;
       return this;
     }
 
-    public PatientRecord.Builder carePlans(List<MtbCarePlan> carePlans) {
+    public PatientRecord.Builder carePlans(@Nullable List<MtbCarePlan> carePlans) {
       this.instance.carePlans = carePlans;
       return this;
     }
 
-    public PatientRecord.Builder specimens(List<TumorSpecimen> specimens) {
+    public PatientRecord.Builder specimens(@Nullable List<TumorSpecimen> specimens) {
       this.instance.specimens = specimens;
       return this;
     }
 
-    public PatientRecord.Builder ihcReports(List<IhcReport> ihcReports) {
+    public PatientRecord.Builder ihcReports(@Nullable List<IhcReport> ihcReports) {
       this.instance.ihcReports = ihcReports;
       return this;
     }
 
-    public PatientRecord.Builder histologyReports(List<HistologyReport> histologyReports) {
+    public PatientRecord.Builder histologyReports(
+        @Nullable List<HistologyReport> histologyReports) {
       this.instance.histologyReports = histologyReports;
       return this;
     }
 
-    public PatientRecord.Builder guidelineTherapies(List<MtbSystemicTherapy> guidelineTherapies) {
+    public PatientRecord.Builder guidelineTherapies(
+        @Nullable List<MtbSystemicTherapy> guidelineTherapies) {
       this.instance.guidelineTherapies = guidelineTherapies;
       return this;
     }
@@ -733,33 +737,33 @@ public class PatientRecord {
     }
 
     public PatientRecord.Builder priorDiagnosticReports(
-        List<MolecularDiagnosticReport> priorDiagnosticReports) {
+        @Nullable List<MolecularDiagnosticReport> priorDiagnosticReports) {
       this.instance.priorDiagnosticReports = priorDiagnosticReports;
       return this;
     }
 
     public PatientRecord.Builder systemicTherapies(
-        List<PatientRecordSystemicTherapiesInner> systemicTherapies) {
+        @Nullable List<PatientRecordSystemicTherapiesInner> systemicTherapies) {
       this.instance.systemicTherapies = systemicTherapies;
       return this;
     }
 
-    public PatientRecord.Builder followUps(List<FollowUp> followUps) {
+    public PatientRecord.Builder followUps(@Nullable List<FollowUp> followUps) {
       this.instance.followUps = followUps;
       return this;
     }
 
-    public PatientRecord.Builder claims(List<Claim> claims) {
+    public PatientRecord.Builder claims(@Nullable List<Claim> claims) {
       this.instance.claims = claims;
       return this;
     }
 
-    public PatientRecord.Builder metadata(MvhMetadata metadata) {
+    public PatientRecord.Builder metadata(@Nullable MvhMetadata metadata) {
       this.instance.metadata = metadata;
       return this;
     }
 
-    public PatientRecord.Builder responses(List<Response> responses) {
+    public PatientRecord.Builder responses(@Nullable List<Response> responses) {
       this.instance.responses = responses;
       return this;
     }

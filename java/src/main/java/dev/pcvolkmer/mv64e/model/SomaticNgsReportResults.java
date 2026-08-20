@@ -296,47 +296,49 @@ public class SomaticNgsReportResults {
       this.instance = instance;
     }
 
-    public SomaticNgsReportResults.Builder rnaSeqs(List<RnaSeq> rnaSeqs) {
+    public SomaticNgsReportResults.Builder rnaSeqs(@Nullable List<RnaSeq> rnaSeqs) {
       this.instance.rnaSeqs = rnaSeqs;
       return this;
     }
 
-    public SomaticNgsReportResults.Builder tmb(Tmb tmb) {
+    public SomaticNgsReportResults.Builder tmb(@Nullable Tmb tmb) {
       this.instance.tmb = tmb;
       return this;
     }
 
-    public SomaticNgsReportResults.Builder simpleVariants(List<Snv> simpleVariants) {
+    public SomaticNgsReportResults.Builder simpleVariants(@Nullable List<Snv> simpleVariants) {
       this.instance.simpleVariants = simpleVariants;
       return this;
     }
 
-    public SomaticNgsReportResults.Builder hrdScore(HrdScore hrdScore) {
+    public SomaticNgsReportResults.Builder hrdScore(@Nullable HrdScore hrdScore) {
       this.instance.hrdScore = hrdScore;
       return this;
     }
 
-    public SomaticNgsReportResults.Builder copyNumberVariants(List<Cnv> copyNumberVariants) {
+    public SomaticNgsReportResults.Builder copyNumberVariants(
+        @Nullable List<Cnv> copyNumberVariants) {
       this.instance.copyNumberVariants = copyNumberVariants;
       return this;
     }
 
-    public SomaticNgsReportResults.Builder tumorCellContent(TumorCellContent tumorCellContent) {
+    public SomaticNgsReportResults.Builder tumorCellContent(
+        @Nullable TumorCellContent tumorCellContent) {
       this.instance.tumorCellContent = tumorCellContent;
       return this;
     }
 
-    public SomaticNgsReportResults.Builder dnaFusions(List<DnaFusion> dnaFusions) {
+    public SomaticNgsReportResults.Builder dnaFusions(@Nullable List<DnaFusion> dnaFusions) {
       this.instance.dnaFusions = dnaFusions;
       return this;
     }
 
-    public SomaticNgsReportResults.Builder rnaFusions(List<RnaFusion> rnaFusions) {
+    public SomaticNgsReportResults.Builder rnaFusions(@Nullable List<RnaFusion> rnaFusions) {
       this.instance.rnaFusions = rnaFusions;
       return this;
     }
 
-    public SomaticNgsReportResults.Builder brcaness(Brcaness brcaness) {
+    public SomaticNgsReportResults.Builder brcaness(@Nullable Brcaness brcaness) {
       this.instance.brcaness = brcaness;
       return this;
     }

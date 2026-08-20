@@ -176,17 +176,17 @@ public class OncoProcedureTypeCoding {
       return this;
     }
 
-    public OncoProcedureTypeCoding.Builder display(String display) {
+    public OncoProcedureTypeCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public OncoProcedureTypeCoding.Builder system(String system) {
+    public OncoProcedureTypeCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public OncoProcedureTypeCoding.Builder version(String version) {
+    public OncoProcedureTypeCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

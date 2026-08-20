@@ -118,12 +118,12 @@ public class GeneAlterationReference {
       return this;
     }
 
-    public GeneAlterationReference.Builder display(String display) {
+    public GeneAlterationReference.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public GeneAlterationReference.Builder gene(Coding gene) {
+    public GeneAlterationReference.Builder gene(@Nullable Coding gene) {
       this.instance.gene = gene;
       return this;
     }

@@ -97,7 +97,7 @@ public class CnvStartRange {
       return this;
     }
 
-    public CnvStartRange.Builder end(BigDecimal end) {
+    public CnvStartRange.Builder end(@Nullable BigDecimal end) {
       this.instance.end = end;
       return this;
     }

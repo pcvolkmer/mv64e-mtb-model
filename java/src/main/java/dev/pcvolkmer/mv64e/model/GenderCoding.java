@@ -178,17 +178,17 @@ public class GenderCoding {
       return this;
     }
 
-    public GenderCoding.Builder display(String display) {
+    public GenderCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public GenderCoding.Builder system(String system) {
+    public GenderCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public GenderCoding.Builder version(String version) {
+    public GenderCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

@@ -182,17 +182,17 @@ public class ProteinExpressionResultCoding {
       return this;
     }
 
-    public ProteinExpressionResultCoding.Builder display(String display) {
+    public ProteinExpressionResultCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public ProteinExpressionResultCoding.Builder system(String system) {
+    public ProteinExpressionResultCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public ProteinExpressionResultCoding.Builder version(String version) {
+    public ProteinExpressionResultCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

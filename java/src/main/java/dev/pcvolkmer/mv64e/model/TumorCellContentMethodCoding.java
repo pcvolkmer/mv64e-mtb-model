@@ -1,7 +1,6 @@
 package dev.pcvolkmer.mv64e.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.Objects;
@@ -65,13 +64,11 @@ public class TumorCellContentMethodCoding {
   }
 
   @JsonProperty(value = JSON_PROPERTY_CODE, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public CodeEnum getCode() {
     return code;
   }
 
   @JsonProperty(value = JSON_PROPERTY_CODE, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setCode(CodeEnum code) {
     this.code = code;
   }
@@ -83,13 +80,11 @@ public class TumorCellContentMethodCoding {
   }
 
   @JsonProperty(value = JSON_PROPERTY_DISPLAY, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public @Nullable String getDisplay() {
     return display;
   }
 
   @JsonProperty(value = JSON_PROPERTY_DISPLAY, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDisplay(@Nullable String display) {
     this.display = display;
   }
@@ -101,13 +96,11 @@ public class TumorCellContentMethodCoding {
   }
 
   @JsonProperty(value = JSON_PROPERTY_SYSTEM, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public @Nullable String getSystem() {
     return system;
   }
 
   @JsonProperty(value = JSON_PROPERTY_SYSTEM, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSystem(@Nullable String system) {
     this.system = system;
   }
@@ -119,13 +112,11 @@ public class TumorCellContentMethodCoding {
   }
 
   @JsonProperty(value = JSON_PROPERTY_VERSION, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public @Nullable String getVersion() {
     return version;
   }
 
   @JsonProperty(value = JSON_PROPERTY_VERSION, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setVersion(@Nullable String version) {
     this.version = version;
   }
@@ -183,17 +174,17 @@ public class TumorCellContentMethodCoding {
       return this;
     }
 
-    public TumorCellContentMethodCoding.Builder display(String display) {
+    public TumorCellContentMethodCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public TumorCellContentMethodCoding.Builder system(String system) {
+    public TumorCellContentMethodCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public TumorCellContentMethodCoding.Builder version(String version) {
+    public TumorCellContentMethodCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

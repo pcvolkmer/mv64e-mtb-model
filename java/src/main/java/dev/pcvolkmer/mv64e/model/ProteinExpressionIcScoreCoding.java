@@ -179,17 +179,17 @@ public class ProteinExpressionIcScoreCoding {
       return this;
     }
 
-    public ProteinExpressionIcScoreCoding.Builder display(String display) {
+    public ProteinExpressionIcScoreCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public ProteinExpressionIcScoreCoding.Builder system(String system) {
+    public ProteinExpressionIcScoreCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public ProteinExpressionIcScoreCoding.Builder version(String version) {
+    public ProteinExpressionIcScoreCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

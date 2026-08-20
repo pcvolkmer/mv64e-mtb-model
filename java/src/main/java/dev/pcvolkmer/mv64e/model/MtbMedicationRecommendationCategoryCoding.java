@@ -183,17 +183,17 @@ public class MtbMedicationRecommendationCategoryCoding {
       return this;
     }
 
-    public MtbMedicationRecommendationCategoryCoding.Builder display(String display) {
+    public MtbMedicationRecommendationCategoryCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public MtbMedicationRecommendationCategoryCoding.Builder system(String system) {
+    public MtbMedicationRecommendationCategoryCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public MtbMedicationRecommendationCategoryCoding.Builder version(String version) {
+    public MtbMedicationRecommendationCategoryCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

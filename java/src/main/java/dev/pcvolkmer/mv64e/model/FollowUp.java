@@ -148,12 +148,12 @@ public class FollowUp {
       return this;
     }
 
-    public FollowUp.Builder lastContactDate(Date lastContactDate) {
+    public FollowUp.Builder lastContactDate(@Nullable Date lastContactDate) {
       this.instance.lastContactDate = lastContactDate;
       return this;
     }
 
-    public FollowUp.Builder patientStatus(FollowUpPatientStatusCoding patientStatus) {
+    public FollowUp.Builder patientStatus(@Nullable FollowUpPatientStatusCoding patientStatus) {
       this.instance.patientStatus = patientStatus;
       return this;
     }

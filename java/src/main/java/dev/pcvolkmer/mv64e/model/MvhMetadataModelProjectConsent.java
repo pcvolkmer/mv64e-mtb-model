@@ -133,7 +133,7 @@ public class MvhMetadataModelProjectConsent {
       return this;
     }
 
-    public MvhMetadataModelProjectConsent.Builder date(Date date) {
+    public MvhMetadataModelProjectConsent.Builder date(@Nullable Date date) {
       this.instance.date = date;
       return this;
     }

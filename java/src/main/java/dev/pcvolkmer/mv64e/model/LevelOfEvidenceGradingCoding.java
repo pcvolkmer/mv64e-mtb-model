@@ -188,17 +188,17 @@ public class LevelOfEvidenceGradingCoding {
       return this;
     }
 
-    public LevelOfEvidenceGradingCoding.Builder display(String display) {
+    public LevelOfEvidenceGradingCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public LevelOfEvidenceGradingCoding.Builder system(String system) {
+    public LevelOfEvidenceGradingCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public LevelOfEvidenceGradingCoding.Builder version(String version) {
+    public LevelOfEvidenceGradingCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

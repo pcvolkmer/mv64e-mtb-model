@@ -182,17 +182,17 @@ public class RecistCoding {
       return this;
     }
 
-    public RecistCoding.Builder display(String display) {
+    public RecistCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public RecistCoding.Builder system(String system) {
+    public RecistCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public RecistCoding.Builder version(String version) {
+    public RecistCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

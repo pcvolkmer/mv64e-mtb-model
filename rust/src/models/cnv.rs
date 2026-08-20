@@ -26,7 +26,7 @@ pub struct Cnv {
     #[serde(rename = "patient")]
     pub patient: models::Reference,
     #[serde(rename = "endRange", skip_serializing_if = "Option::is_none")]
-    pub end_range: Option<models::CnvEndRange>,
+    pub end_range: Option<models::CnvStartRange>,
     #[serde(rename = "chromosome")]
     pub chromosome: models::Chromosome,
     #[serde(rename = "id")]

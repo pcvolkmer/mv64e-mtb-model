@@ -187,17 +187,17 @@ public class ClaimResponseStatusReasonCoding {
       return this;
     }
 
-    public ClaimResponseStatusReasonCoding.Builder display(String display) {
+    public ClaimResponseStatusReasonCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public ClaimResponseStatusReasonCoding.Builder system(String system) {
+    public ClaimResponseStatusReasonCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public ClaimResponseStatusReasonCoding.Builder version(String version) {
+    public ClaimResponseStatusReasonCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }
