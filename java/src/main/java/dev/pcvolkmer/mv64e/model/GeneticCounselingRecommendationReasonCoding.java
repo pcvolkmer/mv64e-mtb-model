@@ -181,17 +181,17 @@ public class GeneticCounselingRecommendationReasonCoding {
       return this;
     }
 
-    public GeneticCounselingRecommendationReasonCoding.Builder display(String display) {
+    public GeneticCounselingRecommendationReasonCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public GeneticCounselingRecommendationReasonCoding.Builder system(String system) {
+    public GeneticCounselingRecommendationReasonCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public GeneticCounselingRecommendationReasonCoding.Builder version(String version) {
+    public GeneticCounselingRecommendationReasonCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

@@ -140,17 +140,17 @@ public class Reference {
       return this;
     }
 
-    public Reference.Builder display(String display) {
+    public Reference.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public Reference.Builder system(String system) {
+    public Reference.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public Reference.Builder type(String type) {
+    public Reference.Builder type(@Nullable String type) {
       this.instance.type = type;
       return this;
     }

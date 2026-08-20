@@ -172,17 +172,17 @@ public class FollowUpPatientStatusCoding {
       return this;
     }
 
-    public FollowUpPatientStatusCoding.Builder display(String display) {
+    public FollowUpPatientStatusCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public FollowUpPatientStatusCoding.Builder system(String system) {
+    public FollowUpPatientStatusCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public FollowUpPatientStatusCoding.Builder version(String version) {
+    public FollowUpPatientStatusCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

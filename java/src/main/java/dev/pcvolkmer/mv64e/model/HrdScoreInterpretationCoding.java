@@ -176,17 +176,17 @@ public class HrdScoreInterpretationCoding {
       return this;
     }
 
-    public HrdScoreInterpretationCoding.Builder display(String display) {
+    public HrdScoreInterpretationCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public HrdScoreInterpretationCoding.Builder system(String system) {
+    public HrdScoreInterpretationCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public HrdScoreInterpretationCoding.Builder version(String version) {
+    public HrdScoreInterpretationCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

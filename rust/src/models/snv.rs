@@ -21,7 +21,7 @@ pub struct Snv {
     #[serde(rename = "altAllele")]
     pub alt_allele: String,
     #[serde(rename = "position")]
-    pub position: models::CnvEndRange,
+    pub position: models::CnvStartRange,
     #[serde(rename = "gene")]
     pub gene: models::Coding,
     #[serde(rename = "exonId", skip_serializing_if = "Option::is_none")]
@@ -44,7 +44,7 @@ impl Snv {
         chromosome: models::Chromosome,
         id: String,
         alt_allele: String,
-        position: models::CnvEndRange,
+        position: models::CnvStartRange,
         gene: models::Coding,
         dna_change: String,
         patient: models::Reference,

@@ -179,12 +179,12 @@ public class PublicationReference {
       return this;
     }
 
-    public PublicationReference.Builder display(String display) {
+    public PublicationReference.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public PublicationReference.Builder type(String type) {
+    public PublicationReference.Builder type(@Nullable String type) {
       this.instance.type = type;
       return this;
     }

@@ -45,7 +45,7 @@ public class Snv {
 
   public static final String JSON_PROPERTY_POSITION = "position";
 
-  private CnvEndRange position;
+  private CnvStartRange position;
 
   public static final String JSON_PROPERTY_GENE = "gene";
 
@@ -222,19 +222,19 @@ public class Snv {
     this.altAllele = altAllele;
   }
 
-  public Snv position(CnvEndRange position) {
+  public Snv position(CnvStartRange position) {
 
     this.position = position;
     return this;
   }
 
   @JsonProperty(value = JSON_PROPERTY_POSITION, required = true)
-  public CnvEndRange getPosition() {
+  public CnvStartRange getPosition() {
     return position;
   }
 
   @JsonProperty(value = JSON_PROPERTY_POSITION, required = true)
-  public void setPosition(CnvEndRange position) {
+  public void setPosition(CnvStartRange position) {
     this.position = position;
   }
 
@@ -438,17 +438,17 @@ public class Snv {
       this.instance = instance;
     }
 
-    public Snv.Builder localization(Set<BaseVariantLocalizationCoding> localization) {
+    public Snv.Builder localization(@Nullable Set<BaseVariantLocalizationCoding> localization) {
       this.instance.localization = localization;
       return this;
     }
 
-    public Snv.Builder proteinChange(String proteinChange) {
+    public Snv.Builder proteinChange(@Nullable String proteinChange) {
       this.instance.proteinChange = proteinChange;
       return this;
     }
 
-    public Snv.Builder interpretation(ClinVarCoding interpretation) {
+    public Snv.Builder interpretation(@Nullable ClinVarCoding interpretation) {
       this.instance.interpretation = interpretation;
       return this;
     }
@@ -458,7 +458,7 @@ public class Snv {
       return this;
     }
 
-    public Snv.Builder externalIds(List<VariantExternalId> externalIds) {
+    public Snv.Builder externalIds(@Nullable List<VariantExternalId> externalIds) {
       this.instance.externalIds = externalIds;
       return this;
     }
@@ -478,7 +478,7 @@ public class Snv {
       return this;
     }
 
-    public Snv.Builder position(CnvEndRange position) {
+    public Snv.Builder position(CnvStartRange position) {
       this.instance.position = position;
       return this;
     }
@@ -488,7 +488,7 @@ public class Snv {
       return this;
     }
 
-    public Snv.Builder exonId(String exonId) {
+    public Snv.Builder exonId(@Nullable String exonId) {
       this.instance.exonId = exonId;
       return this;
     }

@@ -176,17 +176,17 @@ public class MtbDiagnosisTypeCoding {
       return this;
     }
 
-    public MtbDiagnosisTypeCoding.Builder display(String display) {
+    public MtbDiagnosisTypeCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public MtbDiagnosisTypeCoding.Builder system(String system) {
+    public MtbDiagnosisTypeCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public MtbDiagnosisTypeCoding.Builder version(String version) {
+    public MtbDiagnosisTypeCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

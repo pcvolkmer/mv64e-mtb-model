@@ -140,17 +140,17 @@ public class Coding {
       return this;
     }
 
-    public Coding.Builder display(String display) {
+    public Coding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public Coding.Builder system(String system) {
+    public Coding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public Coding.Builder version(String version) {
+    public Coding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

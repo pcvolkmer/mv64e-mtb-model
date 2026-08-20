@@ -427,33 +427,36 @@ public class MtbSystemicTherapy {
       this.instance = instance;
     }
 
-    public MtbSystemicTherapy.Builder statusReason(MtbTherapyStatusReasonCoding statusReason) {
+    public MtbSystemicTherapy.Builder statusReason(
+        @Nullable MtbTherapyStatusReasonCoding statusReason) {
       this.instance.statusReason = statusReason;
       return this;
     }
 
-    public MtbSystemicTherapy.Builder medication(Set<AtcUnregisteredMedicationCoding> medication) {
+    public MtbSystemicTherapy.Builder medication(
+        @Nullable Set<AtcUnregisteredMedicationCoding> medication) {
       this.instance.medication = medication;
       return this;
     }
 
-    public MtbSystemicTherapy.Builder intent(MtbTherapyIntentCoding intent) {
+    public MtbSystemicTherapy.Builder intent(@Nullable MtbTherapyIntentCoding intent) {
       this.instance.intent = intent;
       return this;
     }
 
-    public MtbSystemicTherapy.Builder therapyLine(Integer therapyLine) {
+    public MtbSystemicTherapy.Builder therapyLine(@Nullable Integer therapyLine) {
       this.instance.therapyLine = therapyLine;
       return this;
     }
 
-    public MtbSystemicTherapy.Builder reason(Reference reason) {
+    public MtbSystemicTherapy.Builder reason(@Nullable Reference reason) {
       this.instance.reason = reason;
       return this;
     }
 
     public MtbSystemicTherapy.Builder recommendationFulfillmentStatus(
-        MtbSystemicTherapyRecommendationFulfillmentStatusCoding recommendationFulfillmentStatus) {
+        @Nullable MtbSystemicTherapyRecommendationFulfillmentStatusCoding
+            recommendationFulfillmentStatus) {
       this.instance.recommendationFulfillmentStatus = recommendationFulfillmentStatus;
       return this;
     }
@@ -473,17 +476,18 @@ public class MtbSystemicTherapy {
       return this;
     }
 
-    public MtbSystemicTherapy.Builder notes(List<String> notes) {
+    public MtbSystemicTherapy.Builder notes(@Nullable List<String> notes) {
       this.instance.notes = notes;
       return this;
     }
 
-    public MtbSystemicTherapy.Builder dosage(MtbSystemicTherapyDosageDensityCoding dosage) {
+    public MtbSystemicTherapy.Builder dosage(
+        @Nullable MtbSystemicTherapyDosageDensityCoding dosage) {
       this.instance.dosage = dosage;
       return this;
     }
 
-    public MtbSystemicTherapy.Builder period(PeriodDate period) {
+    public MtbSystemicTherapy.Builder period(@Nullable PeriodDate period) {
       this.instance.period = period;
       return this;
     }
@@ -493,12 +497,13 @@ public class MtbSystemicTherapy {
       return this;
     }
 
-    public MtbSystemicTherapy.Builder category(MtbSystemicTherapyCategoryCoding category) {
+    public MtbSystemicTherapy.Builder category(
+        @Nullable MtbSystemicTherapyCategoryCoding category) {
       this.instance.category = category;
       return this;
     }
 
-    public MtbSystemicTherapy.Builder basedOn(Reference basedOn) {
+    public MtbSystemicTherapy.Builder basedOn(@Nullable Reference basedOn) {
       this.instance.basedOn = basedOn;
       return this;
     }

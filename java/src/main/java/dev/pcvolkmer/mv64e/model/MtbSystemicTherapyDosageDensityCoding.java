@@ -175,17 +175,17 @@ public class MtbSystemicTherapyDosageDensityCoding {
       return this;
     }
 
-    public MtbSystemicTherapyDosageDensityCoding.Builder display(String display) {
+    public MtbSystemicTherapyDosageDensityCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public MtbSystemicTherapyDosageDensityCoding.Builder system(String system) {
+    public MtbSystemicTherapyDosageDensityCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public MtbSystemicTherapyDosageDensityCoding.Builder version(String version) {
+    public MtbSystemicTherapyDosageDensityCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

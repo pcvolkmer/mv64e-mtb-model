@@ -223,12 +223,12 @@ public class ProteinExpression {
       this.instance = instance;
     }
 
-    public ProteinExpression.Builder cpsScore(Integer cpsScore) {
+    public ProteinExpression.Builder cpsScore(@Nullable Integer cpsScore) {
       this.instance.cpsScore = cpsScore;
       return this;
     }
 
-    public ProteinExpression.Builder icScore(ProteinExpressionIcScoreCoding icScore) {
+    public ProteinExpression.Builder icScore(@Nullable ProteinExpressionIcScoreCoding icScore) {
       this.instance.icScore = icScore;
       return this;
     }
@@ -248,12 +248,12 @@ public class ProteinExpression {
       return this;
     }
 
-    public ProteinExpression.Builder tcScore(ProteinExpressionTcScoreCoding tcScore) {
+    public ProteinExpression.Builder tcScore(@Nullable ProteinExpressionTcScoreCoding tcScore) {
       this.instance.tcScore = tcScore;
       return this;
     }
 
-    public ProteinExpression.Builder tpsScore(Integer tpsScore) {
+    public ProteinExpression.Builder tpsScore(@Nullable Integer tpsScore) {
       this.instance.tpsScore = tpsScore;
       return this;
     }

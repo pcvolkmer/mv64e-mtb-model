@@ -351,12 +351,12 @@ public class RnaSeq {
       this.instance = instance;
     }
 
-    public RnaSeq.Builder librarySize(Integer librarySize) {
+    public RnaSeq.Builder librarySize(@Nullable Integer librarySize) {
       this.instance.librarySize = librarySize;
       return this;
     }
 
-    public RnaSeq.Builder localization(Set<BaseVariantLocalizationCoding> localization) {
+    public RnaSeq.Builder localization(@Nullable Set<BaseVariantLocalizationCoding> localization) {
       this.instance.localization = localization;
       return this;
     }
@@ -366,7 +366,7 @@ public class RnaSeq {
       return this;
     }
 
-    public RnaSeq.Builder cohortRanking(Integer cohortRanking) {
+    public RnaSeq.Builder cohortRanking(@Nullable Integer cohortRanking) {
       this.instance.cohortRanking = cohortRanking;
       return this;
     }
@@ -381,12 +381,12 @@ public class RnaSeq {
       return this;
     }
 
-    public RnaSeq.Builder transcriptId(TranscriptId transcriptId) {
+    public RnaSeq.Builder transcriptId(@Nullable TranscriptId transcriptId) {
       this.instance.transcriptId = transcriptId;
       return this;
     }
 
-    public RnaSeq.Builder externalIds(List<VariantExternalId> externalIds) {
+    public RnaSeq.Builder externalIds(@Nullable List<VariantExternalId> externalIds) {
       this.instance.externalIds = externalIds;
       return this;
     }
@@ -396,12 +396,12 @@ public class RnaSeq {
       return this;
     }
 
-    public RnaSeq.Builder tissueCorrectedExpression(Boolean tissueCorrectedExpression) {
+    public RnaSeq.Builder tissueCorrectedExpression(@Nullable Boolean tissueCorrectedExpression) {
       this.instance.tissueCorrectedExpression = tissueCorrectedExpression;
       return this;
     }
 
-    public RnaSeq.Builder gene(Coding gene) {
+    public RnaSeq.Builder gene(@Nullable Coding gene) {
       this.instance.gene = gene;
       return this;
     }

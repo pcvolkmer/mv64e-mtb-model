@@ -178,17 +178,17 @@ public class ClaimStageCoding {
       return this;
     }
 
-    public ClaimStageCoding.Builder display(String display) {
+    public ClaimStageCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public ClaimStageCoding.Builder system(String system) {
+    public ClaimStageCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public ClaimStageCoding.Builder version(String version) {
+    public ClaimStageCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

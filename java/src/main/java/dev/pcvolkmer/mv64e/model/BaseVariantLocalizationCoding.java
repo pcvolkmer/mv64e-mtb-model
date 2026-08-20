@@ -180,17 +180,17 @@ public class BaseVariantLocalizationCoding {
       return this;
     }
 
-    public BaseVariantLocalizationCoding.Builder display(String display) {
+    public BaseVariantLocalizationCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public BaseVariantLocalizationCoding.Builder system(String system) {
+    public BaseVariantLocalizationCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public BaseVariantLocalizationCoding.Builder version(String version) {
+    public BaseVariantLocalizationCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

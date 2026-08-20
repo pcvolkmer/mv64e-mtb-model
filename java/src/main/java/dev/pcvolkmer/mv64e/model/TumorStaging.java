@@ -33,14 +33,12 @@ public class TumorStaging {
   }
 
   @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
   public Date getDate() {
     return date;
   }
 
   @JsonProperty(value = JSON_PROPERTY_DATE, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDate(Date date) {
     this.date = date;
   }
@@ -52,13 +50,11 @@ public class TumorStaging {
   }
 
   @JsonProperty(value = JSON_PROPERTY_METHOD, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public TumorStagingMethodCoding getMethod() {
     return method;
   }
 
   @JsonProperty(value = JSON_PROPERTY_METHOD, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMethod(TumorStagingMethodCoding method) {
     this.method = method;
   }
@@ -70,13 +66,11 @@ public class TumorStaging {
   }
 
   @JsonProperty(value = JSON_PROPERTY_TNM_CLASSIFICATION, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public @Nullable TumorStagingTnmClassification getTnmClassification() {
     return tnmClassification;
   }
 
   @JsonProperty(value = JSON_PROPERTY_TNM_CLASSIFICATION, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setTnmClassification(@Nullable TumorStagingTnmClassification tnmClassification) {
     this.tnmClassification = tnmClassification;
   }
@@ -96,13 +90,11 @@ public class TumorStaging {
   }
 
   @JsonProperty(value = JSON_PROPERTY_OTHER_CLASSIFICATIONS, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public @Nullable List<Coding> getOtherClassifications() {
     return otherClassifications;
   }
 
   @JsonProperty(value = JSON_PROPERTY_OTHER_CLASSIFICATIONS, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setOtherClassifications(@Nullable List<Coding> otherClassifications) {
     this.otherClassifications = otherClassifications;
   }
@@ -167,12 +159,13 @@ public class TumorStaging {
       return this;
     }
 
-    public TumorStaging.Builder tnmClassification(TumorStagingTnmClassification tnmClassification) {
+    public TumorStaging.Builder tnmClassification(
+        @Nullable TumorStagingTnmClassification tnmClassification) {
       this.instance.tnmClassification = tnmClassification;
       return this;
     }
 
-    public TumorStaging.Builder otherClassifications(List<Coding> otherClassifications) {
+    public TumorStaging.Builder otherClassifications(@Nullable List<Coding> otherClassifications) {
       this.instance.otherClassifications = otherClassifications;
       return this;
     }

@@ -98,7 +98,7 @@ public class PeriodDate {
       return this;
     }
 
-    public PeriodDate.Builder end(Date end) {
+    public PeriodDate.Builder end(@Nullable Date end) {
       this.instance.end = end;
       return this;
     }

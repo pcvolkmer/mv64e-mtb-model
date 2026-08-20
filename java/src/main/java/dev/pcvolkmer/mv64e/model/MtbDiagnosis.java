@@ -359,12 +359,12 @@ public class MtbDiagnosis {
       this.instance = instance;
     }
 
-    public MtbDiagnosis.Builder grading(MtbDiagnosisGrading grading) {
+    public MtbDiagnosis.Builder grading(@Nullable MtbDiagnosisGrading grading) {
       this.instance.grading = grading;
       return this;
     }
 
-    public MtbDiagnosis.Builder germlineCodes(Set<Coding> germlineCodes) {
+    public MtbDiagnosis.Builder germlineCodes(@Nullable Set<Coding> germlineCodes) {
       this.instance.germlineCodes = germlineCodes;
       return this;
     }
@@ -399,23 +399,23 @@ public class MtbDiagnosis {
       return this;
     }
 
-    public MtbDiagnosis.Builder staging(MtbDiagnosisStaging staging) {
+    public MtbDiagnosis.Builder staging(@Nullable MtbDiagnosisStaging staging) {
       this.instance.staging = staging;
       return this;
     }
 
-    public MtbDiagnosis.Builder histology(List<Reference> histology) {
+    public MtbDiagnosis.Builder histology(@Nullable List<Reference> histology) {
       this.instance.histology = histology;
       return this;
     }
 
     public MtbDiagnosis.Builder guidelineTreatmentStatus(
-        MtbDiagnosisGuidelineTreatmentStatusCoding guidelineTreatmentStatus) {
+        @Nullable MtbDiagnosisGuidelineTreatmentStatusCoding guidelineTreatmentStatus) {
       this.instance.guidelineTreatmentStatus = guidelineTreatmentStatus;
       return this;
     }
 
-    public MtbDiagnosis.Builder notes(List<String> notes) {
+    public MtbDiagnosis.Builder notes(@Nullable List<String> notes) {
       this.instance.notes = notes;
       return this;
     }

@@ -183,17 +183,17 @@ public class MtbProcedureRecommendationCategoryCoding {
       return this;
     }
 
-    public MtbProcedureRecommendationCategoryCoding.Builder display(String display) {
+    public MtbProcedureRecommendationCategoryCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public MtbProcedureRecommendationCategoryCoding.Builder system(String system) {
+    public MtbProcedureRecommendationCategoryCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public MtbProcedureRecommendationCategoryCoding.Builder version(String version) {
+    public MtbProcedureRecommendationCategoryCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

@@ -228,7 +228,7 @@ public class MolecularDiagnosticReport {
       return this;
     }
 
-    public MolecularDiagnosticReport.Builder performer(Reference performer) {
+    public MolecularDiagnosticReport.Builder performer(@Nullable Reference performer) {
       this.instance.performer = performer;
       return this;
     }
@@ -243,7 +243,7 @@ public class MolecularDiagnosticReport {
       return this;
     }
 
-    public MolecularDiagnosticReport.Builder results(List<String> results) {
+    public MolecularDiagnosticReport.Builder results(@Nullable List<String> results) {
       this.instance.results = results;
       return this;
     }

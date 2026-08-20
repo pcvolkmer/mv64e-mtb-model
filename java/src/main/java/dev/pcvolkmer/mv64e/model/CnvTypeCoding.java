@@ -176,17 +176,17 @@ public class CnvTypeCoding {
       return this;
     }
 
-    public CnvTypeCoding.Builder display(String display) {
+    public CnvTypeCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public CnvTypeCoding.Builder system(String system) {
+    public CnvTypeCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public CnvTypeCoding.Builder version(String version) {
+    public CnvTypeCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

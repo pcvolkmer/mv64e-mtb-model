@@ -239,7 +239,8 @@ public class DnaFusion {
       return this;
     }
 
-    public DnaFusion.Builder localization(Set<BaseVariantLocalizationCoding> localization) {
+    public DnaFusion.Builder localization(
+        @Nullable Set<BaseVariantLocalizationCoding> localization) {
       this.instance.localization = localization;
       return this;
     }
@@ -249,7 +250,7 @@ public class DnaFusion {
       return this;
     }
 
-    public DnaFusion.Builder externalIds(List<VariantExternalId> externalIds) {
+    public DnaFusion.Builder externalIds(@Nullable List<VariantExternalId> externalIds) {
       this.instance.externalIds = externalIds;
       return this;
     }

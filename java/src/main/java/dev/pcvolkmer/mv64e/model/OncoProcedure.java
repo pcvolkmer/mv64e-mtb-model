@@ -335,22 +335,22 @@ public class OncoProcedure {
       this.instance = instance;
     }
 
-    public OncoProcedure.Builder statusReason(MtbTherapyStatusReasonCoding statusReason) {
+    public OncoProcedure.Builder statusReason(@Nullable MtbTherapyStatusReasonCoding statusReason) {
       this.instance.statusReason = statusReason;
       return this;
     }
 
-    public OncoProcedure.Builder intent(MtbTherapyIntentCoding intent) {
+    public OncoProcedure.Builder intent(@Nullable MtbTherapyIntentCoding intent) {
       this.instance.intent = intent;
       return this;
     }
 
-    public OncoProcedure.Builder therapyLine(Integer therapyLine) {
+    public OncoProcedure.Builder therapyLine(@Nullable Integer therapyLine) {
       this.instance.therapyLine = therapyLine;
       return this;
     }
 
-    public OncoProcedure.Builder reason(Reference reason) {
+    public OncoProcedure.Builder reason(@Nullable Reference reason) {
       this.instance.reason = reason;
       return this;
     }
@@ -375,17 +375,17 @@ public class OncoProcedure {
       return this;
     }
 
-    public OncoProcedure.Builder basedOn(Reference basedOn) {
+    public OncoProcedure.Builder basedOn(@Nullable Reference basedOn) {
       this.instance.basedOn = basedOn;
       return this;
     }
 
-    public OncoProcedure.Builder notes(List<String> notes) {
+    public OncoProcedure.Builder notes(@Nullable List<String> notes) {
       this.instance.notes = notes;
       return this;
     }
 
-    public OncoProcedure.Builder period(PeriodDate period) {
+    public OncoProcedure.Builder period(@Nullable PeriodDate period) {
       this.instance.period = period;
       return this;
     }

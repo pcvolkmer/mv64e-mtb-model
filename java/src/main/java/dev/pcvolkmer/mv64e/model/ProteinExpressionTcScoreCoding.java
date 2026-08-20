@@ -185,17 +185,17 @@ public class ProteinExpressionTcScoreCoding {
       return this;
     }
 
-    public ProteinExpressionTcScoreCoding.Builder display(String display) {
+    public ProteinExpressionTcScoreCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public ProteinExpressionTcScoreCoding.Builder system(String system) {
+    public ProteinExpressionTcScoreCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public ProteinExpressionTcScoreCoding.Builder version(String version) {
+    public ProteinExpressionTcScoreCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

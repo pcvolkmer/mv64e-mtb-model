@@ -195,17 +195,17 @@ public class MolecularDiagnosticReportTypeCoding {
       return this;
     }
 
-    public MolecularDiagnosticReportTypeCoding.Builder display(String display) {
+    public MolecularDiagnosticReportTypeCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public MolecularDiagnosticReportTypeCoding.Builder system(String system) {
+    public MolecularDiagnosticReportTypeCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public MolecularDiagnosticReportTypeCoding.Builder version(String version) {
+    public MolecularDiagnosticReportTypeCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

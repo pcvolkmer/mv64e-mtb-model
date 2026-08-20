@@ -96,7 +96,7 @@ public class PatientHealthInsurance {
       return this;
     }
 
-    public PatientHealthInsurance.Builder reference(Reference reference) {
+    public PatientHealthInsurance.Builder reference(@Nullable Reference reference) {
       this.instance.reference = reference;
       return this;
     }

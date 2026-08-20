@@ -437,37 +437,37 @@ public class Cnv {
       this.instance = instance;
     }
 
-    public Cnv.Builder localization(Set<BaseVariantLocalizationCoding> localization) {
+    public Cnv.Builder localization(@Nullable Set<BaseVariantLocalizationCoding> localization) {
       this.instance.localization = localization;
       return this;
     }
 
-    public Cnv.Builder reportedFocality(String reportedFocality) {
+    public Cnv.Builder reportedFocality(@Nullable String reportedFocality) {
       this.instance.reportedFocality = reportedFocality;
       return this;
     }
 
-    public Cnv.Builder reportedAffectedGenes(Set<Coding> reportedAffectedGenes) {
+    public Cnv.Builder reportedAffectedGenes(@Nullable Set<Coding> reportedAffectedGenes) {
       this.instance.reportedAffectedGenes = reportedAffectedGenes;
       return this;
     }
 
-    public Cnv.Builder totalCopyNumber(Integer totalCopyNumber) {
+    public Cnv.Builder totalCopyNumber(@Nullable Integer totalCopyNumber) {
       this.instance.totalCopyNumber = totalCopyNumber;
       return this;
     }
 
-    public Cnv.Builder cnA(BigDecimal cnA) {
+    public Cnv.Builder cnA(@Nullable BigDecimal cnA) {
       this.instance.cnA = cnA;
       return this;
     }
 
-    public Cnv.Builder externalIds(List<VariantExternalId> externalIds) {
+    public Cnv.Builder externalIds(@Nullable List<VariantExternalId> externalIds) {
       this.instance.externalIds = externalIds;
       return this;
     }
 
-    public Cnv.Builder startRange(CnvStartRange startRange) {
+    public Cnv.Builder startRange(@Nullable CnvStartRange startRange) {
       this.instance.startRange = startRange;
       return this;
     }
@@ -482,7 +482,7 @@ public class Cnv {
       return this;
     }
 
-    public Cnv.Builder endRange(CnvEndRange endRange) {
+    public Cnv.Builder endRange(@Nullable CnvEndRange endRange) {
       this.instance.endRange = endRange;
       return this;
     }
@@ -497,17 +497,17 @@ public class Cnv {
       return this;
     }
 
-    public Cnv.Builder cnB(BigDecimal cnB) {
+    public Cnv.Builder cnB(@Nullable BigDecimal cnB) {
       this.instance.cnB = cnB;
       return this;
     }
 
-    public Cnv.Builder relativeCopyNumber(BigDecimal relativeCopyNumber) {
+    public Cnv.Builder relativeCopyNumber(@Nullable BigDecimal relativeCopyNumber) {
       this.instance.relativeCopyNumber = relativeCopyNumber;
       return this;
     }
 
-    public Cnv.Builder copyNumberNeutralLoH(Set<Coding> copyNumberNeutralLoH) {
+    public Cnv.Builder copyNumberNeutralLoH(@Nullable Set<Coding> copyNumberNeutralLoH) {
       this.instance.copyNumberNeutralLoH = copyNumberNeutralLoH;
       return this;
     }

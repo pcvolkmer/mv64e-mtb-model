@@ -1,6 +1,5 @@
 package dev.pcvolkmer.mv64e.model;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -35,13 +34,11 @@ public class TumorCellContent {
   }
 
   @JsonProperty(value = JSON_PROPERTY_METHOD, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public TumorCellContentMethodCoding getMethod() {
     return method;
   }
 
   @JsonProperty(value = JSON_PROPERTY_METHOD, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMethod(TumorCellContentMethodCoding method) {
     this.method = method;
   }
@@ -53,13 +50,11 @@ public class TumorCellContent {
   }
 
   @JsonProperty(value = JSON_PROPERTY_ID, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public String getId() {
     return id;
   }
 
   @JsonProperty(value = JSON_PROPERTY_ID, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setId(String id) {
     this.id = id;
   }
@@ -71,13 +66,11 @@ public class TumorCellContent {
   }
 
   @JsonProperty(value = JSON_PROPERTY_SPECIMEN, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public Reference getSpecimen() {
     return specimen;
   }
 
   @JsonProperty(value = JSON_PROPERTY_SPECIMEN, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSpecimen(Reference specimen) {
     this.specimen = specimen;
   }
@@ -89,13 +82,11 @@ public class TumorCellContent {
   }
 
   @JsonProperty(value = JSON_PROPERTY_VALUE, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public BigDecimal getValue() {
     return value;
   }
 
   @JsonProperty(value = JSON_PROPERTY_VALUE, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setValue(BigDecimal value) {
     this.value = value;
   }
@@ -107,13 +98,11 @@ public class TumorCellContent {
   }
 
   @JsonProperty(value = JSON_PROPERTY_PATIENT, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public Reference getPatient() {
     return patient;
   }
 
   @JsonProperty(value = JSON_PROPERTY_PATIENT, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPatient(Reference patient) {
     this.patient = patient;
   }

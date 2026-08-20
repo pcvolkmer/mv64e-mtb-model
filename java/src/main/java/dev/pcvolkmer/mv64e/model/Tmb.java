@@ -1,6 +1,5 @@
 package dev.pcvolkmer.mv64e.model;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Objects;
 import org.jspecify.annotations.Nullable;
@@ -35,13 +34,11 @@ public class Tmb {
   }
 
   @JsonProperty(value = JSON_PROPERTY_INTERPRETATION, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public @Nullable TmbInterpretationCoding getInterpretation() {
     return interpretation;
   }
 
   @JsonProperty(value = JSON_PROPERTY_INTERPRETATION, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setInterpretation(@Nullable TmbInterpretationCoding interpretation) {
     this.interpretation = interpretation;
   }
@@ -53,13 +50,11 @@ public class Tmb {
   }
 
   @JsonProperty(value = JSON_PROPERTY_ID, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public String getId() {
     return id;
   }
 
   @JsonProperty(value = JSON_PROPERTY_ID, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setId(String id) {
     this.id = id;
   }
@@ -71,13 +66,11 @@ public class Tmb {
   }
 
   @JsonProperty(value = JSON_PROPERTY_SPECIMEN, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public Reference getSpecimen() {
     return specimen;
   }
 
   @JsonProperty(value = JSON_PROPERTY_SPECIMEN, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSpecimen(Reference specimen) {
     this.specimen = specimen;
   }
@@ -89,13 +82,11 @@ public class Tmb {
   }
 
   @JsonProperty(value = JSON_PROPERTY_VALUE, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public TmbResult getValue() {
     return value;
   }
 
   @JsonProperty(value = JSON_PROPERTY_VALUE, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setValue(TmbResult value) {
     this.value = value;
   }
@@ -107,13 +98,11 @@ public class Tmb {
   }
 
   @JsonProperty(value = JSON_PROPERTY_PATIENT, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public Reference getPatient() {
     return patient;
   }
 
   @JsonProperty(value = JSON_PROPERTY_PATIENT, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setPatient(Reference patient) {
     this.patient = patient;
   }
@@ -168,7 +157,7 @@ public class Tmb {
       this.instance = instance;
     }
 
-    public Tmb.Builder interpretation(TmbInterpretationCoding interpretation) {
+    public Tmb.Builder interpretation(@Nullable TmbInterpretationCoding interpretation) {
       this.instance.interpretation = interpretation;
       return this;
     }

@@ -174,17 +174,17 @@ public class CarePlanBoardTypeCoding {
       return this;
     }
 
-    public CarePlanBoardTypeCoding.Builder display(String display) {
+    public CarePlanBoardTypeCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public CarePlanBoardTypeCoding.Builder system(String system) {
+    public CarePlanBoardTypeCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public CarePlanBoardTypeCoding.Builder version(String version) {
+    public CarePlanBoardTypeCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

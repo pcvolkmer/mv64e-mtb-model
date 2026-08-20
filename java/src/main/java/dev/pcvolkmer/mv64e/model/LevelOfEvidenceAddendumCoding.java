@@ -178,17 +178,17 @@ public class LevelOfEvidenceAddendumCoding {
       return this;
     }
 
-    public LevelOfEvidenceAddendumCoding.Builder display(String display) {
+    public LevelOfEvidenceAddendumCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public LevelOfEvidenceAddendumCoding.Builder system(String system) {
+    public LevelOfEvidenceAddendumCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public LevelOfEvidenceAddendumCoding.Builder version(String version) {
+    public LevelOfEvidenceAddendumCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

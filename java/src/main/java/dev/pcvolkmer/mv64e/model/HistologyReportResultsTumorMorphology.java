@@ -163,7 +163,7 @@ public class HistologyReportResultsTumorMorphology {
       return this;
     }
 
-    public HistologyReportResultsTumorMorphology.Builder note(String note) {
+    public HistologyReportResultsTumorMorphology.Builder note(@Nullable String note) {
       this.instance.note = note;
       return this;
     }

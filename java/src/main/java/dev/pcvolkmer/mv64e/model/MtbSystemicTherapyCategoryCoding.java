@@ -181,17 +181,17 @@ public class MtbSystemicTherapyCategoryCoding {
       return this;
     }
 
-    public MtbSystemicTherapyCategoryCoding.Builder display(String display) {
+    public MtbSystemicTherapyCategoryCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public MtbSystemicTherapyCategoryCoding.Builder system(String system) {
+    public MtbSystemicTherapyCategoryCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public MtbSystemicTherapyCategoryCoding.Builder version(String version) {
+    public MtbSystemicTherapyCategoryCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

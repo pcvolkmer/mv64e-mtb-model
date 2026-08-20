@@ -13,7 +13,7 @@ import org.jspecify.annotations.Nullable;
 public class MtbStudyEnrollmentRecommendation {
   public static final String JSON_PROPERTY_PRIORITY = "priority";
 
-  private RecommendationPriorityCoding priority;
+  private MtbRecommendationPriorityCoding priority;
 
   public static final String JSON_PROPERTY_MEDICATION = "medication";
 
@@ -53,19 +53,19 @@ public class MtbStudyEnrollmentRecommendation {
 
   public MtbStudyEnrollmentRecommendation() {}
 
-  public MtbStudyEnrollmentRecommendation priority(RecommendationPriorityCoding priority) {
+  public MtbStudyEnrollmentRecommendation priority(MtbRecommendationPriorityCoding priority) {
 
     this.priority = priority;
     return this;
   }
 
   @JsonProperty(value = JSON_PROPERTY_PRIORITY, required = true)
-  public RecommendationPriorityCoding getPriority() {
+  public MtbRecommendationPriorityCoding getPriority() {
     return priority;
   }
 
   @JsonProperty(value = JSON_PROPERTY_PRIORITY, required = true)
-  public void setPriority(RecommendationPriorityCoding priority) {
+  public void setPriority(MtbRecommendationPriorityCoding priority) {
     this.priority = priority;
   }
 
@@ -328,24 +328,24 @@ public class MtbStudyEnrollmentRecommendation {
     }
 
     public MtbStudyEnrollmentRecommendation.Builder priority(
-        RecommendationPriorityCoding priority) {
+        MtbRecommendationPriorityCoding priority) {
       this.instance.priority = priority;
       return this;
     }
 
     public MtbStudyEnrollmentRecommendation.Builder medication(
-        Set<AtcUnregisteredMedicationCoding> medication) {
+        @Nullable Set<AtcUnregisteredMedicationCoding> medication) {
       this.instance.medication = medication;
       return this;
     }
 
     public MtbStudyEnrollmentRecommendation.Builder supportingVariants(
-        List<GeneAlterationReference> supportingVariants) {
+        @Nullable List<GeneAlterationReference> supportingVariants) {
       this.instance.supportingVariants = supportingVariants;
       return this;
     }
 
-    public MtbStudyEnrollmentRecommendation.Builder reason(Reference reason) {
+    public MtbStudyEnrollmentRecommendation.Builder reason(@Nullable Reference reason) {
       this.instance.reason = reason;
       return this;
     }
@@ -356,13 +356,13 @@ public class MtbStudyEnrollmentRecommendation {
     }
 
     public MtbStudyEnrollmentRecommendation.Builder supportingFindings(
-        List<Reference> supportingFindings) {
+        @Nullable List<Reference> supportingFindings) {
       this.instance.supportingFindings = supportingFindings;
       return this;
     }
 
     public MtbStudyEnrollmentRecommendation.Builder levelOfEvidence(
-        LevelOfEvidence levelOfEvidence) {
+        @Nullable LevelOfEvidence levelOfEvidence) {
       this.instance.levelOfEvidence = levelOfEvidence;
       return this;
     }

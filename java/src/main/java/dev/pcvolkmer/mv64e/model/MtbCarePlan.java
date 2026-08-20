@@ -467,30 +467,30 @@ public class MtbCarePlan {
       this.instance = instance;
     }
 
-    public MtbCarePlan.Builder boardType(CarePlanBoardTypeCoding boardType) {
+    public MtbCarePlan.Builder boardType(@Nullable CarePlanBoardTypeCoding boardType) {
       this.instance.boardType = boardType;
       return this;
     }
 
     public MtbCarePlan.Builder recommendationsMissingReason(
-        MtbCarePlanRecommendationsMissingReasonCoding recommendationsMissingReason) {
+        @Nullable MtbCarePlanRecommendationsMissingReasonCoding recommendationsMissingReason) {
       this.instance.recommendationsMissingReason = recommendationsMissingReason;
       return this;
     }
 
     public MtbCarePlan.Builder studyEnrollmentRecommendations(
-        List<MtbStudyEnrollmentRecommendation> studyEnrollmentRecommendations) {
+        @Nullable List<MtbStudyEnrollmentRecommendation> studyEnrollmentRecommendations) {
       this.instance.studyEnrollmentRecommendations = studyEnrollmentRecommendations;
       return this;
     }
 
-    public MtbCarePlan.Builder reason(Reference reason) {
+    public MtbCarePlan.Builder reason(@Nullable Reference reason) {
       this.instance.reason = reason;
       return this;
     }
 
     public MtbCarePlan.Builder geneticCounselingRecommendation(
-        GeneticCounselingRecommendation geneticCounselingRecommendation) {
+        @Nullable GeneticCounselingRecommendation geneticCounselingRecommendation) {
       this.instance.geneticCounselingRecommendation = geneticCounselingRecommendation;
       return this;
     }
@@ -501,30 +501,31 @@ public class MtbCarePlan {
     }
 
     public MtbCarePlan.Builder medicationRecommendations(
-        List<MtbMedicationRecommendation> medicationRecommendations) {
+        @Nullable List<MtbMedicationRecommendation> medicationRecommendations) {
       this.instance.medicationRecommendations = medicationRecommendations;
       return this;
     }
 
     public MtbCarePlan.Builder rebiopsyRequests(
-        List<MtbCarePlanRebiopsyRequestsInner> rebiopsyRequests) {
+        @Nullable List<MtbCarePlanRebiopsyRequestsInner> rebiopsyRequests) {
       this.instance.rebiopsyRequests = rebiopsyRequests;
       return this;
     }
 
     public MtbCarePlan.Builder histologyReevaluationRequests(
-        List<MtbCarePlanHistologyReevaluationRequestsInner> histologyReevaluationRequests) {
+        @Nullable List<MtbCarePlanHistologyReevaluationRequestsInner>
+            histologyReevaluationRequests) {
       this.instance.histologyReevaluationRequests = histologyReevaluationRequests;
       return this;
     }
 
-    public MtbCarePlan.Builder notes(List<String> notes) {
+    public MtbCarePlan.Builder notes(@Nullable List<String> notes) {
       this.instance.notes = notes;
       return this;
     }
 
     public MtbCarePlan.Builder procedureRecommendations(
-        List<MtbCarePlanProcedureRecommendationsInner> procedureRecommendations) {
+        @Nullable List<MtbCarePlanProcedureRecommendationsInner> procedureRecommendations) {
       this.instance.procedureRecommendations = procedureRecommendations;
       return this;
     }
@@ -535,7 +536,7 @@ public class MtbCarePlan {
     }
 
     public MtbCarePlan.Builder noSequencingPerformedReason(
-        CarePlanNoSequencingPerformedReasonCoding noSequencingPerformedReason) {
+        @Nullable CarePlanNoSequencingPerformedReasonCoding noSequencingPerformedReason) {
       this.instance.noSequencingPerformedReason = noSequencingPerformedReason;
       return this;
     }

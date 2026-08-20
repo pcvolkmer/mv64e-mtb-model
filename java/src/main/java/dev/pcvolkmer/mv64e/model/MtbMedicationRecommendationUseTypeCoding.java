@@ -181,17 +181,17 @@ public class MtbMedicationRecommendationUseTypeCoding {
       return this;
     }
 
-    public MtbMedicationRecommendationUseTypeCoding.Builder display(String display) {
+    public MtbMedicationRecommendationUseTypeCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public MtbMedicationRecommendationUseTypeCoding.Builder system(String system) {
+    public MtbMedicationRecommendationUseTypeCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public MtbMedicationRecommendationUseTypeCoding.Builder version(String version) {
+    public MtbMedicationRecommendationUseTypeCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

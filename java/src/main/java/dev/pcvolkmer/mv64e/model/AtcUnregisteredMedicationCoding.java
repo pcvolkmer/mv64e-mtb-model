@@ -175,7 +175,7 @@ public class AtcUnregisteredMedicationCoding {
       return this;
     }
 
-    public AtcUnregisteredMedicationCoding.Builder display(String display) {
+    public AtcUnregisteredMedicationCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
@@ -185,7 +185,7 @@ public class AtcUnregisteredMedicationCoding {
       return this;
     }
 
-    public AtcUnregisteredMedicationCoding.Builder version(String version) {
+    public AtcUnregisteredMedicationCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

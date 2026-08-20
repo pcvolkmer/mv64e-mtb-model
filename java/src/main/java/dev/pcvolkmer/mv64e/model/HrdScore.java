@@ -180,7 +180,7 @@ public class HrdScore {
       this.instance = instance;
     }
 
-    public HrdScore.Builder interpretation(HrdScoreInterpretationCoding interpretation) {
+    public HrdScore.Builder interpretation(@Nullable HrdScoreInterpretationCoding interpretation) {
       this.instance.interpretation = interpretation;
       return this;
     }

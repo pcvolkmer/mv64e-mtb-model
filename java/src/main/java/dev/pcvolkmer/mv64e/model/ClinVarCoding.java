@@ -180,17 +180,17 @@ public class ClinVarCoding {
       return this;
     }
 
-    public ClinVarCoding.Builder display(String display) {
+    public ClinVarCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public ClinVarCoding.Builder system(String system) {
+    public ClinVarCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public ClinVarCoding.Builder version(String version) {
+    public ClinVarCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

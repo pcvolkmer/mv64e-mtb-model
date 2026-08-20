@@ -27,14 +27,12 @@ public class TumorSpecimenCollection {
   }
 
   @JsonProperty(value = JSON_PROPERTY_DATE, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
   public @Nullable Date getDate() {
     return date;
   }
 
   @JsonProperty(value = JSON_PROPERTY_DATE, required = false)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setDate(@Nullable Date date) {
     this.date = date;
   }
@@ -46,13 +44,11 @@ public class TumorSpecimenCollection {
   }
 
   @JsonProperty(value = JSON_PROPERTY_METHOD, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public TumorSpecimenCollectionMethodCoding getMethod() {
     return method;
   }
 
   @JsonProperty(value = JSON_PROPERTY_METHOD, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setMethod(TumorSpecimenCollectionMethodCoding method) {
     this.method = method;
   }
@@ -65,13 +61,11 @@ public class TumorSpecimenCollection {
   }
 
   @JsonProperty(value = JSON_PROPERTY_LOCALIZATION, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public TumorSpecimenCollectionLocalizationCoding getLocalization() {
     return localization;
   }
 
   @JsonProperty(value = JSON_PROPERTY_LOCALIZATION, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setLocalization(TumorSpecimenCollectionLocalizationCoding localization) {
     this.localization = localization;
   }
@@ -122,7 +116,7 @@ public class TumorSpecimenCollection {
       this.instance = instance;
     }
 
-    public TumorSpecimenCollection.Builder date(Date date) {
+    public TumorSpecimenCollection.Builder date(@Nullable Date date) {
       this.instance.date = date;
       return this;
     }

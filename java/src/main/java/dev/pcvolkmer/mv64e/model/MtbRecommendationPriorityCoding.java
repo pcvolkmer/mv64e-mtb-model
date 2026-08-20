@@ -6,15 +6,31 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.Objects;
 import org.jspecify.annotations.Nullable;
 
-public class RecommendationPriorityCoding {
+public class MtbRecommendationPriorityCoding {
   public enum CodeEnum {
     _1(String.valueOf("1")),
 
-    _2(String.valueOf("2")),
+    _6(String.valueOf("6")),
+
+    _8(String.valueOf("8")),
+
+    _4(String.valueOf("4")),
+
+    _12(String.valueOf("12")),
+
+    _11(String.valueOf("11")),
+
+    _9(String.valueOf("9")),
+
+    _7(String.valueOf("7")),
 
     _3(String.valueOf("3")),
 
-    _4(String.valueOf("4"));
+    _10(String.valueOf("10")),
+
+    _2(String.valueOf("2")),
+
+    _5(String.valueOf("5"));
 
     private String value;
 
@@ -59,9 +75,9 @@ public class RecommendationPriorityCoding {
 
   private @Nullable String version;
 
-  public RecommendationPriorityCoding() {}
+  public MtbRecommendationPriorityCoding() {}
 
-  public RecommendationPriorityCoding code(CodeEnum code) {
+  public MtbRecommendationPriorityCoding code(CodeEnum code) {
 
     this.code = code;
     return this;
@@ -77,7 +93,7 @@ public class RecommendationPriorityCoding {
     this.code = code;
   }
 
-  public RecommendationPriorityCoding display(@Nullable String display) {
+  public MtbRecommendationPriorityCoding display(@Nullable String display) {
 
     this.display = display;
     return this;
@@ -93,7 +109,7 @@ public class RecommendationPriorityCoding {
     this.display = display;
   }
 
-  public RecommendationPriorityCoding system(@Nullable String system) {
+  public MtbRecommendationPriorityCoding system(@Nullable String system) {
 
     this.system = system;
     return this;
@@ -109,7 +125,7 @@ public class RecommendationPriorityCoding {
     this.system = system;
   }
 
-  public RecommendationPriorityCoding version(@Nullable String version) {
+  public MtbRecommendationPriorityCoding version(@Nullable String version) {
 
     this.version = version;
     return this;
@@ -133,11 +149,12 @@ public class RecommendationPriorityCoding {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    RecommendationPriorityCoding recommendationPriorityCoding = (RecommendationPriorityCoding) o;
-    return Objects.equals(this.code, recommendationPriorityCoding.code)
-        && Objects.equals(this.display, recommendationPriorityCoding.display)
-        && Objects.equals(this.system, recommendationPriorityCoding.system)
-        && Objects.equals(this.version, recommendationPriorityCoding.version);
+    MtbRecommendationPriorityCoding mtbRecommendationPriorityCoding =
+        (MtbRecommendationPriorityCoding) o;
+    return Objects.equals(this.code, mtbRecommendationPriorityCoding.code)
+        && Objects.equals(this.display, mtbRecommendationPriorityCoding.display)
+        && Objects.equals(this.system, mtbRecommendationPriorityCoding.system)
+        && Objects.equals(this.version, mtbRecommendationPriorityCoding.version);
   }
 
   @Override
@@ -148,7 +165,7 @@ public class RecommendationPriorityCoding {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class RecommendationPriorityCoding {\n");
+    sb.append("class MtbRecommendationPriorityCoding {\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    display: ").append(toIndentedString(display)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
@@ -163,37 +180,37 @@ public class RecommendationPriorityCoding {
 
   public static class Builder {
 
-    private RecommendationPriorityCoding instance;
+    private MtbRecommendationPriorityCoding instance;
 
     public Builder() {
-      this(new RecommendationPriorityCoding());
+      this(new MtbRecommendationPriorityCoding());
     }
 
-    protected Builder(RecommendationPriorityCoding instance) {
+    protected Builder(MtbRecommendationPriorityCoding instance) {
       this.instance = instance;
     }
 
-    public RecommendationPriorityCoding.Builder code(CodeEnum code) {
+    public MtbRecommendationPriorityCoding.Builder code(CodeEnum code) {
       this.instance.code = code;
       return this;
     }
 
-    public RecommendationPriorityCoding.Builder display(String display) {
+    public MtbRecommendationPriorityCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public RecommendationPriorityCoding.Builder system(String system) {
+    public MtbRecommendationPriorityCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public RecommendationPriorityCoding.Builder version(String version) {
+    public MtbRecommendationPriorityCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }
 
-    public RecommendationPriorityCoding build() {
+    public MtbRecommendationPriorityCoding build() {
       try {
         return this.instance;
       } finally {
@@ -208,12 +225,12 @@ public class RecommendationPriorityCoding {
     }
   }
 
-  public static RecommendationPriorityCoding.Builder builder() {
-    return new RecommendationPriorityCoding.Builder();
+  public static MtbRecommendationPriorityCoding.Builder builder() {
+    return new MtbRecommendationPriorityCoding.Builder();
   }
 
-  public RecommendationPriorityCoding.Builder toBuilder() {
-    return new RecommendationPriorityCoding.Builder()
+  public MtbRecommendationPriorityCoding.Builder toBuilder() {
+    return new MtbRecommendationPriorityCoding.Builder()
         .code(getCode())
         .display(getDisplay())
         .system(getSystem())

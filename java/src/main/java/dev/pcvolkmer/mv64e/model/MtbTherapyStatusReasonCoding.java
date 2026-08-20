@@ -210,17 +210,17 @@ public class MtbTherapyStatusReasonCoding {
       return this;
     }
 
-    public MtbTherapyStatusReasonCoding.Builder display(String display) {
+    public MtbTherapyStatusReasonCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public MtbTherapyStatusReasonCoding.Builder system(String system) {
+    public MtbTherapyStatusReasonCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public MtbTherapyStatusReasonCoding.Builder version(String version) {
+    public MtbTherapyStatusReasonCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

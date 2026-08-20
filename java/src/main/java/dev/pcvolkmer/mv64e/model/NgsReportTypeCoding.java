@@ -186,17 +186,17 @@ public class NgsReportTypeCoding {
       return this;
     }
 
-    public NgsReportTypeCoding.Builder display(String display) {
+    public NgsReportTypeCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public NgsReportTypeCoding.Builder system(String system) {
+    public NgsReportTypeCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public NgsReportTypeCoding.Builder version(String version) {
+    public NgsReportTypeCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

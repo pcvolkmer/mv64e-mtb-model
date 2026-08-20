@@ -259,12 +259,12 @@ public class Patient {
       this.instance = instance;
     }
 
-    public Patient.Builder dateOfDeath(Date dateOfDeath) {
+    public Patient.Builder dateOfDeath(@Nullable Date dateOfDeath) {
       this.instance.dateOfDeath = dateOfDeath;
       return this;
     }
 
-    public Patient.Builder age(Age age) {
+    public Patient.Builder age(@Nullable Age age) {
       this.instance.age = age;
       return this;
     }
@@ -274,12 +274,12 @@ public class Patient {
       return this;
     }
 
-    public Patient.Builder address(PatientAddress address) {
+    public Patient.Builder address(@Nullable PatientAddress address) {
       this.instance.address = address;
       return this;
     }
 
-    public Patient.Builder vitalStatus(VitalStatusCoding vitalStatus) {
+    public Patient.Builder vitalStatus(@Nullable VitalStatusCoding vitalStatus) {
       this.instance.vitalStatus = vitalStatus;
       return this;
     }
@@ -299,7 +299,7 @@ public class Patient {
       return this;
     }
 
-    public Patient.Builder managingSite(Coding managingSite) {
+    public Patient.Builder managingSite(@Nullable Coding managingSite) {
       this.instance.managingSite = managingSite;
       return this;
     }

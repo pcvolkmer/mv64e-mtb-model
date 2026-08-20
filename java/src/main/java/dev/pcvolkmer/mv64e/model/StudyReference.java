@@ -185,12 +185,12 @@ public class StudyReference {
       return this;
     }
 
-    public StudyReference.Builder display(String display) {
+    public StudyReference.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public StudyReference.Builder type(String type) {
+    public StudyReference.Builder type(@Nullable String type) {
       this.instance.type = type;
       return this;
     }

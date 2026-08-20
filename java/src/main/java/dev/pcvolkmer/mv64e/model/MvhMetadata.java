@@ -210,18 +210,19 @@ public class MvhMetadata {
       return this;
     }
 
-    public MvhMetadata.Builder researchConsents(List<Map<String, Object>> researchConsents) {
+    public MvhMetadata.Builder researchConsents(
+        @Nullable List<Map<String, Object>> researchConsents) {
       this.instance.researchConsents = researchConsents;
       return this;
     }
 
-    public MvhMetadata.Builder episodeOfCare(Reference episodeOfCare) {
+    public MvhMetadata.Builder episodeOfCare(@Nullable Reference episodeOfCare) {
       this.instance.episodeOfCare = episodeOfCare;
       return this;
     }
 
     public MvhMetadata.Builder reasonResearchConsentMissing(
-        BroadConsentReasonMissing reasonResearchConsentMissing) {
+        @Nullable BroadConsentReasonMissing reasonResearchConsentMissing) {
       this.instance.reasonResearchConsentMissing = reasonResearchConsentMissing;
       return this;
     }

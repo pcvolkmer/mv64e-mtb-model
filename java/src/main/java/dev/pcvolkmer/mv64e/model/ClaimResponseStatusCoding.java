@@ -176,17 +176,17 @@ public class ClaimResponseStatusCoding {
       return this;
     }
 
-    public ClaimResponseStatusCoding.Builder display(String display) {
+    public ClaimResponseStatusCoding.Builder display(@Nullable String display) {
       this.instance.display = display;
       return this;
     }
 
-    public ClaimResponseStatusCoding.Builder system(String system) {
+    public ClaimResponseStatusCoding.Builder system(@Nullable String system) {
       this.instance.system = system;
       return this;
     }
 
-    public ClaimResponseStatusCoding.Builder version(String version) {
+    public ClaimResponseStatusCoding.Builder version(@Nullable String version) {
       this.instance.version = version;
       return this;
     }

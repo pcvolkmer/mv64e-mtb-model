@@ -1,7 +1,6 @@
 package dev.pcvolkmer.mv64e.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonValue;
 import java.util.Objects;
@@ -60,13 +59,11 @@ public class VariantExternalId {
   }
 
   @JsonProperty(value = JSON_PROPERTY_VALUE, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public String getValue() {
     return value;
   }
 
   @JsonProperty(value = JSON_PROPERTY_VALUE, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setValue(String value) {
     this.value = value;
   }
@@ -78,13 +75,11 @@ public class VariantExternalId {
   }
 
   @JsonProperty(value = JSON_PROPERTY_SYSTEM, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public SystemEnum getSystem() {
     return system;
   }
 
   @JsonProperty(value = JSON_PROPERTY_SYSTEM, required = true)
-  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
   public void setSystem(SystemEnum system) {
     this.system = system;
   }
