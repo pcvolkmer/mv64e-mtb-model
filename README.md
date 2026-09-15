@@ -8,16 +8,16 @@ in [https://github.com/dnpm-dip/mv64e-mtb-dto-*](https://github.com/dnpm-dip).
 
 ## Supported DNPM-Datenmodell 2.1 versions
 
-This library is intended to be used with DNPM-Datenmodell 2.1 as used in DNPM:DIP 1.3.2. For older DNPM:DIP versions,
+This library is intended to be used with DNPM-Datenmodell 2.1 as used in DNPM:DIP 1.3.3. For older DNPM:DIP versions,
 please use the corresponding library versions:
 
-| DNPM Datenmodell     | DNPM:DIP | Language(s) | Library                                                                        | Latest Version |
-|----------------------|----------|-------------|--------------------------------------------------------------------------------|----------------|
-| DNPM Datenmodell 2.1 | <= 1.3.1 | Java        | [mv64e-mtb-dto-java](https://github.com/dnpm-dip/mv64e-mtb-dto-java)           | 0.3.0          |
-| DNPM Datenmodell 2.1 | <= 1.3.1 | C#          | [mv64e-mtb-dto-dotnet](https://github.com/dnpm-dip/mv64e-mtb-dto-dotnet)       | 0.3.0          |
-| DNPM Datenmodell 2.1 | <= 1.3.1 | Rust        | [mv64e-mtb-dto-rs](https://github.com/dnpm-dip/mv64e-mtb-dto-rs)               | 0.3.0          |
-| DNPM Datenmodell 2.1 | <= 1.3.1 | Go          | [mv64e-mtb-dto-go](https://github.com/dnpm-dip/mv64e-mtb-dto-go)               | 0.3.0          |
-| DNPM Datenmodell 2.1 | 1.3.2    | Java, Rust  | [mv64e-mtb-model](https://github.com/pcvolkmer/mv64e-mtb-model) (this library) | 0.5.0          |
+| DNPM Datenmodell     | DNPM:DIP     | Language(s) | Library                                                                        | Latest Version |
+|----------------------|--------------|-------------|--------------------------------------------------------------------------------|----------------|
+| DNPM Datenmodell 2.1 | <= 1.3.1     | Java        | [mv64e-mtb-dto-java](https://github.com/dnpm-dip/mv64e-mtb-dto-java)           | 0.3.0          |
+| DNPM Datenmodell 2.1 | <= 1.3.1     | C#          | [mv64e-mtb-dto-dotnet](https://github.com/dnpm-dip/mv64e-mtb-dto-dotnet)       | 0.3.0          |
+| DNPM Datenmodell 2.1 | <= 1.3.1     | Rust        | [mv64e-mtb-dto-rs](https://github.com/dnpm-dip/mv64e-mtb-dto-rs)               | 0.3.0          |
+| DNPM Datenmodell 2.1 | <= 1.3.1     | Go          | [mv64e-mtb-dto-go](https://github.com/dnpm-dip/mv64e-mtb-dto-go)               | 0.3.0          |
+| DNPM Datenmodell 2.1 | 1.3.2, 1.3.3 | Java, Rust  | [mv64e-mtb-model](https://github.com/pcvolkmer/mv64e-mtb-model) (this library) | 0.5.0          |
 
 ## Usage notices
 
