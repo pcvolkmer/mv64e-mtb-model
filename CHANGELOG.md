@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/pcvolkmer/mv64e-mtb-model/compare/v0.5.0...v0.6.0) (2026-10-29)
+
+
+### Features
+
+* update to DNPM Datamodel 2.1 used by DNPM:DIP 1.3.5 ([#19](https://github.com/pcvolkmer/mv64e-mtb-model/issues/19)) ([8712a37](https://github.com/pcvolkmer/mv64e-mtb-model/commit/8712a37b5ed7b0eb0e5787a8d210afa89db30404))
+
 ## [0.5.0](https://github.com/pcvolkmer/mv64e-mtb-model/compare/v0.4.3...v0.5.0) (2026-08-20)
 
 
