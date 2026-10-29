@@ -145,6 +145,7 @@ impl PatientRecord {
             follow_ups: None,
             prior_diagnostic_reports: None,
             systemic_therapies: None,
+            study_inclusions: None,
             metadata: None,
             msi_findings: None,
         }
