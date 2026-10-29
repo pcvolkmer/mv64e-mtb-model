@@ -11,6 +11,10 @@ public class PatientRecord {
 
   private List<MtbDiagnosis> diagnoses;
 
+  public static final String JSON_PROPERTY_STUDY_INCLUSIONS = "studyInclusions";
+
+  private @Nullable List<PatientRecordStudyInclusionsInner> studyInclusions;
+
   public static final String JSON_PROPERTY_NGS_REPORTS = "ngsReports";
 
   private @Nullable List<SomaticNgsReport> ngsReports;
@@ -111,6 +115,33 @@ public class PatientRecord {
   @JsonProperty(value = JSON_PROPERTY_DIAGNOSES, required = true)
   public void setDiagnoses(List<MtbDiagnosis> diagnoses) {
     this.diagnoses = diagnoses;
+  }
+
+  public PatientRecord studyInclusions(
+      @Nullable List<PatientRecordStudyInclusionsInner> studyInclusions) {
+
+    this.studyInclusions = studyInclusions;
+    return this;
+  }
+
+  public PatientRecord addStudyInclusionsItem(
+      PatientRecordStudyInclusionsInner studyInclusionsItem) {
+    if (this.studyInclusions == null) {
+      this.studyInclusions = new ArrayList<>();
+    }
+    this.studyInclusions.add(studyInclusionsItem);
+    return this;
+  }
+
+  @JsonProperty(value = JSON_PROPERTY_STUDY_INCLUSIONS, required = false)
+  public @Nullable List<PatientRecordStudyInclusionsInner> getStudyInclusions() {
+    return studyInclusions;
+  }
+
+  @JsonProperty(value = JSON_PROPERTY_STUDY_INCLUSIONS, required = false)
+  public void setStudyInclusions(
+      @Nullable List<PatientRecordStudyInclusionsInner> studyInclusions) {
+    this.studyInclusions = studyInclusions;
   }
 
   public PatientRecord ngsReports(@Nullable List<SomaticNgsReport> ngsReports) {
@@ -570,6 +601,7 @@ public class PatientRecord {
     }
     PatientRecord patientRecord = (PatientRecord) o;
     return Objects.equals(this.diagnoses, patientRecord.diagnoses)
+        && Objects.equals(this.studyInclusions, patientRecord.studyInclusions)
         && Objects.equals(this.ngsReports, patientRecord.ngsReports)
         && Objects.equals(this.performanceStatus, patientRecord.performanceStatus)
         && Objects.equals(this.guidelineProcedures, patientRecord.guidelineProcedures)
@@ -595,6 +627,7 @@ public class PatientRecord {
   public int hashCode() {
     return Objects.hash(
         diagnoses,
+        studyInclusions,
         ngsReports,
         performanceStatus,
         guidelineProcedures,
@@ -621,6 +654,7 @@ public class PatientRecord {
     StringBuilder sb = new StringBuilder();
     sb.append("class PatientRecord {\n");
     sb.append("    diagnoses: ").append(toIndentedString(diagnoses)).append("\n");
+    sb.append("    studyInclusions: ").append(toIndentedString(studyInclusions)).append("\n");
     sb.append("    ngsReports: ").append(toIndentedString(ngsReports)).append("\n");
     sb.append("    performanceStatus: ").append(toIndentedString(performanceStatus)).append("\n");
     sb.append("    guidelineProcedures: ")
@@ -668,6 +702,12 @@ public class PatientRecord {
 
     public PatientRecord.Builder diagnoses(List<MtbDiagnosis> diagnoses) {
       this.instance.diagnoses = diagnoses;
+      return this;
+    }
+
+    public PatientRecord.Builder studyInclusions(
+        @Nullable List<PatientRecordStudyInclusionsInner> studyInclusions) {
+      this.instance.studyInclusions = studyInclusions;
       return this;
     }
 
@@ -795,6 +835,7 @@ public class PatientRecord {
   public PatientRecord.Builder toBuilder() {
     return new PatientRecord.Builder()
         .diagnoses(getDiagnoses())
+        .studyInclusions(getStudyInclusions())
         .ngsReports(getNgsReports())
         .performanceStatus(getPerformanceStatus())
         .guidelineProcedures(getGuidelineProcedures())

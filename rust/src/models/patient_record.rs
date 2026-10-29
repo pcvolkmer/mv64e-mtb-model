@@ -6,6 +6,8 @@ use serde::{Deserialize, Serialize};
 pub struct PatientRecord {
     #[serde(rename = "diagnoses")]
     pub diagnoses: Vec<models::MtbDiagnosis>,
+    #[serde(rename = "studyInclusions", skip_serializing_if = "Option::is_none")]
+    pub study_inclusions: Option<Vec<models::PatientRecordStudyInclusionsInner>>,
     #[serde(rename = "ngsReports", skip_serializing_if = "Option::is_none")]
     pub ngs_reports: Option<Vec<models::SomaticNgsReport>>,
     #[serde(rename = "performanceStatus", skip_serializing_if = "Option::is_none")]
@@ -63,6 +65,7 @@ impl PatientRecord {
     ) -> PatientRecord {
         PatientRecord {
             diagnoses,
+            study_inclusions: None,
             ngs_reports: None,
             performance_status: None,
             guideline_procedures: None,
