@@ -21,7 +21,7 @@ please use the corresponding library versions:
 | DNPM Datenmodell 2.1 | <= 1.3.1      | Rust        | [mv64e-mtb-dto-rs](https://github.com/dnpm-dip/mv64e-mtb-dto-rs)               | 0.3.0                |
 | DNPM Datenmodell 2.1 | <= 1.3.1      | Go          | [mv64e-mtb-dto-go](https://github.com/dnpm-dip/mv64e-mtb-dto-go)               | 0.3.0                |
 | DNPM Datenmodell 2.1 | 1.3.2 - 1.3.4 | Java, Rust  | [mv64e-mtb-model](https://github.com/pcvolkmer/mv64e-mtb-model) (this library) | ~~0.5.0~~ (outdated) |
-| DNPM Datenmodell 2.1 | 1.3.5         | Java, Rust  | [mv64e-mtb-model](https://github.com/pcvolkmer/mv64e-mtb-model) (this library) | 0.6.0                |
+| DNPM Datenmodell 2.1 | 1.3.5         | Java, Rust, Go  | [mv64e-mtb-model](https://github.com/pcvolkmer/mv64e-mtb-model) (this library) | 0.6.1                |
 
 ## Usage notices
 
@@ -33,4 +33,3 @@ https://github.com/dnpm-dip/backend-core/commit/97c44aa8bbd6ba4ac81824c5178db23f
 Since Java code is also intended to be used with Onkostar, the default Java version is limited to Java 11 and all
 date-time objects do not use JSR 310 types but `java.util.Date`.
 This may change in the future (Onkostar 3).
-

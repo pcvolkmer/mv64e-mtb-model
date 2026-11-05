@@ -147,25 +147,47 @@ case $1 in
       -exec sed -i '/@JsonInclude/d' {} \;
     ;;
 
-  ### C#
-  csharp)
-    echo "Generate C# code"
-    mkdir -p ./generated/csharp
+  ### Go
+  go)
+    echo "Generate Go code"
+    mkdir -p ./generated/go
 
     docker run --rm --user 1000 \
       -v ./openapi.json:/local/openapi.json \
-      -v ./generated/csharp/:/local/out/ \
+      -v ./generated/go/:/local/out/ \
       openapitools/openapi-generator-cli generate \
         --skip-validate-spec \
         -i /local/openapi.json \
-        -g csharp \
+        -g go \
         -o /local/out \
-        --additional-properties=packageName=MV64e.MTB
+        --additional-properties=packageName=mv64e_model
 
-    # cleanup csharp code
-    find ./generated/csharp -name "*.cs" \
+    # cleanup go code
+    find ./generated/go -name "*.go" \
       -exec sed -i '/\/\*/,/\*\//d' {} \;
+    find ./generated/go -name "*.go" \
+      -exec sed -i '/\/\/ Code generated/d' {} \;
     ;;
+
+    ### C#
+    csharp)
+      echo "Generate C# code"
+      mkdir -p ./generated/csharp
+
+      docker run --rm --user 1000 \
+        -v ./openapi.json:/local/openapi.json \
+        -v ./generated/csharp/:/local/out/ \
+        openapitools/openapi-generator-cli generate \
+          --skip-validate-spec \
+          -i /local/openapi.json \
+          -g csharp \
+          -o /local/out \
+          --additional-properties=packageName=MV64e.MTB
+
+      # cleanup csharp code
+      find ./generated/csharp -name "*.cs" \
+        -exec sed -i '/\/\*/,/\*\//d' {} \;
+      ;;
 
   *)
     echo "No code generation for $1 available"

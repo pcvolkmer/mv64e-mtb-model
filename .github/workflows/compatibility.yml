@@ -17,6 +17,7 @@ jobs:
         language:
           - java
           - rust
+          - go
 
     runs-on: ubuntu-latest
     steps:
@@ -48,3 +49,11 @@ jobs:
           cp mv64e-mtb-fake-patient.json rust/tests/mv64e-mtb-fake-patient.json
           cargo build --verbose
           cargo test --verbose
+
+      # Go
+      - name: Run tests
+        if: matrix.language == 'go'
+        working-directory: go
+        run: |
+          cp ../mv64e-mtb-fake-patient.json tests/mv64e-mtb-fake-patient.json
+          go test -v

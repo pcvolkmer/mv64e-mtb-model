@@ -17,6 +17,7 @@ jobs:
         language:
           - java
           - rust
+          - go
 
     runs-on: ubuntu-latest
     steps:
@@ -42,6 +43,12 @@ jobs:
         run: |
           cargo build --verbose
           cargo test --verbose
+
+      # Go
+      - name: Run tests
+        if: matrix.language == 'go'
+        working-directory: go
+        run: go test -v
 
   publish:
     if: ${{ github.event_name == 'release' && github.event.action == 'created' }}
