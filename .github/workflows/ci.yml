@@ -57,6 +57,7 @@ jobs:
       matrix:
         language:
           - java
+          - go
 
     runs-on: ubuntu-latest
     permissions:
@@ -80,3 +81,13 @@ jobs:
         if: matrix.language == 'java'
         working-directory: java
         run: ./gradlew build publish -Pdnpm_dev_token=${{ secrets.DNPM_DEV_TOKEN }}
+
+      # Go
+      - name: Create Go module tag
+        if: ${{ steps.release.outputs.release_created && matrix.language == 'go' }}
+        env:
+          RELEASE_TAG: ${{ steps.release.outputs.tag_name }}
+        run: |
+          GO_TAG="go/${RELEASE_TAG}"
+          git tag "$GO_TAG" "$GITHUB_SHA"
+          git push origin "$GO_TAG"
