@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.2](https://github.com/pcvolkmer/mv64e-mtb-model/compare/v0.6.1...v0.6.2) (2026-11-06)
+
+
+### Bug Fixes
+
+* use go dir in module name ([fa2fb07](https://github.com/pcvolkmer/mv64e-mtb-model/commit/fa2fb07b6c57d6739f285dfb4c39370aeeccd09c))
+
 ## [0.6.1](https://github.com/pcvolkmer/mv64e-mtb-model/compare/v0.6.0...v0.6.1) (2026-11-06)
 
 
