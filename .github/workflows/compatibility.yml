@@ -53,7 +53,6 @@ jobs:
       # Go
       - name: Run tests
         if: matrix.language == 'go'
-        working-directory: go
         run: |
-          cp ../mv64e-mtb-fake-patient.json tests/mv64e-mtb-fake-patient.json
-          go test -v
+          cp mv64e-mtb-fake-patient.json go/tests/mv64e-mtb-fake-patient.json
+          go test -v ./go
