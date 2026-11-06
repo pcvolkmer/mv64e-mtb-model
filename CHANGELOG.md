@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.3](https://github.com/pcvolkmer/mv64e-mtb-model/compare/v0.6.2...v0.6.3) (2026-11-06)
+
+
+### Features
+
+* create go release tag ([c24b429](https://github.com/pcvolkmer/mv64e-mtb-model/commit/c24b429bd2cfcb7aff55daa146424cff2a3e1dfe))
+
 ## [0.6.2](https://github.com/pcvolkmer/mv64e-mtb-model/compare/v0.6.1...v0.6.2) (2026-11-06)
 
 

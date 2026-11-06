@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "dev.pcvolkmer.mv64e"
-version = "0.6.2" // x-release-please-version
+version = "0.6.3" // x-release-please-version
 
 java {
     toolchain {
