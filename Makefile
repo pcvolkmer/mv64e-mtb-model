@@ -12,6 +12,10 @@ generate-java:
 generate-rust:
 	./scripts/generate.sh rust
 
+.PHONY: generate-go
+generate-go:
+	./scripts/generate.sh go
+
 # Source-Code update
 
 .PHONY: update-java
@@ -31,4 +35,28 @@ update-rust: generate-rust
 	cargo fmt
 	echo
 	echo "WARNING: Keep track of manual changes!"
+
+.PHONY: update-go
+update-go: generate-go
+	echo "Copying generated source code ..."
+	cp ./generated/go/go.* ./go/
+	cp ./generated/go/utils.go ./generated/go/model_*.go ./go/
+	$(MAKE) rename-go
+	echo "Formatting ..."
+	cd go && go fmt &>/dev/null
+	echo
+	echo "WARNING: Keep track of manual changes!"
+
+.PHONY: rename-go
+rename-go:
+	find ./go -type f -name 'model_*.go' ! -name 'model_model_*' | while read -r file; do \
+		dir=$$(dirname "$$file"); \
+		name=$$(basename "$$file"); \
+		mv "$$file" "$$dir/$${name#model_}"; \
+	done
+	find ./go -type f -name 'model_model_*.go' | while read -r file; do \
+		dir=$$(dirname "$$file"); \
+		name=$$(basename "$$file"); \
+		mv "$$file" "$$dir/$${name#model_}"; \
+	done
 
