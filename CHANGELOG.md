@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.4](https://github.com/pcvolkmer/mv64e-mtb-model/compare/v0.6.3...v0.6.4) (2026-11-06)
+
+
+### Features
+
+* replace go module ([96b682a](https://github.com/pcvolkmer/mv64e-mtb-model/commit/96b682a3e6a2ab4d23947b2377b9831f8fa3749f))
+
 ## [0.6.3](https://github.com/pcvolkmer/mv64e-mtb-model/compare/v0.6.2...v0.6.3) (2026-11-06)
 
 
